@@ -1,0 +1,30 @@
+{
+  "name": "lighthouse",
+  "description": "Lighthouse theme by Injected Motion",
+  "main": "index.php",
+  "authors": [
+    "Md. Mozahidur Rahman"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "grunt",
+    "sass",
+    "git",
+    "bootstrap",
+    "autoprefixer",
+    "underscore"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
