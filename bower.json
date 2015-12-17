@@ -8,6 +8,8 @@
   "license": "ISC",
   "keywords": [
     "wordpress",
+    "npm",
+    "bower",
     "grunt",
     "sass",
     "git",
@@ -16,15 +18,20 @@
     "underscore"
   ],
   "moduleType": [
-    "globals"
+    "globals",
+    "node"
   ],
-  "homepage": "",
+  "homepage": "http://wittyplex.com",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "src/components"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
 }
