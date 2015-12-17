@@ -1,0 +1,25 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "description": "Lighthouse theme by Injected Motion",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rousnay/lighthouse.git"
+  },
+  "keywords": [
+    "wordpress",
+    "grunt",
+    "sass",
+    "git",
+    "bootstrap",
+    "autoprefixer",
+    "underscore"
+  ],
+  "author": "Md. Mozahidur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rousnay/lighthouse/issues"
+  },
+  "homepage": "https://github.com/rousnay/lighthouse#readme"
+}
