@@ -129,7 +129,7 @@ copy: {
    		src:'<%= project.css %>/*.css',
    		dist:''
    	}
-   }
+   },
 
 // //cssmin
 // cssmin: {
@@ -172,17 +172,15 @@ copy: {
 
    //Watch
    watch: {
-    	options: {
-    		livereload: true,
-    	},
-    	sass: {
+    	// options: {
+    	// 	livereload: true,
+    	// },
+    	css: {
     	// files: '<%= project.src %>/{,*/}*.{scss,sass,js,html,jpg,gif,png}',
-    	files: '<%= project.src %>/{,*/}*.{sass,js}',
-    	tasks: ['copy','uglify','sass','jshint''sass','autoprefixer']
+    	files: '<%= project.src %>/{,*/}*.{scss,js}',
+    	tasks: ['copy','uglify','sass','jshint','sass','autoprefixer']
     }
 }
-
-
 });
 
     // Load the plugin manually
