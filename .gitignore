@@ -7,5 +7,3 @@ tmp
 *.css.map
 .idea
 src/.idea
-src/Content
-dist
