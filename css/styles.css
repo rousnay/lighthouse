@@ -7526,13 +7526,14 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Questrial", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Questrial", Arial, Helvetica, sans-serif;
   clear: both;
 }
 
