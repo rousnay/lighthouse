@@ -43,6 +43,11 @@ uglify: {
   }
 },
 
+//Clean
+clean: {
+    dev: ['tmp'],
+},
+
 //Sass
 sass:{
   dev: {
@@ -53,7 +58,7 @@ sass:{
    			sourcemap: 'none'
    		},
    		files:{
-   			'src/compiled/styles.css' : 'src/sass/styles.scss'
+   			'tmp/styles.css' : 'src/sass/styles.scss'
    		}
    	},
     dist: {
@@ -62,7 +67,7 @@ sass:{
       sourcemap: 'none'
     },
     files:{
-      'src/compiled/styles.min.css' : 'src/sass/styles.scss'
+      'tmp/styles.min.css' : 'src/sass/styles.scss'
     }
   },
 
@@ -70,15 +75,16 @@ sass:{
 
 //Autoprefixer
 autoprefixer: {
-  options: {
-    expand:true,
-    flatten:true,
+  options:{
+    browsers:['last 2 versions']
   },
-  dist: {
-    files: {
-     'css/styles.css' : 'src/compiled/styles.css'
-   }
- }
+
+  multiple_files: {
+      expand: true,
+      flatten: true,
+      src: 'tmp/*.css',
+      dest: 'css/'
+  },
 },
 
 
@@ -100,7 +106,7 @@ jshint: {
 watch: {
   css: {
   files: 'src/{,*/}*.{scss,js}',
-  tasks: ['copy','uglify','sass','autoprefixer','jshint']
+  tasks: ['copy','uglify','clean','sass','autoprefixer','jshint']
 }
 }
 });
