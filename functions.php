@@ -115,9 +115,9 @@ add_action( 'widgets_init', 'lighthouse_widgets_init' );
  */
 function lighthouse_scripts() {
 
-	wp_enqueue_style( 'lighthouse-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
-
 	wp_enqueue_style( 'lighthouse-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'lighthouse-bootstrap-js', get_template_directory_uri() . 'js/bootstrap.min.js', array('jquery'), '', true );
 
 	wp_enqueue_script( 'lighthouse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
