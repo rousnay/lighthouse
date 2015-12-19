@@ -23,6 +23,7 @@ copy: {
   dev: {
     files: [
     {expand: true, flatten: true, src: ['src/js/**'], dest: 'js/', filter: 'isFile'},
+    {expand: true, flatten: true, src: ['<%= project.bower %>/bootstrap-sass/assets/javascripts/bootstrap.min.js'], dest: 'js/', filter: 'isFile'},
     {expand: true, flatten: true, src: ['<%= project.bower %>/jquery/dist/*.min.js'], dest: 'js/', filter: 'isFile'},
     ],
   },
@@ -52,7 +53,7 @@ sass:{
    			sourcemap: 'none'
    		},
    		files:{
-   			'css/style.css' : 'src/sass/style.scss'
+   			'src/compiled/styles.css' : 'src/sass/styles.scss'
    		}
    	},
     dist: {
@@ -61,25 +62,25 @@ sass:{
       sourcemap: 'none'
     },
     files:{
-      'css/style.min.css' : 'src/sass/style.scss'
+      'src/compiled/styles.min.css' : 'src/sass/styles.scss'
     }
   },
 
 },
 
 //Autoprefixer
-autoprefixer:{
-  options:{
-   browsers:['last 2 versions']
- },
-
- multiple_files:{
-   expand:true,
-   flatten:true,
-   src:'css/*.css',
-   dist:''
+autoprefixer: {
+  options: {
+    expand:true,
+    flatten:true,
+  },
+  dist: {
+    files: {
+     'css/styles.css' : 'src/compiled/styles.css'
+   }
  }
 },
+
 
 //jshint
 jshint: {

@@ -1,4 +1,5 @@
 node_modules
+ 
 src/components
 assets
 .sass-cache
@@ -7,3 +8,4 @@ tmp
 *.css.map
 .idea
 src/.idea
+/ /
