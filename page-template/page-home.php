@@ -51,24 +51,17 @@
  * HEADER END
  ****************************/
 ?>
-
-
-		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="container">
 				<div class="row">
 					<main id="main" class="site-main" role="main">
-
-						<section class="home-section">
-							<?php the_content(); ?>
-						</section>
-
-					</main>
-				</div>
-			</div>
-		<?php endwhile; // end of the loop. ?>
-
-
-
+						<?php while ( have_posts() ) : the_post(); ?>
+							<section class="home-content">
+								<?php the_content(); ?>
+							</section>
+						<?php endwhile; // end of the loop. ?>
+					</main><!-- #main -->
+				</div><!-- .row -->
+			</div><!-- .container -->
 <?php
 /****************************
  * PAGE TEMPLATE END
