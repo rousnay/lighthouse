@@ -7982,6 +7982,17 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Templates
+--------------------------------------------------------------*/
+.site-content {
+  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+  position: relative;
+  z-index: 2;
+  background: white;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
