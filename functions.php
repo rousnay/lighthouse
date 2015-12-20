@@ -47,6 +47,21 @@ function lighthouse_setup() {
 		'primary' => esc_html__( 'Primary', 'lighthouse' ),
 	) );
 
+
+	/*
+	 * Lighthouse custom header menus
+	 *
+	 */
+	function lighthouse_header_menus() {
+		register_nav_menus(
+			array(
+				'header-menu-left' => __( 'Header menu left', 'nav menu location', 'lighthouse' ),
+				'header-menu-right' => __( 'Header menu right' , 'nav menu location', 'lighthouse')
+				)
+			);
+	}
+	add_action( 'init', 'lighthouse_header_menus' );
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.

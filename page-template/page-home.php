@@ -24,22 +24,47 @@
 				<?php
 				if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
+			<?php //else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 				endif;
 
 				$description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php //echo $description; /* WPCS: xss ok. */ ?></p>
 				<?php
 				endif; ?>
 			</div><!-- .site-branding -->
+			
+			<div class="container">
+				<div class="row social-links">
+					<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 header-right-area">
+						
+					</div>
+				</div>
+				<div class="row header-menus">
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lighthouse' ); ?></button>
+						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm custom-menu-area">
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lighthouse' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
+							<div id="menu-left">
+								<?php lighthouse_header_menu_left(); ?>
+				        	</div>
+							
+						</div>
+						<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 header-center-area">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+							</a>
+						</div>
+						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm custom-menu-area">
+							<div id="menu-right">
+			        			<?php lighthouse_header_menu_right(); ?>
+			        		</div>
+						</div>
+					</nav><!-- #site-navigation -->
+				</div>
+			</div>
 		</header><!-- #masthead -->
 
 		<div id="content" class="site-content">
