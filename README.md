@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rousnay/lighthouse.svg?branch=master)](https://travis-ci.org/rousnay/lighthouse)
+[![GitHub version](https://badge.fury.io/gh/rousnay%2Flighthouse.svg)](https://badge.fury.io/gh/rousnay%2Flighthouse)
 [![Build Status](https://scrutinizer-ci.com/g/rousnay/lighthouse/badges/build.png?b=master)](https://scrutinizer-ci.com/g/rousnay/lighthouse/build-status/master)
 [![codecov.io](http://codecov.io/github/rousnay/lighthouse/coverage.svg?branch=develop)](http://codecov.io/github/rousnay/lighthouse?branch=master)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
