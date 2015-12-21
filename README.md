@@ -3,7 +3,7 @@
 [![codecov.io](http://codecov.io/github/rousnay/lighthouse/coverage.svg?branch=develop)](http://codecov.io/github/rousnay/lighthouse?branch=master)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-<img align="right" height="160" src="http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2015/12/lighthouse-logo-300x69.png">
+<img align="right" src="http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2015/12/lighthouse-logo-300x69.png">
 
 Lighthouse
 -----------------------------
