@@ -44,20 +44,17 @@
 				</div>
 				<div class="row header-menus">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lighthouse' ); ?></button>
-						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
-
+						<div class="col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
 							<div id="menu-left">
 								<?php lighthouse_header_menu_left(); ?>
 				        	</div>
-							
 						</div>
-						<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 header-center-area">
+						<div class="col-sm-12 col-md-2 col-lg-2 header-center-area">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 							</a>
 						</div>
-						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
+						<div class="col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
 							<div id="menu-right">
 			        			<?php lighthouse_header_menu_right(); ?>
 			        		</div>
@@ -104,7 +101,40 @@
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
-<?php wp_footer(); ?>
+<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+<nav id="mm-menu" class="mm-menu">
+  <div class="mm-menu__header">
+    <h2 class="mm-menu__title">Nick Salloum</h2>
+  </div>
+  <ul class="mm-menu__items">
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-home"></i> Home</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-person"></i> Profile</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-inbox"></i> Inbox</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-favorite"></i> Favourites</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-settings"></i> Settings</span>
+      </a>
+    </li>
+  </ul>
+</nav><!-- /nav -->
 
+<?php wp_footer(); ?>
 </body>
 </html>

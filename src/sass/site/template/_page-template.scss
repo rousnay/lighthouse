@@ -14,3 +14,8 @@ body{
     background: white;
     overflow-x: hidden;
 }
+@media (max-width: $screen-xs-max) {
+    .site-content {
+        margin-top: 70px;
+    }
+}

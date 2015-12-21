@@ -1,6 +1,7 @@
 node_modules
  
 src/components
+src/lib
 assets
 .sass-cache
 tmp

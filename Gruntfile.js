@@ -107,7 +107,7 @@ jshint: {
 watch: {
   css: {
   files: 'src/{,*/}*.{scss,js}',
-  tasks: ['copy','uglify','clean','sass','autoprefixer','jshint']
+  tasks: ['copy','uglify','clean','sass','autoprefixer']
 }
 }
 });
