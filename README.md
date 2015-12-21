@@ -3,17 +3,16 @@
 Lighthouse
 -----------------------------
 
-A modern WordPress theme developed by Injected Motion, The theme is beased on [_s](http://underscores.me/) (`underscores`) .
+A modern WordPress theme developed by Injected Motion Ltd, The theme is beased on [_s](http://underscores.me/) (`underscores`) .
 
 Tools
 ---------
 
-* [Grunt](http://gruntjs.com/): `The JavaScript Task Runner` Automation, performing repetitive tasks like minification, compilation, unit testing and linting.
-* [Bower](http://bower.io/): `A package manager for the web` Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you..
-* [Sass](http://sass-lang.com/): `Syntactically Awesome Style Sheets` Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-* [Git](https://git-scm.com/): `Version control system` Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance.
+* [Grunt](http://gruntjs.com/): `The JavaScript Task Runner`, Automation, performing repetitive tasks like minification, compilation, unit testing and linting.
+* [Bower](http://bower.io/): `A package manager for the web`, Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you..
+* [Sass](http://sass-lang.com/): `Syntactically Awesome Style Sheets`, Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+* [Git](https://git-scm.com/): `Version control system`, Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance.
 
 Copyright
 ---------
-
-Copyright 2015, [Injected Motion](http://injectedmotion.com)
+© 2013-2015, [Injected Motion Ltd](http://injectedmotion.com)
