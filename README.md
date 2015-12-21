@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/rousnay/lighthouse.svg?branch=master)](https://travis-ci.org/rousnay/lighthouse)
-
+[![codecov.io](http://codecov.io/github/rousnay/lighthouse/coverage.svg?branch=develop)](http://codecov.io/github/rousnay/lighthouse?branch=master)
 Lighthouse
 -----------------------------
 
