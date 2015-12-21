@@ -38,14 +38,14 @@
 			
 			<div class="container">
 				<div class="row social-links">
-					<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 header-right-area">
+					<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 social-items">
 						
 					</div>
 				</div>
 				<div class="row header-menus">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lighthouse' ); ?></button>
-						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm custom-menu-area">
+						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
 
 							<div id="menu-left">
 								<?php lighthouse_header_menu_left(); ?>
@@ -57,7 +57,7 @@
 								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 							</a>
 						</div>
-						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm custom-menu-area">
+						<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
 							<div id="menu-right">
 			        			<?php lighthouse_header_menu_right(); ?>
 			        		</div>

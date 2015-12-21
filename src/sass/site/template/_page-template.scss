@@ -1,3 +1,12 @@
+html{
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+body{
+	-webkit-font-smoothing: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+}
 .site-content {
     transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
     position: relative;

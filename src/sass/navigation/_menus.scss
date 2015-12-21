@@ -14,9 +14,10 @@
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: 100%;
 			left: -999em;
 			z-index: 99999;
+			background-color: #fff;
 
 			ul {
 				left: -999em;
@@ -32,10 +33,17 @@
 
 			a {
 				width: 200px;
+				padding: 13px 20px;
+        		margin: 0;
+        		text-transform: uppercase;
+			    font-size: 11px;
+			    font-weight: 500;
+			    border-bottom: 1px solid #f2f2f2;
 			}
 
 			:hover > a,
 			.focus > a {
+				color: #006aa7;
 			}
 
 			a:hover,
@@ -47,6 +55,22 @@
 		li.focus > ul {
 			left: auto;
 		}
+		.menu-item-has-children > a:after{
+			content: "\f107";
+		    display: inline-block;
+		    font-family: FontAwesome;
+		    font-style: normal;
+		    font-weight: normal;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    margin-left: 7px;
+		    color: #a7a7a7;
+		}
+		a {
+        padding: 15px 30px;
+        margin-bottom: 15px;
+		}
 	}
 	li {
 		float: left;
@@ -54,12 +78,15 @@
 
 		&:hover > a,
 		&.focus > a {
+    		opacity: 0.7;
 		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
-        padding: 15px 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
 	}
 
 	.current_page_item > a,
@@ -69,6 +96,10 @@
 	}
 }
 
+/* Left & Right Menus */
+#menu-left, #menu-right {
+    margin-top: 30px;
+}
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {

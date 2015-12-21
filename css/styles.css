@@ -24,7 +24,7 @@
 	## Captions
 	## Galleries
 
-/*------------------------------------------------------------
+/*-------------------------------------------------------------
 # Third Party Styles
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -7766,9 +7766,10 @@ a:hover, a:active {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
-  top: 1.5em;
+  top: 100%;
   left: -999em;
   z-index: 99999;
+  background-color: #fff;
 }
 .main-navigation ul ul ul {
   left: -999em;
@@ -7779,19 +7780,55 @@ a:hover, a:active {
 }
 .main-navigation ul ul a {
   width: 200px;
+  padding: 13px 20px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f2f2;
+}
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+  color: #006aa7;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
+.main-navigation ul .menu-item-has-children > a:after {
+  content: "\f107";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 7px;
+  color: #a7a7a7;
+}
+.main-navigation ul a {
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
 .main-navigation li {
   float: left;
   position: relative;
 }
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+  opacity: 0.7;
+}
 .main-navigation a {
   display: block;
   text-decoration: none;
-  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Left & Right Menus */
+#menu-left, #menu-right {
+  margin-top: 30px;
 }
 
 /* Small menu. */
@@ -7985,6 +8022,17 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Templates
 --------------------------------------------------------------*/
+html {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
 .site-content {
   transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
   position: relative;
