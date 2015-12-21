@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/rousnay/lighthouse.svg?branch=master)](https://travis-ci.org/rousnay/lighthouse)
+[![Build Status](https://scrutinizer-ci.com/g/rousnay/lighthouse/badges/build.png?b=master)](https://scrutinizer-ci.com/g/rousnay/lighthouse/build-status/master)
 [![codecov.io](http://codecov.io/github/rousnay/lighthouse/coverage.svg?branch=develop)](http://codecov.io/github/rousnay/lighthouse?branch=master)
 Lighthouse
 -----------------------------
