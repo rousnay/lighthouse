@@ -140,7 +140,7 @@
 <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
 <nav id="mm-menu" class="mm-menu">
   <div class="mm-menu__header">
-    <h2 class="mm-menu__title">Nick Salloum</h2>
+    <h2 class="mm-menu__title">Lighthouse</h2>
   </div>
   <ul class="mm-menu__items">
     <li class="mm-menu__item">
