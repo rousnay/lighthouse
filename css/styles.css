@@ -7320,7 +7320,7 @@ Version: 0.1.0
   position: fixed;
   top: 25px;
   left: 25px;
-  z-index: 20;
+  z-index: 10;
   width: 24px;
   height: 18px;
   background: linear-gradient(0deg, rgba(33, 33, 33, 0), rgba(33, 33, 33, 0) 7px, #212121 7px, #212121 11px, rgba(33, 33, 33, 0) 11px, rgba(33, 33, 33, 0) 18px);
@@ -7384,7 +7384,7 @@ Version: 0.1.0
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 9;
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -11207,16 +11207,45 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background: #fff;
+}
+header .container {
+  width: auto;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%;
 }
+.main-navigation #header-menu-id > li {
+  display: inline-block;
+}
+.main-navigation li {
+  position: relative;
+}
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+  opacity: 0.7;
+}
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  text-align: center;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -11230,6 +11259,10 @@ a:hover, a:active {
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
+}
+.main-navigation ul ul li {
+  float: left;
+  text-align: left;
 }
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
@@ -11267,20 +11300,6 @@ a:hover, a:active {
   padding: 15px 30px;
   margin-bottom: 15px;
 }
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-.main-navigation li:hover > a, .main-navigation li.focus > a {
-  opacity: 0.7;
-}
-.main-navigation a {
-  display: block;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
-}
 
 /* Left & Right Menus */
 #menu-left, #menu-right {
@@ -11311,9 +11330,168 @@ a:hover, a:active {
   box-shadow: none;
 }
 
+/*Search*/
+/*search*/
+.iv-module.live-search {
+  float: right;
+  z-index: 999999;
+  margin-top: -50px;
+  display: table !important;
+  height: 100%;
+  margin-left: 30px;
+  position: relative;
+}
+
+.centered {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+a.trigger {
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+i.fa.fa-search {
+  display: block;
+}
+
+.live-search .inner-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: -30px;
+  top: 50px;
+  width: 285px;
+  border: 1px solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+.live-search .inner-wrapper .container {
+  width: 100%;
+}
+.live-search .inner-wrapper .container .row {
+  position: relative;
+}
+.live-search .inner-wrapper .inner-form label {
+  display: none;
+}
+
+.live-search .inner-wrapper.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.inner-wrapper label {
+  display: none;
+}
+.inner-wrapper a.submit-form {
+  color: #ffffff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  top: 0;
+  right: 0;
+  display: block;
+  text-align: center;
+  position: absolute;
+}
+.inner-wrapper a.submit-form i.fa.fa-search {
+  padding: 10px;
+}
+
+span.form-close-btn.thin {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-right: 15px;
+  z-index: 99999;
+  cursor: pointer;
+  font-size: 1.2em;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+span.form-close-btn.bold {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-right: 15px;
+  z-index: 99999;
+  cursor: pointer;
+  font-size: 1.2em;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.inner-form {
+  background: #ffffff;
+  padding: 20px;
+  color: #ffffff;
+  z-index: 20000;
+  position: relative;
+}
+.inner-form:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-color: #e7e7e7 transparent;
+  /* background-color: transparent; */
+  display: block;
+  width: 0;
+  top: -15px;
+  bottom: auto;
+  right: 30px;
+  border-width: 0 15px 15px;
+}
+.inner-form a:hover {
+  color: #1e82b6;
+}
+
+.live-search .submit-form {
+  background-color: #23495e;
+}
+
+.live-search input[type="search"] {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 11px 15px;
+  font-size: 12px;
+  line-height: 1.84;
+  float: left;
+  border-radius: 0;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3f3f3f;
+  padding-right: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 35px;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  outline: 0;
+}
+
 @media (min-width: 991px) {
   #mm-menu-toggle {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .header-center-area .iv-module.live-search {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .iv-module.live-search {
+    margin-top: 0;
+  }
+  .iv-module.live-search .inner-wrapper {
+    top: 100%;
   }
 }
 @media (min-width: 767px) {
@@ -11324,6 +11502,12 @@ a:hover, a:active {
   }
 }
 @media (max-width: 767px) {
+  header .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .main-navigation {
     position: fixed;
     z-index: 9;
@@ -11338,43 +11522,14 @@ a:hover, a:active {
     max-width: 180px;
     line-height: 70px;
   }
+
+  .iv-module.live-search {
+    margin-top: 0;
+  }
+  .iv-module.live-search .inner-wrapper {
+    top: 100%;
+  }
 }
-/*
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-}
-*/
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -11550,11 +11705,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 767px) {
-  .site-content {
-    margin-top: 70px;
-  }
-}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

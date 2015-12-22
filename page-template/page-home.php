@@ -20,22 +20,6 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lighthouse' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php //else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-				endif;
-
-				$description = get_bloginfo( 'description', 'display' );
-				if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php //echo $description; /* WPCS: xss ok. */ ?></p>
-				<?php
-				endif; ?>
-			</div><!-- .site-branding -->
-			
 			<div class="container">
 				<div class="row social-links">
 					<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 social-items">
@@ -53,11 +37,59 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 							</a>
+
+							<div class="iv-module live-search">
+								<div class="centered">
+									<a href="#" class="trigger"><i class="fa fa-search"></i></a>
+									<div class="inner-wrapper">
+										<span class="form-close-btn thin"> ✕ </span>
+										<span class="form-close-btn bold"><i class="fa fa-remove"></i></span>
+										<div class="inner-form">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-12">
+													 	<form method="get" action="<?php echo esc_url( home_url( '/' ) );?>">
+													 		<label for="s"><?php _e('Type &amp; hit enter to search', 'ivan_domain');?></label>
+															<input type="search" name="s" id="s" placeholder="<?php echo esc_attr__('Type &amp; hit enter to search', 'lighthouse');?>" />
+															<a class="submit-form" href="#"><i class="fa fa-search"></i></a>
+															<div class="clearfix"></div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<div class="col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
 							<div id="menu-right">
 			        			<?php lighthouse_header_menu_right(); ?>
 			        		</div>
+			        		<div class="iv-module live-search ">
+								<div class="centered">
+									<a href="#" class="trigger"><i class="fa fa-search"></i></a>
+									<div class="inner-wrapper">
+										<span class="form-close-btn thin"> ✕ </span>
+										<span class="form-close-btn bold"><i class="fa fa-remove"></i></span>
+										<div class="inner-form">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-12">
+													 	<form method="get" action="<?php echo esc_url( home_url( '/' ) );?>">
+													 		<label for="s"><?php _e('Type &amp; hit enter', 'ivan_domain');?></label>
+															<input type="search" name="s" id="s" placeholder="<?php echo esc_attr__('Type &amp; hit enter', 'lighthouse');?>" />
+															<a class="submit-form" href="#"><i class="fa fa-search"></i></a>
+															<div class="clearfix"></div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</nav><!-- #site-navigation -->
 				</div>
