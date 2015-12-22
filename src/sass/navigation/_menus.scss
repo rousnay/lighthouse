@@ -4,15 +4,62 @@ header{
     z-index: 3;
     width: 100%;
     background: #fff;
-
+    border-bottom: 1px solid #E6E6E6;
     .container {
 	    width: auto;
 	    padding-left: 2.5%;
 	    padding-right: 2.5%;
 		}
+		.social-links {
+		    border-bottom: 1px solid #E6E6E6;
+		    padding-top: 5px;
+		    a {
+    			font-size: 20px;
+			}
+			.icon{
+				float: right;
+				display: block;
+			    width: 40px;
+			    height: 40px;
+				transition: background 0.3s;
+				.fa {
+				    padding: 10px;
+				    color: #fff!important;
+				}
+				&:nth-child(2n+1) {
+			    background-color: #dddddd;
+				}
+				&:nth-child(2n) {
+    			background-color: #d2d2d2;
+				}
+			}
+			.icon-twitter{
+				&:hover{
+				background-color:#00abf0
+				}
+			}
+			.icon-facebook{
+				&:hover{
+				background-color:#4b6cb2;
+				}
+			}
+			.icon-google-plus{
+				&:hover{
+				background-color:#dc4b3f
+				}
+			}
+			.icon-linkedin{
+				&:hover{
+				background-color:#0077b5
+				}
+			}
+			.icon-youtube{
+				&:hover{
+				background-color:#df192a
+				}
+			}
+		}
 }
-
-
 
 .main-navigation {
 	clear: both;

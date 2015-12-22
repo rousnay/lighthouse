@@ -22,8 +22,12 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container">
 				<div class="row social-links">
-					<div class="col-xs-8 col-sm-10 col-md-5 col-lg-5 social-items">
-						
+					<div class="col-lg-12 social-items">
+						<a href="" class="icon icon-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a>
+						<a href="" class="icon icon-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
+						<a href="" class="icon icon-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
+						<a href="" class="icon icon-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
+						<a href="" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>	
 					</div>
 				</div>
 				<div class="row header-menus">

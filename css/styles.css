@@ -11212,11 +11212,51 @@ header {
   z-index: 3;
   width: 100%;
   background: #fff;
+  border-bottom: 1px solid #E6E6E6;
 }
 header .container {
   width: auto;
   padding-left: 2.5%;
   padding-right: 2.5%;
+}
+header .social-links {
+  border-bottom: 1px solid #E6E6E6;
+  padding-top: 5px;
+}
+header .social-links a {
+  font-size: 20px;
+}
+header .social-links .icon {
+  float: right;
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s;
+}
+header .social-links .icon .fa {
+  padding: 10px;
+  color: #fff !important;
+}
+header .social-links .icon:nth-child(2n+1) {
+  background-color: #dddddd;
+}
+header .social-links .icon:nth-child(2n) {
+  background-color: #d2d2d2;
+}
+header .social-links .icon-twitter:hover {
+  background-color: #00abf0;
+}
+header .social-links .icon-facebook:hover {
+  background-color: #4b6cb2;
+}
+header .social-links .icon-google-plus:hover {
+  background-color: #dc4b3f;
+}
+header .social-links .icon-linkedin:hover {
+  background-color: #0077b5;
+}
+header .social-links .icon-youtube:hover {
+  background-color: #df192a;
 }
 
 .main-navigation {
