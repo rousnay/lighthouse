@@ -174,3 +174,49 @@ function lighthouse_header_menu_right() {
     );
     }
 }
+
+/**
+ * Custom widgets
+ */
+
+//footer widgets
+function footer_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Footer Widgets #1',
+		'description'   => __( 'Widgets displayed at footer.', 'lighthouse' ),
+		'id' => 'footer_widgets_1',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+		register_sidebar( array(
+		'name' => 'Footer Widgets #2',
+		'description'   => __( 'Widgets displayed at footer.', 'lighthouse' ),
+		'id' => 'footer_widgets_2',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+		register_sidebar( array(
+		'name' => 'Footer Widgets #3',
+		'description'   => __( 'Widgets displayed at footer.', 'lighthouse' ),
+		'id' => 'footer_widgets_3',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+		register_sidebar( array(
+		'name' => 'Footer Widgets #4',
+		'description'   => __( 'Widgets displayed at footer.', 'lighthouse' ),
+		'id' => 'footer_widgets_4',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'footer_widgets_init' );

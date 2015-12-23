@@ -1,0 +1,23 @@
+footer {
+    position: relative;
+    font-size: 13px;
+    .footer-normal{
+    	padding: 80px 0 80px;
+    	background-color: #1f2426;
+    	.widget{
+    	color: #7f7f7f;
+    	}
+    }
+   .footer-bottom{
+	    background-color: #141819;
+   		padding: 45px 0;
+	    .site-info{
+		    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    line-height: 1.25;
+		    color: #9d9d9d;
+		    -webkit-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+		    -moz-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+		    transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+		 }
+	}
+}

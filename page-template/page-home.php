@@ -129,13 +129,32 @@
 		</div><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lighthouse' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'lighthouse' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lighthouse' ), 'lighthouse', '<a href="http://injectedmotion.com" rel="designer">Injected Motion</a>' ); ?>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
+			<div class="footer-normal">
+				<div class="container">
+					<div class="row widget">
+						<div class="col-sm-6 col-md-3 widget-col widget-col-1"><?php dynamic_sidebar( 'footer_widgets_1' ); ?></div>
+						<div class="col-sm-6 col-md-3 widget-col widget-col-2"><?php dynamic_sidebar( 'footer_widgets_2' ); ?></div>
+						<div class="col-sm-6 col-md-3 widget-col widget-col-3"><?php dynamic_sidebar( 'footer_widgets_3' ); ?></div>
+						<div class="col-sm-6 col-md-3 widget-col widget-col-4"><?php dynamic_sidebar( 'footer_widgets_4' ); ?></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row site-info">
+						<div class="col-sm-12 col-md-6 bottom-footer-left-area">
+							dasd
+						</div>
+						<div class="col-sm-12 col-md-6 bottom-footer-right-area">
+							adasd
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- footer -->
 	</div><!-- #page -->
+
+<!-- MENU FOR SMALL SCREEN -->
 
 <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
 <nav id="mm-menu" class="mm-menu">
@@ -169,7 +188,7 @@
       </a>
     </li>
   </ul>
-</nav><!-- /nav -->
+</nav><!-- nav -->
 
 <?php wp_footer(); ?>
 </body>
