@@ -121,7 +121,7 @@ add_action( 'edit_category', 'lighthouse_category_transient_flusher' );
 add_action( 'save_post',     'lighthouse_category_transient_flusher' );
 
 /**
- * Custom Header Menus
+ * Custom Menus
  */
 //Left menu
 function lighthouse_header_menu_left() {
@@ -174,6 +174,59 @@ function lighthouse_header_menu_right() {
     );
     }
 }
+
+//Fotter menu
+function lighthouse_footer_menu() {
+    if ( has_nav_menu( 'footer-menu' ) ) {
+    wp_nav_menu(
+        array(
+            'theme_location'  => 'footer-menu',
+            'menu'            => '',
+            'container'       => 'div',
+            'container_id'    => 'footer-menu-id',
+            'container_class' => 'footer-menu-cl',
+            'menu_id'         => 'footer-menu-id',
+            'menu_class'      => 'footer-menu-cl',
+			'echo'            => true,
+			'fallback_cb'     => '',
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			'depth'           => 0,
+			'walker'          => ''
+        )
+    );
+    }
+}
+
+//Menu footer-bottom
+function lighthouse_footer_menu_bottom() {
+    if ( has_nav_menu( 'footer-menu-bottom' ) ) {
+    wp_nav_menu(
+        array(
+            'theme_location'  => 'footer-menu-bottom',
+            'menu'            => '',
+            'container'       => 'div',
+            'container_id'    => 'footer-menu-bottom-id',
+            'container_class' => 'footer-menu-bottom-cl',
+            'menu_id'         => 'footer-menu-id',
+            'menu_class'      => 'footer-menu-cl',
+			'echo'            => true,
+			'fallback_cb'     => '',
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			'depth'           => 0,
+			'walker'          => ''
+        )
+    );
+    }
+}
+
 
 /**
  * Custom widgets
