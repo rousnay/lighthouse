@@ -21,5 +21,50 @@
     padding: 0;
     margin: 0;
     list-style: none;
-}
+    }
+    li{
+        padding: 0;
+        margin-bottom: 12px;
+        position: relative;
+    }
+    .menu{
+        li{
+            font-weight: 500;
+        }
+    }
+    .widget_recent_entries {
+        li{
+            padding-bottom: 16px;
+            margin-bottom: 17px;
+            border-bottom: 1px solid #363636;
+            figure {
+                margin: 0;
+                width: 40px;
+                height: 40px;
+                display: table-cell;
+                vertical-align: middle;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            div {
+                padding-left: 15px;
+                display: table-cell;
+                vertical-align: middle;
+                a{
+                    font-size: 13px;
+                    line-height: 1.5em;
+                    margin-bottom: 3px;
+                    font-weight: 500;
+                    padding-top: 0;
+                }
+                .post-date {
+                    font-size: 11px;
+                    line-height: 1.4em;
+                    display: block;
+                    color: #7f7f7f;
+                }
+            }
+        }
+    }
 }

@@ -7,6 +7,19 @@ footer {
     	.widget{
     	color: #7f7f7f;
     	}
+        a{
+            color: #989898;
+            text-decoration: none;
+            -webkit-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
+            -moz-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
+            -ms-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
+            -o-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
+            transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
+            &:hover {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
     }
    .footer-bottom{
 	    background-color: #141819;
@@ -18,6 +31,65 @@ footer {
 		    -webkit-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
 		    -moz-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
 		    transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+
+            .social-items,.footer-menu {
+                    float: right;
+                    text-align: right;
+            }
+            .footer-menu {
+                width: calc(90% - 160px);
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    text-align: right;
+                    display: inline-block;
+                    li {
+                        display: inline-block;
+                        margin-left: 25px;
+                        a{
+                            color: #fff;
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .social-items{
+                width: 160px;
+                margin-left: 9%;
+                 .fa {
+                    color: #fff;
+                    font-size: 16px;
+                    margin-left: 15px;
+                    transition: color 0.3s;
+                }
+                    .icon-twitter{
+                        &:hover .fa{
+                        color:#00abf0
+                        }
+                    }
+                    .icon-facebook{
+                        &:hover .fa{
+                        color:#4b6cb2;
+                        }
+                    }
+                    .icon-google-plus{
+                        &:hover .fa{
+                        color:#dc4b3f
+                        }
+                    }
+                    .icon-linkedin{
+                        &:hover .fa{
+                        color:#0077b5
+                        }
+                    }
+                    .icon-youtube{
+                        &:hover .fa{
+                        color:#df192a
+                        }
+                    }
+            }
 		 }
 	}
 }
