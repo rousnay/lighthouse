@@ -170,33 +170,8 @@
   <div class="mm-menu__header">
     <h2 class="mm-menu__title">Lighthouse</h2>
   </div>
-  <ul class="mm-menu__items">
-    <li class="mm-menu__item">
-      <a class="mm-menu__link" href="#">
-        <span class="mm-menu__link-text"><i class="md md-home"></i> Home</span>
-      </a>
-    </li>
-    <li class="mm-menu__item">
-      <a class="mm-menu__link" href="#">
-        <span class="mm-menu__link-text"><i class="md md-person"></i> Profile</span>
-      </a>
-    </li>
-    <li class="mm-menu__item">
-      <a class="mm-menu__link" href="#">
-        <span class="mm-menu__link-text"><i class="md md-inbox"></i> Inbox</span>
-      </a>
-    </li>
-    <li class="mm-menu__item">
-      <a class="mm-menu__link" href="#">
-        <span class="mm-menu__link-text"><i class="md md-favorite"></i> Favourites</span>
-      </a>
-    </li>
-    <li class="mm-menu__item">
-      <a class="mm-menu__link" href="#">
-        <span class="mm-menu__link-text"><i class="md md-settings"></i> Settings</span>
-      </a>
-    </li>
-  </ul>
+  <?php lighthouse_header_menu_left(); ?>
+  <?php lighthouse_header_menu_right(); ?>
 </nav><!-- nav -->
 
 <?php wp_footer(); ?>

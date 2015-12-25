@@ -7553,7 +7553,7 @@ Version: 0.1.0
   position: relative;
   overflow: hidden;
   margin: 4px 0;
-  padding: 12px;
+  padding: 7px;
   color: #727272;
   font-size: 16px;
   text-decoration: none;
@@ -11361,6 +11361,31 @@ header .social-links .icon-youtube:hover .fa {
   border: none;
   outline: none;
   box-shadow: none;
+}
+
+#mm-menu #header-menu-left-id {
+  margin-top: 15px;
+}
+#mm-menu #header-menu-id {
+  padding-left: 15px;
+}
+#mm-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#mm-menu ul ul {
+  padding-left: 15px;
+}
+#mm-menu a {
+  color: #333;
+  text-decoration: none;
+}
+#mm-menu a:hover, #mm-menu a:active {
+  color: #2980b9;
+}
+#mm-menu a:focus {
+  outline: none;
 }
 
 /*Search*/

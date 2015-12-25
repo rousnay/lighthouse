@@ -139,8 +139,8 @@ function lighthouse_header_menu_left() {
 			'fallback_cb'     => '',
 			'before'          => '',
 			'after'           => '',
-			'link_before'     => '',
-			'link_after'      => '',
+			'link_before'     => '<span>',
+			'link_after'      => '</span>',
 			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			'depth'           => 0,
 			'walker'          => ''
@@ -165,8 +165,8 @@ function lighthouse_header_menu_right() {
 			'fallback_cb'     => '',
 			'before'          => '',
 			'after'           => '',
-			'link_before'     => '',
-			'link_after'      => '',
+			'link_before'     => '<span>',
+			'link_after'      => '</span>',
 			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			'depth'           => 0,
 			'walker'          => ''

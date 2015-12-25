@@ -188,7 +188,33 @@ header{
 	outline: none;
 	box-shadow:none;
 }
+#mm-menu{
+	#header-menu-left-id {
+    margin-top: 15px;
+	}
+	#header-menu-id {
+    padding-left: 15px;
+	}
+	ul{
+		list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    ul{
+		    padding-left: 15px;
+		}
+	}
+	a{
+		color: #333;
+	    text-decoration: none;
+	    &:hover,&:active{
+	    	color: #2980b9;
+	    }
+	    &:focus{
+	    	outline: none;
+	    }
+	}
 
+}
 /*Search*/
 
 /*search*/

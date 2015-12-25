@@ -3,6 +3,10 @@
 /***
 Primary Nav manu Toggle hide/show
 ***/
+jQuery('#mm-menu li').addClass("mm-menu__item");
+jQuery('#mm-menu a').addClass("mm-menu__link");
+jQuery('#mm-menu a span').addClass("mm-menu__link-text");
+
 var menu = new Menu;
 
 })(jQuery);
