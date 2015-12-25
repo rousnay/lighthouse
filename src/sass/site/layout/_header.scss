@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #E6E6E6;
+    &.panel-top{
+        position: relative;
+    }
+    &.panel-fixed {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0 !important;
+    border-bottom: 1px solid #e6e6e6;
+    -webkit-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+    transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+    opacity: 1;
+    -webkit-animation: fadeInDown 1s alternate ease;
+    -moz-animation: fadeInDown 1s alternate ease;
+    animation: fadeInDown 1s alternate ease;
+    }
+}

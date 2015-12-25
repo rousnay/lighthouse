@@ -3,10 +3,19 @@
 /***
 Primary Nav manu Toggle hide/show
 ***/
+
+$(window).scroll(function(){
+  var sticky = $('header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 100) sticky.addClass('panel-fixed').removeClass('panel-top');
+  else sticky.removeClass('panel-fixed').addClass('panel-top');
+});
+
+
 jQuery('#mm-menu li').addClass("mm-menu__item");
 jQuery('#mm-menu a').addClass("mm-menu__link");
 jQuery('#mm-menu a span').addClass("mm-menu__link-text");
-
 var menu = new Menu;
 
 })(jQuery);

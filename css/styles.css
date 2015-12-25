@@ -11207,13 +11207,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-header {
-  position: fixed;
-  z-index: 3;
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #E6E6E6;
-}
 header .container {
   width: auto;
   padding-left: 2.5%;
@@ -11693,6 +11686,31 @@ span.form-close-btn.bold {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #E6E6E6;
+}
+header.panel-top {
+  position: relative;
+}
+header.panel-fixed {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0 !important;
+  border-bottom: 1px solid #e6e6e6;
+  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+  opacity: 1;
+  -webkit-animation: fadeInDown 1s alternate ease;
+  animation: fadeInDown 1s alternate ease;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
