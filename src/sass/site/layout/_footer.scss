@@ -10,10 +10,6 @@ footer {
         a{
             color: #989898;
             text-decoration: none;
-            -webkit-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
-            -moz-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
-            -ms-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
-            -o-transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
             transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
             &:hover {
                 color: #ffffff;
