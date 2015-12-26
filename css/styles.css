@@ -12113,3 +12113,27 @@ object {
 .gallery-caption {
   display: block;
 }
+
+/*--------------------------------------------------------------
+# Customize
+--------------------------------------------------------------*/
+/***************
+Visual Composer
+***************/
+.wpb_wrapper .ivan-custom-wrapper .wpb_column {
+  padding-left: 0;
+  padding-right: 0;
+}
+.wpb_wrapper .ivan-custom-wrapper .wpb_column .ivan-icon-box-wrapper {
+  margin-top: 0 !important;
+}
+.wpb_wrapper .ivan-custom-wrapper .wpb_column .ivan-icon-box-wrapper .ivan-icon-box {
+  border: 0 !important;
+}
+.wpb_wrapper .ivan-custom-wrapper .wpb_column .ivan-icon-box-wrapper .ivan-icon-box .main-icon {
+  color: #236fb6 !important;
+}
+
+/***************
+Master Slider
+***************/
