@@ -17,7 +17,7 @@
 @import "../components/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "../components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-@import "../components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../components/bootstrap-sass/assets/stylesheets/bootstrap/forms"; //If disable -> Error: Undefined mixin 'form-inline';
 @import "../components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components

@@ -11191,16 +11191,10 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
-}
-a:visited {
-  color: purple;
-}
-a:hover, a:focus, a:active {
-  color: midnightblue;
+  text-decoration: none !important;
 }
 a:focus {
-  outline: thin dotted;
+  outline: none;
 }
 a:hover, a:active {
   outline: 0;
@@ -12019,6 +12013,9 @@ body {
   z-index: 2;
   background: white;
   overflow-x: hidden;
+}
+.site-content a {
+  transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
 }
 
 /*--------------------------------------------------------------
