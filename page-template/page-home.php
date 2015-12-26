@@ -142,9 +142,6 @@
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row site-info">
-						<div class="col-sm-12 col-md-6 bottom-footer-left">
-							<div class="copyright">© 2015 - Lighthouse Group PLC - Company No. 04042743</div>
-						</div>
 						<div class="col-sm-12 col-md-6 bottom-footer-right">
 							<div class="social-items">
 								<a href="" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>	
@@ -156,6 +153,9 @@
 							<div class="footer-menu">
 								<?php lighthouse_footer_menu_bottom(); ?>
 							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 bottom-footer-left">
+							<div class="copyright">© 2015 - Lighthouse Group PLC - Company No. 04042743</div>
 						</div>
 					</div>
 				</div>
