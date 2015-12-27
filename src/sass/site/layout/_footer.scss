@@ -1,4 +1,4 @@
-footer {
+footer#colophon {
     position: relative;
     font-size: 13px;
     .footer-normal{
@@ -95,7 +95,7 @@ footer {
 	}
 }
 @media (max-width: 991px){
-    footer{
+    footer#colophon{
         .footer-normal{
             padding-bottom: 20px;
         }

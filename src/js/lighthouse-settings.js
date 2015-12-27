@@ -5,7 +5,7 @@ Primary Nav manu Toggle hide/show
 ***/
 
 $(window).scroll(function(){
-  var sticky = $('header'),
+  var sticky = $('#masthead'),
       scroll = $(window).scrollTop();
 
   if (scroll >= 100) sticky.addClass('panel-fixed').removeClass('panel-top');

@@ -1,0 +1,39 @@
+.site-content {
+    transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+    position: relative;
+    z-index: 2;
+    background: white;
+    overflow-x: hidden;
+    a {
+    transition: background 350ms ease-in-out, border-color 350ms ease-in-out, color 150ms ease-in-out;
+	}
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
