@@ -6,7 +6,8 @@ input[type="search"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
-	border-radius: 3px;
+	border-radius: 0;
+	outline: none;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: background 500ms ease, border 500ms ease;
 
@@ -19,10 +20,16 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 11px 15px;
 
 }
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+
+button[type="submit"]:focus, input[type="submit"]:focus, button[type="submit"]:active, input[type="submit"]:active, button[type="submit"]:hover, input[type="submit"]:hover {
+    border-color: #f0f0f0 !important;
+    background-color: #f0f0f0 !important;
+    color: #4c4c4c !important;
 }

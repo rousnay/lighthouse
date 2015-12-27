@@ -1,27 +1,49 @@
 /***************
 Visual Composer
 ***************/
-.wpb_wrapper {
-	.ivan-custom-wrapper {
-		.wpb_column {
-			padding-left: 0;
-			padding-right: 0;
-			.ivan-icon-box-wrapper {
-				margin-top: 0!important;
-				.ivan-icon-box {
-					border: 0!Important;
-					.main-icon {
-						color: #236fb6!important;
-					}
-				}
+
+body {
+	&.home{
+		.ivan-custom-wrapper {
+			.wpb_column {
+				padding-left: 0;
+				padding-right: 0;
 			}
-			// .ivan-button{
-			// 	.round-square {
-			// 	    border-radius: 5px;
-			// 	}
-			// }
 		}
 	}
+}
+.ivan-custom-wrapper {
+	.wpb_column {
+		.ivan-icon-box-wrapper {
+			margin-top: 0!important;
+			.ivan-icon-box {
+				border-width: 0!Important;
+				.main-icon {
+					color: #236fb6!important;
+				}
+			}
+		}
+		// .ivan-button{
+		// 	.round-square {
+		// 	    border-radius: 5px;
+		// 	}
+		// }
+	}
+}
+
+.ivan-title-wrapper{
+	.title-wrapper {
+    position: relative;
+    .title-heading {
+    margin: 0;
+    color: #292d33;
+}
+ .sub {
+    margin: 10px 0 0;
+    color: #6d8394!important;
+    line-height: 1.3;
+}
+}
 }
 .ivan-promo-box {
     padding: 130px 80px;
@@ -53,6 +75,18 @@ Visual Composer
     position: relative;
 	}
 }
+
+
+.ivan-button-wrapper{
+	.ivan-button.outline {
+    border-width: 2px;
+    background-color: transparent;
+    color: #236fb6;
+}
+
+}
+
+
 @media (max-width: 1199px) and (min-width: 992px){
 	.ivan-promo-box {
 	    padding: 100px 35px;
@@ -75,7 +109,28 @@ Ninja Forms
 		display: none;
 	}
 	input{
-			transition: all 0.3s ease-out;
-			border-radius:0;
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    font-size: 12px;
+	    border: 1px solid #e7e7e7;
+	    color: #5d5d5d;
+	    border-radius: 0!important;
+	    transition: all 0.3s ease-out;
+	}
+}
+.ninja-forms-form-wrap {
+	form {
+		input:focus, textarea:focus{
+		    background: #fcfcfc;
+		    border-color: #5d5d5d;
+		}
+		input[type=submit] {
+		    color: white;
+		    background: #0d8dd6;
+		    float: left;
+		    border: none;
+		    letter-spacing: 1px;
+		    width: auto;
+		    padding: 13px 27px;
+		}
 	}
 }
