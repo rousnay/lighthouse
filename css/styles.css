@@ -11122,22 +11122,18 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
+  border-radius: 0;
   background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 button:active, button:focus,
 input[type="button"]:active,
@@ -11147,7 +11143,6 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 input[type="text"],
@@ -11882,7 +11877,9 @@ footer .footer-bottom .site-info .social-items .icon-youtube:hover .fa {
 --------------------------------------------------------------*/
 .widget {
   margin: 0;
-  /* Make sure select elements fit in widgets. */
+}
+.widget .widget-col > div:first-child {
+  margin-bottom: 35px;
 }
 .widget select {
   max-width: 100%;
@@ -11919,6 +11916,21 @@ footer .footer-bottom .site-info .social-items .icon-youtube:hover .fa {
   color: #ffffff;
   background-color: transparent;
   outline: none;
+}
+.widget input[type="submit"] {
+  color: #ffffff;
+  border: 2px solid #1f62a1;
+  padding: 10px 15px;
+  font-size: 13px;
+  color: #7f7f7f;
+  background: transparent;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-color: #363636;
+}
+.widget button[type="submit"]:hover, .widget button[type="submit"]:focus, .widget button[type="submit"]:active, .widget input[type="submit"]:hover, .widget input[type="submit"]:focus, .widget input[type="submit"]:active {
+  border-color: #f0f0f0 !important;
+  background-color: #f0f0f0 !important;
+  color: #4c4c4c !important;
 }
 .widget .widget-title {
   font-weight: 400;
@@ -12137,3 +12149,13 @@ Visual Composer
 /***************
 Master Slider
 ***************/
+/***************
+Ninja Forms
+***************/
+.widget_ninja_forms_widget .ninja-forms-required-items {
+  display: none;
+}
+.widget_ninja_forms_widget input {
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}

@@ -1,7 +1,11 @@
 .widget {
 	margin: 0;
 
-	/* Make sure select elements fit in widgets. */
+	.widget-col{
+        > div:first-child{
+            margin-bottom: 35px;
+        }
+    }
 	select {
 		max-width: 100%;
 	}
@@ -33,6 +37,23 @@
             color: #ffffff;
             background-color: transparent;
             outline: none;
+        }
+    }
+    input[type="submit"]{
+        color: #ffffff;
+        border: 2px solid #1f62a1;
+        padding: 10px 15px;
+        font-size: 13px;
+        color: #7f7f7f;
+        background: transparent;
+        font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        border-color: #363636;
+    }
+    button[type="submit"], input[type="submit"] {
+        &:hover, &:focus, &:active{
+            border-color: #f0f0f0 !important;
+            background-color: #f0f0f0 !important;
+            color: #4c4c4c !important;
         }
     }
 	.widget-title {
