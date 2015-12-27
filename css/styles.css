@@ -10984,8 +10984,8 @@ select,
 textarea {
   color: #404040;
   font-family: "Questrial", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 22.4px;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 
@@ -11124,8 +11124,8 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 0;
   background: #e6e6e6;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   padding: .6em 1em .4em;
 }
@@ -12146,6 +12146,45 @@ Visual Composer
   color: #236fb6 !important;
 }
 
+.ivan-promo-box {
+  padding: 130px 80px;
+  background-color: #2ca9e0;
+  padding: 130px 80px;
+  color: #fff;
+  position: relative;
+}
+.ivan-promo-box .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.ivan-promo-box .overlay.dark-overlay {
+  background-color: #000;
+}
+.ivan-promo-box:hover .overlay {
+  opacity: .4;
+}
+.ivan-promo-box h3 {
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 400;
+  position: relative;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .ivan-promo-box {
+    padding: 100px 35px;
+  }
+}
+@media (max-width: 991px) {
+  .ivan-promo-box {
+    padding: 75px 35px;
+  }
+}
 /***************
 Master Slider
 ***************/

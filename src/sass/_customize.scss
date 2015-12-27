@@ -15,10 +15,54 @@ Visual Composer
 					}
 				}
 			}
+			// .ivan-button{
+			// 	.round-square {
+			// 	    border-radius: 5px;
+			// 	}
+			// }
 		}
 	}
 }
-
+.ivan-promo-box {
+    padding: 130px 80px;
+    background-color: #2ca9e0;
+    padding: 130px 80px;
+    color: #fff;
+    position: relative;
+    .overlay {
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    opacity: 0;
+	    transition: all 0.3s ease-out;
+	    &.dark-overlay {
+		    background-color: #000;
+		}
+	}
+	&:hover{
+		.overlay {
+    		opacity: .4;
+		}
+	}
+	h3 {
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 400;
+    position: relative;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px){
+	.ivan-promo-box {
+	    padding: 100px 35px;
+	}
+}
+@media (max-width: 991px){
+	.ivan-promo-box {
+	    padding: 75px 35px;
+	}
+}
 /***************
 Master Slider
 ***************/
