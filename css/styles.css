@@ -11135,6 +11135,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 0;
+  outline: none;
   background: #e6e6e6;
   font-size: 16px;
   font-size: 1rem;
@@ -11359,10 +11360,14 @@ header .social-links .icon-youtube:hover .fa {
 }
 
 /* Small menu. */
-#mm-menu-toggle {
+button#mm-menu-toggle {
   border: none;
   outline: none;
   box-shadow: none;
+  background-color: transparent !important;
+}
+button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle:focus {
+  background-color: transparent !important;
 }
 
 #mm-menu #header-menu-left-id {
@@ -11948,11 +11953,11 @@ footer#colophon .footer-bottom .site-info .social-items .icon-youtube:hover .fa 
 }
 .widget input[type="submit"] {
   color: #ffffff;
-  border: 2px solid #1f62a1;
+  border: 2px solid #363636 !important;
   padding: 10px 15px;
   font-size: 13px;
   color: #7f7f7f;
-  background: transparent;
+  background: transparent !important;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-color: #363636;
 }
@@ -12155,7 +12160,7 @@ body.home .ivan-custom-wrapper .wpb_column {
   border-width: 0 !important;
 }
 .ivan-custom-wrapper .wpb_column .ivan-icon-box-wrapper .ivan-icon-box .main-icon {
-  color: #236fb6 !important;
+  color: #236fb6;
 }
 
 .ivan-title-wrapper .title-wrapper {
@@ -12204,6 +12209,10 @@ body.home .ivan-custom-wrapper .wpb_column {
   border-width: 2px;
   background-color: transparent;
   color: #236fb6;
+}
+
+.ivan-icon-box.clean-color .icon-box-holder .main-icon, .ivan-icon-box.light-bg .icon-box-holder .main-icon {
+  color: #fff !important;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {

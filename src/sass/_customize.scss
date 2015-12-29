@@ -19,7 +19,7 @@ body {
 			.ivan-icon-box {
 				border-width: 0!Important;
 				.main-icon {
-					color: #236fb6!important;
+					color: #236fb6;
 				}
 			}
 		}
@@ -85,8 +85,14 @@ body {
 }
 
 }
+.ivan-icon-box.clean-color .icon-box-holder .main-icon, .ivan-icon-box.light-bg .icon-box-holder .main-icon {
+    color: #fff!important;
+}
 
-
+// .ivan-button.outline:hover {
+//     border-color: transparent!important;
+//     color: #FFFFFF!important;
+// }
 @media (max-width: 1199px) and (min-width: 992px){
 	.ivan-promo-box {
 	    padding: 100px 35px;

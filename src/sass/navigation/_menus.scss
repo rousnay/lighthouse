@@ -178,10 +178,16 @@ header{
 }
 
 /* Small menu. */
-#mm-menu-toggle{
-	border:none;
-	outline: none;
-	box-shadow:none;
+button {
+	&#mm-menu-toggle{
+		border:none;
+		outline: none;
+		box-shadow:none;
+		background-color: transparent!important;
+		&:hover, &:active, &:focus{
+			background-color: transparent!important;
+		}
+	}
 }
 #mm-menu{
 	#header-menu-left-id {
