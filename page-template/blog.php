@@ -11,7 +11,7 @@ get_header(); ?>
 			<div class="col-md-6">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 search-area">
 										
 <?php get_search_form(); ?>
 											
@@ -67,7 +67,7 @@ get_header(); ?>
 
 	</div>
 	<div class="col-md-3 sidebar" role="complementary">
-
+		<?php dynamic_sidebar( 'blog_widgets' ); ?>
 	</div>
 </div><!-- .row -->
 </div><!-- .container -->

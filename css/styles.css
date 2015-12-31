@@ -12063,8 +12063,15 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 .page-template-blog .site-content .title-wrapper .entry-title {
   color: #fff;
 }
+.page-template-blog .site-content .title-wrapper .search-area {
+  padding-right: 0;
+}
 .page-template-blog .site-content .title-wrapper form.search-form {
   float: right;
+  margin-top: 12px;
+}
+.page-template-blog .site-content .title-wrapper form.search-form label {
+  margin-bottom: 0;
 }
 .page-template-blog .site-content .title-wrapper form.search-form input[type="search"] {
   display: block;
@@ -12118,29 +12125,32 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   background-color: #f0f0f0 !important;
   border-color: #f0f0f0 !important;
 }
-.page-template-blog .site-content article {
+.page-template-blog .site-content .blog-listing {
+  margin-top: 10px;
+}
+.page-template-blog .site-content .blog-listing article {
   background: #fff;
   margin: 15px 0;
   box-shadow: none;
   transition: box-shadow 250ms linear;
 }
-.page-template-blog .site-content article:hover {
+.page-template-blog .site-content .blog-listing article:hover {
   box-shadow: 1px 2px 2px 1px rgba(150, 150, 150, 0.6);
 }
-.page-template-blog .site-content article .thumbnail-hover {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover {
   position: relative;
   border: 0;
   border-radius: 0;
   padding: 0;
   margin: 0;
 }
-.page-template-blog .site-content article .thumbnail-hover:hover .overlay {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover:hover .overlay {
   opacity: 0.4;
 }
-.page-template-blog .site-content article .thumbnail-hover:hover .thumb-cross {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover:hover .thumb-cross {
   opacity: 1;
 }
-.page-template-blog .site-content article .thumbnail-hover .overlay {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover .overlay {
   display: block;
   position: absolute;
   top: 0;
@@ -12151,7 +12161,7 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   opacity: 0;
   transition: opacity 500ms ease-in-out;
 }
-.page-template-blog .site-content article .thumbnail-hover .thumb-cross {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover .thumb-cross {
   display: block;
   position: absolute;
   top: 50%;
@@ -12163,7 +12173,7 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   margin-top: -20px;
   transition: opacity 500ms ease-in-out;
 }
-.page-template-blog .site-content article .thumbnail-hover .thumb-cross:before {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover .thumb-cross:before {
   display: block;
   content: ' ';
   position: absolute;
@@ -12174,7 +12184,7 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   width: 100%;
   background-color: #ffffff;
 }
-.page-template-blog .site-content article .thumbnail-hover .thumb-cross:after {
+.page-template-blog .site-content .blog-listing article .thumbnail-hover .thumb-cross:after {
   display: block;
   content: ' ';
   position: absolute;
@@ -12185,13 +12195,13 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   width: 1px;
   background-color: #ffffff;
 }
-.page-template-blog .site-content article .entry-content p {
+.page-template-blog .site-content .blog-listing article .entry-content p {
   text-overflow: ellipsis;
 }
-.page-template-blog .site-content article .read-more {
+.page-template-blog .site-content .blog-listing article .read-more {
   margin: 20px 0;
 }
-.page-template-blog .site-content article .read-more .read-more-btn {
+.page-template-blog .site-content .blog-listing article .read-more .read-more-btn {
   font-family: "Raleway", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1em;
@@ -12205,10 +12215,14 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   padding: 13px 21px;
   position: relative;
 }
-.page-template-blog .site-content article .read-more .read-more-btn:hover {
+.page-template-blog .site-content .blog-listing article .read-more .read-more-btn:hover {
   color: #ffffff;
   background-color: #1C7AAB !important;
   border-color: #1C7AAB !important;
+}
+.page-template-blog .site-content .sidebar {
+  margin-top: 25px;
+  background-color: #fff;
 }
 
 /*--------------------------------------------------------------
