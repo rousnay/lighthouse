@@ -12047,6 +12047,13 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 }
 
 /*--------------------------------------------------------------
+## Blog
+--------------------------------------------------------------*/
+.page-template-blog .site-content {
+  background-color: #f7f7f7;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */

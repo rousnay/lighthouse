@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: Blog
  *
  * @package Lighthouse
  */
@@ -8,14 +8,49 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row">
-		<main id="main" class="site-main" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<section class="home-content">
-					<?php the_content(); ?>
-				</section>
-			<?php endwhile; // end of the loop. ?>
-		</main><!-- #main -->
-	</div><!-- .row -->
+		<div class="col-md-9 blog-listing">
+			<?php 
+			$args = array( 'post_type' => 'post', 'posts_per_page' => -1 );
+			$loop = new WP_Query( $args );
+			$postid = get_the_ID();
+			while ( $loop->have_posts() ) : $loop->the_post();?>
+
+			<article id="post-<?php echo $postid; ?>">
+				<div class="row blog-item">
+					<?php
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+					$url = $thumb[0];
+					?>
+					<div class="col-sm-5 blog-thumb">
+						<div class="thumbnail thumbnail-hover">
+							<div><img class="img-responsive" src="<?php echo $url; ?>"></div>
+							<a href="<?php the_permalink() ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
+						</div>
+
+					</div>
+					<div class="col-sm-7 blog-content">
+						<div class="entry-inner">
+							<div class="entry-header">
+								<h3 class="entry-title"><?php the_title() ?></h3>
+								<span class="date"><?php the_time(get_option('date_format')) ?></span>
+							</div>
+							<div class="entry-content">
+								<?php the_excerpt(); ?>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<?php endwhile; ?>
+
+
+	</div>
+	<div class="col-md-3 sidebar" role="complementary">
+
+	</div>
+</div><!-- .row -->
 </div><!-- .container -->
 
 <?php get_footer(); ?>
