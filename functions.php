@@ -154,6 +154,14 @@ function lighthouse_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lighthouse_scripts' );
 
+
+/**
+ * Read More button in excerpt
+ */
+function new_excerpt_more( $more ) {
+    return ' <br> <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 /**
  * Implement the Custom Header feature.
  */
