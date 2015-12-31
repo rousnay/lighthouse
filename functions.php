@@ -42,6 +42,14 @@ function lighthouse_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+
+	/*
+	 * Default HTML5 Form
+	 *
+	 * @link https://codex.wordpress.org/Function_Reference/get_search_form
+	 */
+	add_theme_support( 'html5', array( 'search-form' ) ); 
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'lighthouse' ),
@@ -159,7 +167,7 @@ add_action( 'wp_enqueue_scripts', 'lighthouse_scripts' );
  * Read More button in excerpt
  */
 function new_excerpt_more( $more ) {
-    return ' <br> <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+    return ' ';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 /**

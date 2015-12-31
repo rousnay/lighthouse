@@ -5,7 +5,22 @@
  * @package Lighthouse
  */
 get_header(); ?>
-
+<div class="title-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+			<div class="col-md-6">
+										
+<?php get_search_form(); ?>
+											
+									
+							
+			</div>
+		</div>
+	</div>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-9 blog-listing">
@@ -25,6 +40,7 @@ get_header(); ?>
 						<div class="thumbnail thumbnail-hover">
 							<div><img class="img-responsive" src="<?php echo $url; ?>"></div>
 							<a href="<?php the_permalink() ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
+							<span class="thumb-cross"></span>
 						</div>
 
 					</div>
@@ -36,6 +52,9 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
+							</div>
+							<div class="read-more">
+								<a href="<?php the_permalink() ?>" class="btn read-more-btn">Read More</a>
 							</div>
 
 						</div>
