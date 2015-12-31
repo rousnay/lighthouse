@@ -8,15 +8,11 @@ get_header(); ?>
 <div class="title-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 title-area">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
-			<div class="col-md-6 search-area">
-										
-<?php get_search_form(); ?>
-											
-									
-							
+			<div class="col-xs-6 search-area">									
+				<?php get_search_form(); ?>						
 			</div>
 		</div>
 	</div>
@@ -30,6 +26,8 @@ get_header(); ?>
 			$postid = get_the_ID();
 			while ( $loop->have_posts() ) : $loop->the_post();?>
 
+
+
 			<article id="post-<?php echo $postid; ?>">
 				<div class="row blog-item">
 					<?php
@@ -38,7 +36,9 @@ get_header(); ?>
 					?>
 					<div class="col-sm-5 blog-thumb">
 						<div class="thumbnail thumbnail-hover">
-							<div><img class="img-responsive" src="<?php echo $url; ?>"></div>
+							<div class="blog-img" style="background-image:url('<?php echo $url; ?>');?>">
+							<img class="img-responsive" style="visibility:hidden" src="<?php echo $url; ?>">
+							</div>
 							<a href="<?php the_permalink() ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
 							<span class="thumb-cross"></span>
 						</div>
