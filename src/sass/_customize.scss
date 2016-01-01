@@ -1,17 +1,6 @@
 /***************
 Visual Composer
 ***************/
-
-body {
-	&.home{
-		.ivan-custom-wrapper {
-			.wpb_column {
-				padding-left: 0;
-				padding-right: 0;
-			}
-		}
-	}
-}
 .ivan-custom-wrapper {
 	.wpb_column {
 		.ivan-icon-box-wrapper {
@@ -30,6 +19,22 @@ body {
 		// }
 	}
 }
+.ivan-icon-box {
+	.icon-box-link-holder {
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    z-index: 11;
+	    
+	    a {
+	    height: 100%;
+	    width: 100%;
+	    color: transparent!important;
+		}
+	}
+}
+
 
 .ivan-title-wrapper{
 	.title-wrapper {
