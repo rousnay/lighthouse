@@ -10,70 +10,6 @@
 		    .entry-title {
 			    color: #fff;
 			}
-			.search-area{
-				padding-right:0;
-			}
-			form.search-form {
-			    float: right;
-			    margin-top: 12px;
-			    label {
-				    margin-bottom: 0;
-				}
-			    input[type="search"]{
-				    display: block;
-				    padding: 10px 10px;
-				    max-width: 100%;
-				    width: 100%;
-				    box-sizing: border-box;
-				    border: 1px solid #BBDCFF;
-				    color: #ffffff;
-				    font-weight: 400;
-				    background-color: transparent;
-				    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-				    border-radius: 0;
-				    outline: none;
-				    transition: background 500ms ease, border 500ms ease;
-				    &::-webkit-input-placeholder {
-					   color: #fff;
-					   font-weight: 400;
-					}
-
-					&:-moz-placeholder { /* Firefox 18- */
-					   color: #fff;  
-					   font-weight: 400;
-					}
-
-					&::-moz-placeholder {  /* Firefox 19+ */
-					   color: #fff;  
-					   font-weight: 400;
-					}
-
-					&:-ms-input-placeholder {  
-					   color: #fff; 
-					   font-weight: 400;
-					}
-				    &:focus{
-				    	border-color: #ffffff;
-					    color: #ffffff;
-					    font-weight: 400;
-					    background-color: transparent;
-					    outline: none;
-				    }
-				}
-				input[type="submit"] {
-				    border-color: #e6e6e6;
-				    background: #e6e6e6;
-				    color: #4c4c4c;
-				    padding: 14px;
-				    font-size: 14px;
-				    &:hover, &:focus{
-				    	color: #4c4c4c;
-					    background-color: #f0f0f0 !important;
-					    border-color: #f0f0f0 !important;
-				    }
-				}
-
-			}
 		}
 		.blog-listing {
 		    margin-top: 10px;
@@ -217,11 +153,6 @@
 		}
 	}
 }
-@media (max-width: 991px){
-	.search-area {
-	    padding-right: 15px!important;
-	}
-}
 @media (max-width: 767px){
 	 .title-wrapper {
     padding: 10px 0!important;
@@ -245,8 +176,5 @@
 @media (max-width: 619px){
 	.title-area{
 		width: 100%!important;
-	}
-	.search-area {
-	    display: none;
 	}
 }

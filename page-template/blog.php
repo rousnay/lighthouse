@@ -8,12 +8,9 @@ get_header(); ?>
 <div class="title-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6 title-area">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</div>
-			<div class="col-xs-6 search-area">									
-				<?php get_search_form(); ?>						
-			</div>
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<h3 class="sub-title">Read the latest articles, commentary in our news blogs</h3>
+			
 		</div>
 	</div>
 </div>
