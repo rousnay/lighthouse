@@ -15,7 +15,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container blog-wrapper">
 	<div class="row">
 		<div class="col-md-9 blog-listing">
 			<?php 
@@ -32,7 +32,7 @@ get_header(); ?>
 					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
 					$url = $thumb[0];
 					?>
-					<div class="col-sm-5 blog-thumb">
+					<div class="col-sm-6 col-md-7 blog-thumb">
 						<div class="thumbnail thumbnail-hover">
 							<div class="blog-img" style="background-image:url('<?php echo $url; ?>');?>">
 							<img class="img-responsive" style="visibility:hidden" src="<?php echo $url; ?>">
@@ -42,7 +42,7 @@ get_header(); ?>
 						</div>
 
 					</div>
-					<div class="col-sm-7 blog-content">
+					<div class="col-sm-6 col-md-5 blog-content">
 						<div class="entry-inner">
 							<div class="entry-header">
 								<h3 class="entry-title"><?php the_title() ?></h3>
