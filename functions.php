@@ -42,6 +42,7 @@ function lighthouse_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'lighthouse_blog_listing', 714, 274, array( 'center', 'center' ) );
 
 	/*
 	 * Default HTML5 Form
@@ -172,6 +173,15 @@ function new_excerpt_more( $more ) {
     return ' ';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+/**
+ * Custome Lenght of excerpt
+ */
+function custom_excerpt_length( $length ) {
+    return 40;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 /**
  * Implement the Custom Header feature.
  */

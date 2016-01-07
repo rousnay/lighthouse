@@ -29,7 +29,7 @@ get_header(); ?>
 			<article id="post-<?php echo $postid; ?>">
 				<div class="row blog-item">
 					<?php
-					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_blog_listing');
 					$url = $thumb[0];
 					?>
 					<div class="col-sm-6 col-md-7 blog-thumb">
