@@ -6,7 +6,12 @@
 	margin-top: 0;
 	padding: 0;
 }
-
+.thumbnail {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
