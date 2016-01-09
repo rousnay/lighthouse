@@ -6,7 +6,7 @@
  */
 get_header(); ?>
 <div class="title-wrapper">
-	<div class="container">
+	<div class="container blog-wrapper">
 		<div class="row">
 		<div class="col-xs-12">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
