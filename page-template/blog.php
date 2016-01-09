@@ -38,7 +38,6 @@ get_header(); ?>
 							<img class="img-responsive" style="visibility:hidden" src="<?php echo $url; ?>">
 							</div>
 							<a href="<?php the_permalink() ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
-							<span class="thumb-cross"></span>
 						</div>
 
 					</div>
