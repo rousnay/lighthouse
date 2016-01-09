@@ -15,15 +15,15 @@ $blog_url = get_permalink( get_option('page_for_posts' ) );
 $blog_title = get_the_title( get_option('page_for_posts' ) );
 ?>
 	<div class="title-wrapper">
-		<div class="container">
+		<div class="container blog-wrapper">
 			<div class="row">
 			<div class="col-xs-12">
-				<h1 class="entry-title"><?php echo $blog_title;?></h1> | <a href="<?php echo $blog_url;?>" class="back-link">back</a>
+				<h1 class="entry-title"><?php echo $blog_title;?></h1> <div class="back-to"> <span> | </span><a href="<?php echo $blog_url;?>">back</a></div>
 			</div>
 			</div>
 		</div>
 	</div>
-	<div id="primary" class="container content-area">
+	<div id="primary" class="container content-area blog-wrapper">
 		<div class="row">
 			<div class="col-md-9 blog-listing">
 				<main id="main" class="site-main" role="main">
@@ -38,7 +38,7 @@ $blog_title = get_the_title( get_option('page_for_posts' ) );
 				<div class="post-img">
 				<img class="img-responsive" src="<?php echo $url; ?>">
 				</div>
-				
+
 				<?php
 				get_template_part( 'template-parts/content', get_post_format() );
 
