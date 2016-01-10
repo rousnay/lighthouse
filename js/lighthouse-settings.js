@@ -125,3 +125,5 @@ function ivan_live_search_init() {
 }
 
 ivan_live_search_init();
+
+jQuery('.owl-carousel').owlCarousel();

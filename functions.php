@@ -145,7 +145,7 @@ function lighthouse_scripts() {
 
 	wp_enqueue_style( 'lighthouse-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('lighthouse-google-fonts', get_template_directory_uri() . '/css/font-awesome.min.css');
+	//wp_enqueue_style('lighthouse-google-fonts', get_template_directory_uri() . '/css/font-awesome.min.css');
 
 	wp_enqueue_style('lighthouse-owl-carousel-css', get_template_directory_uri() . '/css/owl.carousel.min.css');
 

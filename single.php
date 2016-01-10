@@ -53,6 +53,34 @@ $blog_title = get_the_title( get_option('page_for_posts' ) );
 				?>
 
 				</main><!-- #main -->
+
+				<div class="related-art row">
+					<div class="col-xs-12">
+						<div class="owl-carousel owl-theme">
+								
+							<?php
+							 $postslist = get_posts('numberposts=4&order=DESC&orderby=date');
+							 foreach ($postslist as $post) :
+							    setup_postdata($post);
+							 ?>
+							 <div class="entry">
+
+							 	<?php echo the_post_thumbnail($recent->ID, 'thumbnail'); ?>
+
+							 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+							 <?php the_time(get_option('date_format')) ?>
+
+							 <?php the_excerpt(); ?>
+
+							 </div>
+							 <?php endforeach; ?>
+
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		<div class="col-md-3 sidebar" role="complementary">
 			<?php dynamic_sidebar( 'blog_widgets' ); ?>
