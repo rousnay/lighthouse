@@ -25,8 +25,6 @@ copy: {
     {expand: true, flatten: true, src: ['src/js/**'], dest: 'js/', filter: 'isFile'},
     {expand: true, flatten: true, src: ['<%= project.bower %>/bootstrap-sass/assets/javascripts/bootstrap.min.js'], dest: 'js/', filter: 'isFile'},
     {expand: true, flatten: true, src: ['<%= project.bower %>/jquery/dist/*.min.js'], dest: 'js/', filter: 'isFile'},
-    {expand: true, flatten: true, src: ['<%= project.bower %>/owl.carousel/dist/owl.carousel.min.js'], dest: 'js/', filter: 'isFile'},
-    {expand: true, flatten: true, src: ['<%= project.bower %>/owl.carousel/dist/assets/owl.carousel.min.css'], dest: 'css/', filter: 'isFile'},
     {expand: true, flatten: true, src: ['<%= project.bower %>/font-awesome/css/font-awesome.min.css'], dest: 'css/', filter: 'isFile'}
     ],
   },

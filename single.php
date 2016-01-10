@@ -56,7 +56,7 @@ $blog_title = get_the_title( get_option('page_for_posts' ) );
 
 				<div class="related-art row">
 					<div class="col-xs-12">
-						<div class="owl-carousel owl-theme">
+						<div id="owl-example" class="owl-carousel">
 								
 							<?php
 							 $postslist = get_posts('numberposts=4&order=DESC&orderby=date');
