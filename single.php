@@ -51,9 +51,9 @@ get_header(); ?>
 
 				<div class="related-art row">
 						<h2>Related Artices</h2>
-						<div id="owl-example" class="owl-carousel">
+						<div id="related-posts" class="owl-carousel">
 							<?php
-							 $postslist = get_posts('numberposts=4&order=DESC&orderby=date');
+							 $postslist = get_posts('numberposts=99&order=DESC&orderby=date');
 							 foreach ($postslist as $post) :
 							    setup_postdata($post);
 							 ?>

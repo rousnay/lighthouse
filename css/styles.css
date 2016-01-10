@@ -12713,6 +12713,9 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 .related-art h3 a {
   color: #222;
 }
+.related-art .entry-content {
+  margin-top: 10px;
+}
 
 .thumbnail-hover {
   position: relative;

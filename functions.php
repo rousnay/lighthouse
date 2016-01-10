@@ -190,6 +190,48 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+
+//callback function for the 'clear_content' shortcode
+function recent_post_slider($atts){
+
+	echo'<div class="related-art row"><h2>Related Artices</h2><div id="recent-posts" class="owl-carousel">';
+
+	$postslist = get_posts( array(
+		'post_type' => 'post',
+		'numberposts'=> '99',
+		'order'=>'DESC',
+		'orderby' => 'date',
+		)
+	);
+
+	foreach ($postslist as $post) {
+		$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
+		$url_post = $thumb_post[0];
+
+		echo '<div class="col-xs-12"><div class="entry"><div class="thumbnail thumbnail-hover">';
+
+		echo'<img class="img-responsive" src=" ' . $url_post . '">';
+
+		echo '<a href=" ' . get_permalink() .' " " title=" ' .  get_the_title() .' " class="overlay"></a>';
+
+		echo'</div>';
+
+		echo '<h3><a href=" ' . get_permalink() . ' "> ' . get_the_title() . '</a></h3>';
+
+		echo '<span class="date"> <i class="fa fa-clock-o"></i> <span class="date">' . get_the_time(get_option('date_format')) .'</span>';
+		
+		echo '<div class="entry-content">' . get_the_excerpt() . '</div>';
+
+		echo '</div></div>';
+	}
+		
+		echo '</div></div>';
+
+}
+//add the new 'clear_content' shortcode
+add_shortcode('recent_posts','recent_post_slider');
+
+
 /**
  * Implement the Custom Header feature.
  */
