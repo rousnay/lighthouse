@@ -9,11 +9,6 @@
 
 get_header(); ?>
 
-<?php 
-//get the blog info
-$blog_url = get_permalink( get_option('page_for_posts' ) );
-$blog_title = get_the_title( get_option('page_for_posts' ) );
-?>
 	<div class="title-wrapper">
 		<div class="container blog-wrapper">
 			<div class="row">
@@ -31,12 +26,12 @@ $blog_title = get_the_title( get_option('page_for_posts' ) );
 				<?php
 				while ( have_posts() ) : the_post();
 
-					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-					$url = $thumb[0];
+					$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_feature_img');
+					$url_feature = $thumb_feature[0];
 				?> 
 
 				<div class="post-img">
-				<img class="img-responsive" src="<?php echo $url; ?>">
+				<img class="img-responsive" src="<?php echo $url_feature; ?>">
 				</div>
 
 				<?php
@@ -55,29 +50,35 @@ $blog_title = get_the_title( get_option('page_for_posts' ) );
 				</main><!-- #main -->
 
 				<div class="related-art row">
-					<div class="col-xs-12">
+						<h2>Related Artices</h2>
 						<div id="owl-example" class="owl-carousel">
-								
 							<?php
 							 $postslist = get_posts('numberposts=4&order=DESC&orderby=date');
 							 foreach ($postslist as $post) :
 							    setup_postdata($post);
 							 ?>
+							 <div class="col-xs-12">
 							 <div class="entry">
 
-							 	<?php echo the_post_thumbnail($recent->ID, 'thumbnail'); ?>
+								<div class="thumbnail thumbnail-hover">
+								<?php
+									$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
+									$url_post = $thumb_post[0];
+								?>
+									<img class="img-responsive" src="<?php echo $url_post; ?>">
+									<a href="<?php the_permalink() ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
+								</div>
 
 							 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-							 <?php the_time(get_option('date_format')) ?>
-
-							 <?php the_excerpt(); ?>
-
+								<span class="date">
+								<i class="fa fa-clock-o"></i>
+								<?php the_time(get_option('date_format')) ?>
+								</span>
+							 </div>
 							 </div>
 							 <?php endforeach; ?>
 
 						</div>
-					</div>
 				</div>
 
 

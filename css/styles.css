@@ -12478,7 +12478,7 @@ footer#colophon .footer-bottom .site-info .social-items .icon-youtube:hover .fa 
 }
 
 /*--------------------------------------------------------------
-## Templates
+## Page
 --------------------------------------------------------------*/
 body:not(.page-template-default) section header, body:not(.page-template-default) section footer {
   display: none;
@@ -12517,78 +12517,14 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   background: #fff;
   margin: 15px 0;
 }
-.page-template-blog .site-content .blog-listing article .thumbnail-hover, .single-post .site-content .blog-listing article .thumbnail-hover {
-  position: relative;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover:hover .overlay, .single-post .site-content .blog-listing article .thumbnail-hover:hover .overlay {
-  opacity: 0.4;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover:hover .thumb-cross, .single-post .site-content .blog-listing article .thumbnail-hover:hover .thumb-cross {
-  opacity: 1;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover .blog-img, .single-post .site-content .blog-listing article .thumbnail-hover .blog-img {
+.page-template-blog .site-content .blog-listing article .blog-img, .single-post .site-content .blog-listing article .blog-img {
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
 }
-.page-template-blog .site-content .blog-listing article .thumbnail-hover .blog-img .img-responsive, .single-post .site-content .blog-listing article .thumbnail-hover .blog-img .img-responsive {
+.page-template-blog .site-content .blog-listing article .blog-img .img-responsive, .single-post .site-content .blog-listing article .blog-img .img-responsive {
   height: 100%;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover .overlay, .single-post .site-content .blog-listing article .thumbnail-hover .overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #236fb6;
-  opacity: 0;
-  -webkit-transition: opacity 500ms ease-in-out;
-     -moz-transition: opacity 500ms ease-in-out;
-       -o-transition: opacity 500ms ease-in-out;
-          transition: opacity 500ms ease-in-out;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover .thumb-cross, .single-post .site-content .blog-listing article .thumbnail-hover .thumb-cross {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
-  margin-top: -20px;
-  -webkit-transition: opacity 500ms ease-in-out;
-     -moz-transition: opacity 500ms ease-in-out;
-       -o-transition: opacity 500ms ease-in-out;
-          transition: opacity 500ms ease-in-out;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover .thumb-cross:before, .single-post .site-content .blog-listing article .thumbnail-hover .thumb-cross:before {
-  display: block;
-  content: ' ';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -1px;
-  height: 1px;
-  width: 100%;
-  background-color: #ffffff;
-}
-.page-template-blog .site-content .blog-listing article .thumbnail-hover .thumb-cross:after, .single-post .site-content .blog-listing article .thumbnail-hover .thumb-cross:after {
-  display: block;
-  content: ' ';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -1px;
-  height: 100%;
-  width: 1px;
-  background-color: #ffffff;
 }
 .page-template-blog .site-content .blog-listing article .entry-inner .entry-content, .single-post .site-content .blog-listing article .entry-inner .entry-content {
   padding-right: 15px;
@@ -12758,6 +12694,54 @@ body:not(.page-template-default) section header, body:not(.page-template-default
     font-size: 14px !important;
   }
 }
+/*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+.related-art {
+  margin-bottom: 40px;
+}
+.related-art h2 {
+  font-size: 24px;
+  margin: 35px 0 20px 15px;
+}
+.related-art h3 {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 20px 0 5px;
+}
+.related-art h3 a {
+  color: #222;
+}
+
+.thumbnail-hover {
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.thumbnail-hover:hover .overlay {
+  opacity: 0.4;
+}
+.thumbnail-hover:hover .thumb-cross {
+  opacity: 1;
+}
+.thumbnail-hover .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #236fb6;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
+     -moz-transition: opacity 500ms ease-in-out;
+       -o-transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

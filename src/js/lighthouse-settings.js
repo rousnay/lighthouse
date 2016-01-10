@@ -126,4 +126,6 @@ function ivan_live_search_init() {
 
 ivan_live_search_init();
 
-jQuery("#owl-example").owlCarousel();
+jQuery("#owl-example").owlCarousel({
+	items : 4
+});

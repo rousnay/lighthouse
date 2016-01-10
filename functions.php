@@ -42,7 +42,11 @@ function lighthouse_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'lighthouse_feature_img', 1000, 310, array( 'center', 'center' ) );
+
 	add_image_size( 'lighthouse_blog_listing', 714, 274, array( 'center', 'center' ) );
+
+	add_image_size( 'lighthouse_related_post', 475, 280, array( 'center', 'center' ) );
 
 	/*
 	 * Default HTML5 Form
