@@ -145,13 +145,17 @@ function lighthouse_scripts() {
 
 	wp_enqueue_style( 'lighthouse-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('lighthouse-google-fonts', 'https://fonts.googleapis.com/css?family=Questrial');
+	wp_enqueue_style('lighthouse-google-fonts', get_template_directory_uri() . '/css/font-awesome.min.css');
+
+	wp_enqueue_style('lighthouse-owl-carousel-css', get_template_directory_uri() . '/css/owl.carousel.min.css');
 
 	wp_enqueue_script( 'lighthouse-classList-js', 'https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js', array('jquery'), '');
 
 	wp_enqueue_script( 'lighthouse-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 
 	wp_enqueue_script( 'lighthouse-material-menu-js', get_template_directory_uri() . '/js/materialMenu.js', array('jquery'), '', true );
+
+	wp_enqueue_script( 'lighthouse-owl-carousel-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
 
 	wp_enqueue_script( 'lighthouse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

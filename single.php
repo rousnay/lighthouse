@@ -18,7 +18,7 @@ $blog_title = get_the_title( get_option('page_for_posts' ) );
 		<div class="container blog-wrapper">
 			<div class="row">
 			<div class="col-xs-12">
-				<h1 class="entry-title"><?php echo $blog_title;?></h1> <div class="back-to"> <span> | </span><a href="<?php echo $blog_url;?>">back</a></div>
+				<h1 class="entry-title">Lighthouse News Centre</h1> <div class="back-to"> <span> | </span><a href="<?php echo get_site_url(); ?>/news-centre">back</a></div>
 			</div>
 			</div>
 		</div>
