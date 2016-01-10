@@ -186,7 +186,7 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
  * Custome Lenght of excerpt
  */
 function custom_excerpt_length( $length ) {
-    return 30;
+    return 18;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
@@ -194,7 +194,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 //callback function for the 'clear_content' shortcode
 function recent_post_slider($atts){
 
-	echo'<div class="related-art row"><h2>Related Artices</h2><div id="recent-posts" class="owl-carousel">';
+	echo'<div class="related-art row"><div id="recent-posts" class="owl-carousel">';
 
 	$postslist = get_posts( array(
 		'post_type' => 'post',
