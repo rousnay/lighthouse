@@ -12706,23 +12706,45 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 /*--------------------------------------------------------------
 ## Post
 --------------------------------------------------------------*/
-.related-art {
+.post-slider {
   margin-bottom: 40px;
 }
-.related-art h2 {
+.post-slider #related-posts h2 {
   font-size: 24px;
   margin: 35px 0 20px 15px;
 }
-.related-art h3 {
+.post-slider #related-posts .fa-clock-o {
+  color: #7f7f7f;
+}
+.post-slider #related-posts h3 {
   font-size: 16px;
   line-height: 1.3;
   font-weight: 400;
   margin: 20px 0 5px;
 }
-.related-art h3 a {
+.post-slider #related-posts h3 a {
   color: #222;
 }
-.related-art .entry-content {
+.post-slider #related-posts .entry-content {
+  margin-top: 10px;
+}
+.post-slider #recent-posts .entry {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.post-slider #recent-posts .entry h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.post-slider #recent-posts .entry h3 a {
+  color: #222;
+}
+.post-slider #recent-posts .entry .fa-clock-o {
+  color: #7f7f7f;
+}
+.post-slider #recent-posts .entry .entry-content {
   margin-top: 10px;
 }
 
@@ -12752,6 +12774,10 @@ body:not(.page-template-default) section header, body:not(.page-template-default
      -moz-transition: opacity 500ms ease-in-out;
        -o-transition: opacity 500ms ease-in-out;
           transition: opacity 500ms ease-in-out;
+}
+
+.entry {
+  background-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
