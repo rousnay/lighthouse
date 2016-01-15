@@ -49,7 +49,7 @@ get_header(); ?>
 
 				</main><!-- #main -->
 
-				<div class="related-art row">
+				<div class="post-slider row">
 						<h2>Related Artices</h2>
 						<div id="related-posts" class="owl-carousel">
 							<?php
