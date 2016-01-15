@@ -194,17 +194,20 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 //callback function for the 'clear_content' shortcode
 function recent_post_slider($atts){
 
-	echo'<div class="related-art row"><div id="recent-posts" class="owl-carousel">';
+	echo'<div class="post-slider row"><div id="recent-posts" class="owl-carousel">';
 
-	$postslist = get_posts( array(
+	global $post;
+
+	$post_query = new WP_Query( array(
 		'post_type' => 'post',
-		'numberposts'=> '99',
+		'posts_per_page' => 12,
 		'order'=>'DESC',
 		'orderby' => 'date',
 		)
 	);
 
-	foreach ($postslist as $post) {
+	if( $post_query->have_posts() ) : while( $post_query->have_posts() ) : $post_query->the_post();
+
 		$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
 		$url_post = $thumb_post[0];
 
@@ -223,7 +226,10 @@ function recent_post_slider($atts){
 		echo '<div class="entry-content">' . get_the_excerpt() . '</div>';
 
 		echo '</div></div>';
-	}
+
+		endwhile;
+	    wp_reset_postdata();
+	endif;
 		
 		echo '</div></div>';
 
