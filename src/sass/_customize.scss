@@ -94,10 +94,10 @@ Visual Composer
     color: #fff!important;
 }
 
-// .ivan-button.outline:hover {
-//     border-color: transparent!important;
-//     color: #FFFFFF!important;
-// }
+.ivan-button.outline:hover {
+    border-color: transparent!important;
+    color: transparent!important;
+}
 @media (max-width: 1199px) and (min-width: 992px){
 	.ivan-promo-box {
 	    padding: 100px 35px;
