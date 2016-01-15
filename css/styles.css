@@ -12423,6 +12423,12 @@ footer#colophon .footer-bottom .site-info .social-items .icon-youtube:hover .fa 
   margin-bottom: 12px;
   position: relative;
 }
+.widget li i {
+  margin-right: 4px;
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+}
 .widget .menu li {
   font-weight: 500;
 }
@@ -12488,10 +12494,10 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 ## Blog
 --------------------------------------------------------------*/
 .page-template-blog .site-content, .single-post .site-content {
-  background-color: #f7f7f7;
+  background-color: #F7F9FA;
 }
 .page-template-blog .site-content .title-wrapper, .single-post .site-content .title-wrapper {
-  background-color: #F8F9FB;
+  background-color: #F7F9FA;
   border-top: 5px solid #2068AD;
   padding: 30px 0 25px;
   position: relative;
@@ -12515,7 +12521,10 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 }
 .page-template-blog .site-content .blog-listing article, .single-post .site-content .blog-listing article {
   background: #fff;
-  margin: 15px 0;
+  margin: 25px 0;
+}
+.page-template-blog .site-content .blog-listing article:first-child, .single-post .site-content .blog-listing article:first-child {
+  margin-top: 15px;
 }
 .page-template-blog .site-content .blog-listing article .blog-img, .single-post .site-content .blog-listing article .blog-img {
   background-position: center center;

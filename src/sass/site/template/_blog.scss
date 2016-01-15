@@ -1,8 +1,8 @@
 .page-template-blog, .single-post{
 	.site-content {
-		background-color: #f7f7f7;
+		background-color: #F7F9FA;
 		.title-wrapper {
-    		background-color: #F8F9FB;
+    		background-color: #F7F9FA;
     		border-top: 5px solid #2068AD;
 		    padding: 30px 0 25px;
 		    position: relative;
@@ -22,7 +22,10 @@
 		    margin-top: 10px;
 		    		article {
 						background: #fff;
-						margin: 15px 0;
+						margin: 25px 0;
+						&:first-child {
+						    margin-top: 15px;
+						}
 							.blog-img {
 							    background-position: center center;
 							    background-repeat: no-repeat;
