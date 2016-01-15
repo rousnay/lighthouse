@@ -211,13 +211,15 @@ function recent_post_slider($atts){
 		$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
 		$url_post = $thumb_post[0];
 
-		echo '<div class="col-xs-12"><div class="entry"><div class="thumbnail thumbnail-hover">';
+		echo '<div class="col-xs-12"><div class="thumbnail thumbnail-hover">';
 
 		echo'<img class="img-responsive" src=" ' . $url_post . '">';
 
 		echo '<a href=" ' . get_permalink() .' " " title=" ' .  get_the_title() .' " class="overlay"></a>';
 
 		echo'</div>';
+		
+		echo'<div class="entry">';
 
 		echo '<h3><a href=" ' . get_permalink() . ' "> ' . get_the_title() . '</a></h3>';
 
