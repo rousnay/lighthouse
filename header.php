@@ -28,11 +28,11 @@
 			<div class="container">
 				<div class="row social-links">
 					<div class="col-lg-12 social-items">
-						<a href="" class="icon icon-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a>
-						<a href="" class="icon icon-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
-						<a href="" class="icon icon-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
-						<a href="" class="icon icon-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
-						<a href="" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>	
+						<!-- <a href="" class="icon icon-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a> -->
+						<a href="https://www.linkedin.com/company/lighthouse-financial-advice" class="icon icon-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
+						<a href="https://plus.google.com/b/112602769566696286010/112602769566696286010/about/p/pub" class="icon icon-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
+						<a href="https://www.facebook.com/Lighthouse-Group-1544255659197834/" class="icon icon-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
+						<a href="https://twitter.com/talk2lighthouse" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>	
 					</div>
 				</div>
 				<div class="row header-menus">
