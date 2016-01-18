@@ -210,6 +210,7 @@ function recent_post_slider($atts){
 
 		$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
 		$url_post = $thumb_post[0];
+		$content = get_the_content();
 
 		echo '<div class="col-xs-12"><div class="thumbnail thumbnail-hover">';
 
@@ -223,9 +224,15 @@ function recent_post_slider($atts){
 
 		echo '<h3><a href=" ' . get_permalink() . ' "> ' . get_the_title() . '</a></h3>';
 
-		echo '<span class="date"> <i class="fa fa-clock-o"></i> <span class="date">' . get_the_time(get_option('date_format')) .'</span>';
+		echo '<span class="date"> <i class="fa fa-clock-o"></i> ' . get_the_time(get_option('date_format')) .'</span>';
 		
-		echo '<div class="entry-content">' . get_the_excerpt() . '</div>';
+		echo '<div class="entry-content">' . wp_trim_words( $content , '27' ) . '</div>';
+
+		echo '<div class="read-more">';
+
+		echo '<a href="' . get_permalink() . ' " class="btn read-more-btn">Read More</a>';
+		
+		echo '</div>';
 
 		echo '</div></div>';
 
