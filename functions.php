@@ -230,8 +230,8 @@ function recent_post_slider($atts){
 
 		echo '<div class="read-more">';
 
-		echo '<a href="' . get_permalink() . ' " class="btn read-more-btn">Read More</a>';
-		
+		echo '<a href="' . get_permalink() . ' " class="btn read-more-btn">View Article</a>';
+
 		echo '</div>';
 
 		echo '</div></div>';

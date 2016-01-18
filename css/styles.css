@@ -12747,6 +12747,28 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 .post-slider #recent-posts .entry .entry-content {
   margin-top: 10px;
 }
+.post-slider #recent-posts .entry .read-more {
+  margin: 13px 0 0;
+}
+.post-slider #recent-posts .entry .read-more .read-more-btn {
+  font-family: "Raleway", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #1C7AAB;
+  border-color: #1C7AAB;
+  border-radius: 0;
+  padding: 13px 21px;
+  position: relative;
+}
+.post-slider #recent-posts .entry .read-more .read-more-btn:hover {
+  background-color: #e6e6e6 !important;
+  color: #4c4c4c;
+  border-color: #e6e6e6 !important;
+}
 
 .thumbnail-hover {
   position: relative;
