@@ -243,7 +243,7 @@ function recent_post_slider($atts){
 		echo '</div></div>';
 
 }
-//add the new 'clear_content' shortcode
+//add the new 'recent_posts' shortcode
 add_shortcode('recent_posts','recent_post_slider');
 
 

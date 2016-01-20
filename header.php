@@ -27,12 +27,26 @@
 		<header id="masthead" class="site-header panel-top" role="banner">
 			<div class="container">
 				<div class="row social-links">
-					<div class="col-lg-12 social-items">
+					<div class="col-sm-12 col-xs-12 col-md-6 social-items">
 						<!-- <a href="" class="icon icon-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a> -->
 						<a href="https://www.linkedin.com/company/lighthouse-financial-advice" class="icon icon-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
 						<a href="https://plus.google.com/b/112602769566696286010/112602769566696286010/about/p/pub" class="icon icon-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
 						<a href="https://www.facebook.com/Lighthouse-Group-1544255659197834/" class="icon icon-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
-						<a href="https://twitter.com/talk2lighthouse" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>	
+						<a href="https://twitter.com/talk2lighthouse" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>
+						<a href="#" class="live-feed hidden-xs hidden-sm"><span>SP: 9.50p</span></a>	
+					</div>
+					<div class="col-md-6 top-search hidden-xs hidden-sm">
+
+						<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						    <div class="search-wrap">
+						    	<label class="screen-reader-text" for="s"><?php _e( 'Search for:', 'presentation' ); ?></label>
+						    	 <button type="submit">
+					                <i class="fa fa-search"></i>
+					            </button>
+						        <input type="search" placeholder="<?php echo esc_attr( 'Search', 'presentation' ); ?>" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" />
+						    </div>
+						</form>
+
 					</div>
 				</div>
 				<div class="row header-menus">

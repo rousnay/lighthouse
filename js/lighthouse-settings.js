@@ -8,8 +8,14 @@ $(window).scroll(function(){
   var sticky = $('#masthead'),
       scroll = $(window).scrollTop();
 
-  if (scroll >= 100) sticky.addClass('panel-fixed').removeClass('panel-top');
-  else sticky.removeClass('panel-fixed').addClass('panel-top');
+  if (scroll >= 100) {
+  	sticky.addClass('panel-fixed').removeClass('panel-top');
+  	$('.live-search').show();
+  }
+  else {
+  	sticky.removeClass('panel-fixed').addClass('panel-top');
+  	$('.live-search').hide();
+  }
 });
 
 
@@ -133,3 +139,5 @@ jQuery("#related-posts").owlCarousel({
 jQuery("#recent-posts").owlCarousel({
 	items : 3
 });
+
+document.addEventListener("touchstart", function(){}, true);

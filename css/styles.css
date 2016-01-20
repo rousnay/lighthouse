@@ -11609,47 +11609,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-header .container {
-  width: auto;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-}
-header .social-links {
-  border-bottom: 1px solid #E6E6E6;
-  padding-top: 5px;
-}
-header .social-links a {
-  font-size: 16px;
-}
-header .social-links .icon {
-  float: right;
-  display: block;
-  background-color: transparent;
-}
-header .social-links .icon .fa {
-  padding: 10px;
-  color: #3d3d3d;
-  -webkit-transition: color 0.3s;
-     -moz-transition: color 0.3s;
-       -o-transition: color 0.3s;
-          transition: color 0.3s;
-}
-header .social-links .icon-twitter:hover .fa {
-  color: #00abf0;
-}
-header .social-links .icon-facebook:hover .fa {
-  color: #4b6cb2;
-}
-header .social-links .icon-google-plus:hover .fa {
-  color: #dc4b3f;
-}
-header .social-links .icon-linkedin:hover .fa {
-  color: #0077b5;
-}
-header .social-links .icon-youtube:hover .fa {
-  color: #df192a;
-}
-
 .main-navigation {
   clear: both;
   display: block;
@@ -11798,7 +11757,7 @@ button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle
   float: right;
   z-index: 999999;
   margin-top: -50px;
-  display: table !important;
+  display: none;
   height: 100%;
   margin-left: 30px;
   position: relative;
@@ -12131,6 +12090,97 @@ header#masthead.panel-fixed {
      animation: fadeInDown 1s alternate ease;
 }
 
+header .container {
+  width: auto;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+header .social-links {
+  border-bottom: 1px solid #E6E6E6;
+  padding-top: 5px;
+}
+header .social-links a {
+  font-size: 16px;
+}
+header .social-links a.live-feed {
+  color: #333;
+  margin-left: 10px;
+}
+header .social-links a.live-feed span {
+  display: inline-block;
+  margin-top: 5px;
+}
+header .social-links .icon {
+  float: left;
+  display: block;
+  background-color: transparent;
+}
+header .social-links .icon .fa {
+  padding: 10px;
+  color: #3d3d3d;
+  -webkit-transition: color 0.3s;
+     -moz-transition: color 0.3s;
+       -o-transition: color 0.3s;
+          transition: color 0.3s;
+}
+header .social-links .icon-twitter:hover .fa {
+  color: #00abf0;
+}
+header .social-links .icon-facebook:hover .fa {
+  color: #4b6cb2;
+}
+header .social-links .icon-google-plus:hover .fa {
+  color: #dc4b3f;
+}
+header .social-links .icon-linkedin:hover .fa {
+  color: #0077b5;
+}
+header .social-links .icon-youtube:hover .fa {
+  color: #df192a;
+}
+header .top-search form {
+  float: right;
+}
+header .top-search form input[type="search"] {
+  border: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+  font-size: 18px;
+  padding: 0;
+  -webkit-transition: width 0.4s;
+     -moz-transition: width 0.4s;
+       -o-transition: width 0.4s;
+          transition: width 0.4s;
+  width: 100px;
+}
+header .top-search form input[type="search"]:focus {
+  -webkit-transition: width 0.4s 0, 1.22, 0.66, 1.39;
+     -moz-transition: width 0.4s 0, 1.22, 0.66, 1.39;
+       -o-transition: width 0.4s 0, 1.22, 0.66, 1.39;
+          transition: width 0.4s 0, 1.22, 0.66, 1.39;
+  width: 250px;
+}
+header .top-search form button {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+header .top-search form button:hover, header .top-search form button:focus, header .top-search form button:active {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+header .top-search form button i.fa.fa-search {
+  font-size: 18px;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  header .social-links .icon {
+    float: right !important;
+  }
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
