@@ -11971,6 +11971,10 @@ span.form-close-btn.bold {
   .iv-module.live-search .inner-wrapper {
     top: 100%;
   }
+
+  .display-table {
+    display: none !important;
+  }
 }
 /*--------------------------------------------------------------
 # Accessibility
@@ -12150,7 +12154,7 @@ header .top-search form input[type="search"] {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 300;
   text-transform: lowercase;
-  font-size: 18px;
+  font-size: 14px;
   padding: 0;
   -webkit-transition: width 0.4s;
      -moz-transition: width 0.4s;
@@ -12169,6 +12173,7 @@ header .top-search form button {
   background: transparent !important;
   border: none !important;
   outline: none !important;
+  padding-top: .8em;
 }
 header .top-search form button:hover, header .top-search form button:focus, header .top-search form button:active {
   background: transparent !important;
@@ -12176,7 +12181,7 @@ header .top-search form button:hover, header .top-search form button:focus, head
   outline: none !important;
 }
 header .top-search form button i.fa.fa-search {
-  font-size: 18px;
+  font-size: 14px;
   color: #000;
 }
 

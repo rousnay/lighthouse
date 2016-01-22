@@ -90,7 +90,7 @@ header{
                     font-family: "Raleway", Arial, Helvetica, sans-serif;
                     font-weight: 300;
                     text-transform: lowercase;
-                    font-size: 18px;
+                    font-size: 14px;
                     padding: 0;
                     transition: width 0.4s;
                     width: 100px;
@@ -103,13 +103,14 @@ header{
                     background: transparent!important;
                     border: none!important;
                     outline: none!important;
+                    padding-top: .8em;
                     &:hover,&:focus,&:active{
                         background: transparent!important;
                         border: none!important;
                         outline: none!important;
                     }
                     i.fa.fa-search {
-                        font-size: 18px;
+                        font-size: 14px;
                         color: #000;
                     }
                 }
