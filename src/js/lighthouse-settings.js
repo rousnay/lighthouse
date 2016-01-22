@@ -129,9 +129,10 @@ function ivan_live_search_init() {
 
 	});
 }
-
+//Live Search
 ivan_live_search_init();
 
+//Carousel Options
 jQuery("#related-posts").owlCarousel({
 	items : 4
 });
@@ -140,4 +141,13 @@ jQuery("#recent-posts").owlCarousel({
 	items : 3
 });
 
+//
 document.addEventListener("touchstart", function(){}, true);
+
+//Readmore.js Options
+jQuery('#disclaimer-text').readmore({
+  speed: 75,
+  moreLink: '<a href="#" class="disclaimer-read">Read more [+]</a>',
+  lessLink: '<a href="#">Read less [-]</a>',
+  collapsedHeight: 20,
+});

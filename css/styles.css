@@ -12861,6 +12861,47 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   background-color: #ffffff;
 }
 
+.disclaimer-box {
+  border: 1px solid transparent;
+  display: block;
+  margin: 30px 0;
+  padding: 1em 1em 1em 4em;
+  position: relative;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #56b0ee;
+  border: 2px solid #56b0ee;
+  background-color: transparent;
+}
+.disclaimer-box .disclaimer-icon {
+  color: #56b0ee;
+  bottom: 0;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 4em;
+}
+.disclaimer-box .disclaimer-icon i {
+  font-size: 1.7em;
+  line-height: 1;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.disclaimer-box p:last-child {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
