@@ -11763,6 +11763,10 @@ button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle
   position: relative;
 }
 
+.display-table {
+  display: table !important;
+}
+
 .centered {
   display: table-cell !important;
   vertical-align: middle !important;

@@ -10,11 +10,11 @@ $(window).scroll(function(){
 
   if (scroll >= 100) {
   	sticky.addClass('panel-fixed').removeClass('panel-top');
-  	$('.live-search').show();
+  	$('.live-search').addClass('display-table');
   }
   else {
   	sticky.removeClass('panel-fixed').addClass('panel-top');
-  	$('.live-search').hide();
+  	$('.live-search').removeClass('display-table');
   }
 });
 
