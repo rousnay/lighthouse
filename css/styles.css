@@ -13138,3 +13138,10 @@ Ninja Forms
   width: auto;
   padding: 13px 27px;
 }
+
+/***************
+Content Timeline
+***************/
+.timeline .item .post_date {
+  font-size: 16px !important;
+}
