@@ -18,6 +18,7 @@ Primary Nav manu Toggle hide/show
 //   }
 // });
 
+
 	function contentMargin() {
 		var headerHeight	= $('#masthead').height();
 		var siteContent		= $('#content');
@@ -28,7 +29,7 @@ Primary Nav manu Toggle hide/show
 	contentMargin();
 
 	$( window ).resize(function() {
-		contentMargin()
+		contentMargin();
 	});
 
 	jQuery('#mm-menu li').addClass("mm-menu__item");
