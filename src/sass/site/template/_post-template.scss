@@ -138,3 +138,28 @@
 	display: none;
 	}
 }
+
+/* Pagination */
+.pagination {
+    clear:both;
+    position:relative;
+    margin: 15px 0 40px;
+    font-size: 16px;
+    line-height: 1;
+    float:right;
+    span, a{
+	    display:block;
+	    float:left;
+	    margin-left: 3px;
+	    padding:15px 20px;
+	    text-decoration:none;
+	    width:auto;
+	    color: #4c4c4c;
+	    background-color: #e6e6e6;
+	    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+    }
+    .current, a:hover{
+	    color:#fff;
+	    background-color: #1C7AAB;
+	}
+}

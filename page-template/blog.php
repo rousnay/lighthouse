@@ -8,10 +8,10 @@ get_header(); ?>
 <div class="title-wrapper">
 	<div class="container blog-wrapper">
 		<div class="row">
-		<div class="col-xs-12">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<h3 class="sub-title">Read the latest articles, commentary in our news blogs</h3>
-		</div>
+			<div class="col-xs-12">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<h3 class="sub-title">Read the latest articles, commentary in our news blogs</h3>
+			</div>
 		</div>
 	</div>
 </div>
@@ -19,12 +19,17 @@ get_header(); ?>
 	<div class="row">
 		<div class="col-md-9 blog-listing">
 			<?php 
-			$args = array( 'post_type' => 'post', 'posts_per_page' => -1 );
+			$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 6,
+				'paged' => $paged
+				);
 			$loop = new WP_Query( $args );
+			while($loop->have_posts()) : $loop->the_post();	
+
 			$postid = get_the_ID();
-			while ( $loop->have_posts() ) : $loop->the_post();?>
-
-
+			?>
 
 			<article id="post-<?php echo $postid; ?>">
 				<div class="row blog-item">
@@ -35,11 +40,10 @@ get_header(); ?>
 					<div class="col-sm-6 col-md-7 blog-thumb">
 						<div class="thumbnail thumbnail-hover">
 							<div class="blog-img" style="background-image:url('<?php echo $url; ?>');?>">
-							<img class="img-responsive" style="visibility:hidden" src="<?php echo $url; ?>">
+								<img class="img-responsive" style="visibility:hidden" src="<?php echo $url; ?>">
 							</div>
 							<a href="<?php the_permalink() ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
 						</div>
-
 					</div>
 					<div class="col-sm-6 col-md-5 blog-content">
 						<div class="entry-inner">
@@ -60,12 +64,17 @@ get_header(); ?>
 			</article>
 
 		<?php endwhile; ?>
-
-
+	<div class="row">
+		<div class="col-xs-12">
+		<?php if (function_exists("pagination")) {
+		    pagination($loop->max_num_pages);
+		} ?>
+		</div>
 	</div>
-	<div class="col-md-3 sidebar" role="complementary">
-		<?php dynamic_sidebar( 'blog_widgets' ); ?>
-	</div>
+</div>
+<div class="col-md-3 sidebar" role="complementary">
+	<?php dynamic_sidebar( 'blog_widgets' ); ?>
+</div>
 </div><!-- .row -->
 </div><!-- .container -->
 
