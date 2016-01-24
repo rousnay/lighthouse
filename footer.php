@@ -60,5 +60,16 @@
 </nav><!-- nav -->
 
 <?php wp_footer(); ?>
+<script type="text/javascript">
+	function fixed_header_with_adminBar() {
+		var adminBarHeight	= jQuery('#wpadminbar').height();
+		var headerMain		= jQuery('#masthead');
+		headerMain.css('top',adminBarHeight)
+	}
+	fixed_header_with_adminBar();
+	jQuery( window ).resize(function() {
+		fixed_header_with_adminBar()
+	});
+</script>
 </body>
 </html>
