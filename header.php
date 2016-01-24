@@ -24,7 +24,7 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lighthouse' ); ?></a>
 
-		<header id="masthead" class="site-header panel-top" role="banner">
+		<header id="masthead" class="site-header panel-top panel-fixed" role="banner">
 			<div class="container">
 				<div class="row social-links">
 					<div class="col-sm-12 col-xs-12 col-md-6 social-items">
