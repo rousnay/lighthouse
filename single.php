@@ -49,10 +49,9 @@ get_header(); ?>
 
 				</main><!-- #main -->
 
-
 				<div class="row disclaimer-box">
-					<div class="disclaimer-icon"><i class="fa fa-info-circle"></i></div>
-					<div id="disclaimer-text">Disclaimer: This article is for your general information and use only and is not intended to address your particular requirements. 
+					<div class="disclaimer-icon"><i class="fa fa-info"></i></div>
+					<div id="disclaimer-text" class="readmore">Disclaimer: This article is for your general information and use only and is not intended to address your particular requirements. 
 					It should not be relied upon in its entirety. Although endeavours have been made to provide accurate and timely information, 
 					there can be no guarantee that such information is accurate as of the date it is received or that it will continue to be accurate in the future. 
 					No individual or company should act upon such information without receiving appropriate professional advice after a thorough examination of their particular situation. 

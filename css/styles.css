@@ -12871,12 +12871,12 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  color: #56b0ee;
-  border: 2px solid #56b0ee;
+  color: #999999;
+  border: 2px solid #1C7AAB;
   background-color: transparent;
 }
 .disclaimer-box .disclaimer-icon {
-  color: #56b0ee;
+  color: #999999;
   bottom: 0;
   font-size: 1em;
   font-style: normal;
@@ -12900,6 +12900,9 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 }
 .disclaimer-box p:last-child {
   margin-bottom: 0;
+}
+.disclaimer-box .morecontent span {
+  display: none;
 }
 
 /*--------------------------------------------------------------
