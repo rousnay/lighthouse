@@ -178,17 +178,17 @@ add_action( 'wp_enqueue_scripts', 'lighthouse_scripts' );
  * Read More button in excerpt
  */
 function new_excerpt_more( $more ) {
-    return ' ';
+    return '... <a class="readmore" href="' . get_permalink() . ' ">Read more <i class="fa fa-external-link"></i></a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 /**
  * Custome Lenght of excerpt
  */
-function custom_excerpt_length( $length ) {
-    return 18;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+// function custom_excerpt_length( $length ) {
+//     return 50;
+// }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 //callback function for the 'clear_content' shortcode

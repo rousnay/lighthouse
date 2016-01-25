@@ -1,4 +1,4 @@
-.page-template-blog, .single-post{
+.page-template-blog, .single-post, .search-results{
 	.site-content {
 		background-color: #F7F9FA;
 		.title-wrapper {
@@ -18,7 +18,7 @@
 				font-size: 18px;
 			}
 		}
-		.blog-listing {
+		.content-listing {
 		    margin-top: 10px;
 		    		article {
 						background: #fff;
@@ -143,17 +143,17 @@
 	}
 }
 @media (min-width: 1500px){
-	.blog-wrapper {
+	.wider-wrapper {
     width: 90%!important;
 }
 }
 @media (min-width: 1320px) and (max-width: 1499px){
-	.blog-wrapper {
+	.wider-wrapper {
     width: 95%;
 }
 }
 @media (min-width: 992px){
-	.blog-wrapper {
+	.wider-wrapper {
     width: 95%;
 }
 }
@@ -165,7 +165,7 @@
 	}
 }
 @media (min-width: 768px){
-	.blog-wrapper {
+	.wider-wrapper {
     width: 95%;
 }
 }

@@ -15,9 +15,9 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<div class="container blog-wrapper">
+<div class="container wider-wrapper">
 	<div class="row">
-		<div class="col-md-9 blog-listing">
+		<div class="col-md-9 content-listing">
 			<?php 
 			$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 			$args = array(
@@ -36,6 +36,7 @@ get_header(); ?>
 					<?php
 					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_blog_listing');
 					$url = $thumb[0];
+					$content = get_the_content();
 					?>
 					<div class="col-sm-6 col-md-7 blog-thumb">
 						<div class="thumbnail thumbnail-hover">
@@ -52,7 +53,7 @@ get_header(); ?>
 								<span class="date"><?php the_time(get_option('date_format')) ?></span>
 							</div>
 							<div class="entry-content">
-								<?php the_excerpt(); ?>
+								<?php echo wp_trim_words( $content , '18' ) ?>
 							</div>
 							<div class="read-more">
 								<a href="<?php the_permalink() ?>" class="btn read-more-btn">Read More</a>

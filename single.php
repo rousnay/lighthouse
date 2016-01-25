@@ -18,9 +18,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<div id="primary" class="container content-area blog-wrapper">
+	<div id="primary" class="container content-area wider-wrapper">
 		<div class="row">
-			<div class="col-md-9 blog-listing">
+			<div class="col-md-9 content-listing">
 				<main id="main" class="site-main" role="main">
 
 				<?php
@@ -95,7 +95,7 @@ get_header(); ?>
 				</div>
 
 
-			</div>
+			</div><!-- .blog-listing -->
 		<div class="col-md-3 sidebar" role="complementary">
 			<?php dynamic_sidebar( 'blog_widgets' ); ?>
 		</div>

@@ -134,9 +134,6 @@
     		margin-bottom: 0;
 		}
     }
-    .morecontent span {
-	display: none;
-	}
 }
 
 /* Pagination */
@@ -162,4 +159,8 @@
 	    color:#fff;
 	    background-color: #1C7AAB;
 	}
+}
+//Read More
+.morecontent span {
+	display: none;
 }
