@@ -12087,15 +12087,7 @@ header#masthead.panel-fixed {
   left: 0px;
   margin: 0 !important;
   border-bottom: 1px solid #e6e6e6;
-  -webkit-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-  -moz-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-  -o-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-     transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
   opacity: 1;
-  -webkit-animation: fadeInDown 1s alternate ease;
-  -moz-animation: fadeInDown 1s alternate ease;
-  -o-animation: fadeInDown 1s alternate ease;
-     animation: fadeInDown 1s alternate ease;
 }
 
 header .container {
