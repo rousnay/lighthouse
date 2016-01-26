@@ -20,9 +20,9 @@ get_header(); ?>
 	<div id="primary" class="container content-area wider-wrapper">
 		<div class="row">
 			<div class="col-md-9 content-listing">
-				<main id="main" class="site-main" role="main">
+				<main id="main" class="site-main search-results" role="main">
 
-				<?php
+				<?php query_posts($query_string . '&showposts=99');
 				if ( have_posts() ) : ?>
 
 					<header class="page-header">
@@ -62,8 +62,11 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'none' );
 
 				endif; ?>
-
 				</main><!-- #main -->
+				<div class="search-load">
+					<div id="showLess">Show less [-]</div>
+					<div id="loadMore">More result [+]</div>
+				</div>
 			</div><!-- .blog-listing -->
 		<div class="col-md-3 sidebar" role="complementary">
 			<?php dynamic_sidebar( 'blog_widgets' ); ?>

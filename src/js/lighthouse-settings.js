@@ -192,4 +192,52 @@ document.addEventListener("touchstart", function(){}, true);
 		return false;
 	});
 
+	//Load more option to Search result
+    size_art = $(".search-results article").size();
+    x=5;
+
+        if(size_art <= 5){
+            $('#loadMore').hide();
+            $('#showLess').hide();
+        }
+
+    $('.search-results article:lt('+x+')').show();
+
+    $('#loadMore').click(function () {
+        x= (x+6 <= size_art) ? x+6 : size_art;
+        $('.search-results article:lt('+x+')').slideDown();
+
+         $('#showLess').show();
+        if(x <= 5  || x == size_art){
+            $('#loadMore').hide();
+        }
+
+        var visibleArt = $('.search-results').find('article:visible:last');
+
+         $('html, body').animate({
+	        scrollTop: $(visibleArt).offset().top
+	    }, 1000);
+    });
+
+    $('#showLess').click(function () {
+        x=(x-6<0) ? 5 : x-6;
+        
+
+        $('#loadMore').show();
+        $('#showLess').show();
+        if(x <= 5){
+            $('#showLess').hide();
+        }
+
+			
+		$('.search-results article').not(':lt('+x+')').hide(1000);
+
+		var visibleArt = $('.search-results').find('article:visible:last').prevAll().eq(7);
+		        $('html, body').animate({
+			        scrollTop: $(visibleArt).offset().top
+			    }, 1000);
+
+
+    });
+
 })(jQuery);

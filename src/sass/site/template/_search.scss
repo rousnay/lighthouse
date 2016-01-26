@@ -96,6 +96,34 @@
         }
     }
 }
+
+//Load more
+#main article{ display:none;
+}
+#showLess {
+    display:none;
+}
+.search-load {
+    float: right;
+    margin: 10px 0 30px;
+    >div{
+    	cursor:pointer;
+	    display: block;
+	    float: left;
+	    margin-left: 3px;
+	    text-decoration: none;
+	    width: auto;
+		color: #4c4c4c;
+		padding: 15px 20px;
+		background-color: #e6e6e6;
+		transition: color .15s ease-in-out background-color .15s ease-in-out;
+	    &:hover {
+			color: #fff;
+			background-color: #1C7AAB;
+	    }
+    }
+}
+
 //post nav
 .nav-links {
     float: right;
@@ -118,8 +146,6 @@
 	    }
     }
 }
-
-
 
 //excerpt read more link
 a.readmore {
