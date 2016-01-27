@@ -1,7 +1,7 @@
 [![GitHub version](https://badge.fury.io/gh/rousnay%2Flighthouse.svg)](https://badge.fury.io/gh/rousnay%2Flighthouse)
 [![Build Status](https://scrutinizer-ci.com/g/rousnay/lighthouse/badges/build.png?b=master)](https://scrutinizer-ci.com/g/rousnay/lighthouse/build-status/master)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-<img align="right" src="http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2016/01/logo-financial-solutions.jpg">
+<img align="right" src="http://genuineimitation.co.uk/lighthouse/wp-content/themes/lighthouse/lighthouse-logo.jpg">
 
 
 Lighthouse
