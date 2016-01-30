@@ -13325,3 +13325,21 @@ Content Timeline
 .timeline .item .post_date {
   font-size: 16px !important;
 }
+
+/***************
+Notification Bar
+***************/
+body.has-mtsnb {
+  padding-top: 0 !important;
+}
+
+.mtsnb {
+  top: initial !important;
+  bottom: 0 !important;
+}
+
+.mtsnb-hidden.mtsnb-top {
+  -webkit-transform: translateY(100%) translate3d(0, 0, 0);
+     -moz-transform: translateY(100%) translate3d(0, 0, 0);
+          transform: translateY(100%) translate3d(0, 0, 0);
+}
