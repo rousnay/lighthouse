@@ -168,3 +168,21 @@ body.has-mtsnb {
 .mtsnb-hidden.mtsnb-top {
     transform: translateY(100%) translate3d(0,0,0);
 }
+
+
+/***************
+ivan-carousel (owl)
+***************/
+.ivan-carousel.vc_1453810117981{
+	overflow: visible!important;
+	.owl-controls {
+		.owl-buttons {
+			.owl-prev {
+			    left: -25px!important;
+			}
+			.owl-next {
+				    right: -25px!important;
+			}
+		}
+	}
+}

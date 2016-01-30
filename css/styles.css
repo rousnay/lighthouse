@@ -13343,3 +13343,16 @@ body.has-mtsnb {
      -moz-transform: translateY(100%) translate3d(0, 0, 0);
           transform: translateY(100%) translate3d(0, 0, 0);
 }
+
+/***************
+ivan-carousel (owl)
+***************/
+.ivan-carousel.vc_1453810117981 {
+  overflow: visible !important;
+}
+.ivan-carousel.vc_1453810117981 .owl-controls .owl-buttons .owl-prev {
+  left: -25px !important;
+}
+.ivan-carousel.vc_1453810117981 .owl-controls .owl-buttons .owl-next {
+  right: -25px !important;
+}
