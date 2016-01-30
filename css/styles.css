@@ -13021,7 +13021,7 @@ body:not(.page-template-default) section header, body:not(.page-template-default
   outline: none !important;
 }
 
-#main article {
+.search-results #main article {
   display: none;
 }
 
