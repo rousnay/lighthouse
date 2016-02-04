@@ -13269,9 +13269,18 @@ Visual Composer
   color: #fff !important;
 }
 
-.ivan-button.outline:hover {
+.ivan-button.round-square.with-text.btn-desc.outline:hover {
   border-color: transparent !important;
   color: transparent !important;
+}
+
+.ivan-button.round.large.with-text.light-bg.outline:hover {
+  color: #006AA7 !important;
+}
+
+.ivan-promo-box .ivan-button.light-bg.outline:hover {
+  color: #292d33;
+  background-color: #FFF;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
