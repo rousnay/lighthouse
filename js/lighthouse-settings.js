@@ -1,24 +1,8 @@
 ( function( $ ) {
 
-/***
-Primary Nav manu Toggle hide/show
-***/
-
-// $(window).scroll(function(){
-//   var sticky = $('#masthead'),
-//       scroll = $(window).scrollTop();
-
-//   if (scroll >= 100) {
-//   	sticky.addClass('panel-fixed').removeClass('panel-top');
-//   	$('.live-search').addClass('display-table');
-//   }
-//   else {
-//   	sticky.removeClass('panel-fixed').addClass('panel-top');
-//   	$('.live-search').removeClass('display-table');
-//   }
-// });
-
-
+	/******************************
+	 Header and Menu
+	******************************/
 	function contentMargin() {
 		var headerHeight	= $('#masthead').height();
 		var siteContent		= $('#content');
@@ -37,9 +21,120 @@ Primary Nav manu Toggle hide/show
 	jQuery('#mm-menu a span').addClass("mm-menu__link-text");
 	var menu = new Menu;
 
+
+	/******************
+	 Read More Options
+	******************/
+    var showChar = 90;
+	var ellipsestext = "...";
+	var moretext = "Read more [+]";
+	var lesstext = "Read less [-]";
+	$('.readmore').each(function() {
+		var content = $(this).html();
+
+		if(content.length > showChar) {
+
+			var c = content.substr(0, showChar);
+			var h = content.substr(showChar-1, content.length - showChar);
+
+			var html = c + '<span class="moreelipses">'+ellipsestext+'</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+
+			$(this).html(html);
+		}
+
+	});
+
+	$(".morelink").click(function(){
+		if($(this).hasClass("less")) {
+			$(this).removeClass("less");
+			$(this).html(moretext);
+		} else {
+			$(this).addClass("less");
+			$(this).html(lesstext);
+		}
+		$(this).parent().prev().toggle();
+		$(this).prev().toggle();
+		return false;
+	});
+
+
+	/*********************************
+	 Load more option to Search result
+	*********************************/
+    size_art = $(".search-results article").size();
+    x=5;
+
+        if(size_art <= 5){
+            $('#loadMore').hide();
+            $('#showLess').hide();
+        }
+
+    $('.search-results article:lt('+x+')').show();
+
+    $('#loadMore').click(function () {
+        x= (x+6 <= size_art) ? x+6 : size_art;
+        $('.search-results article:lt('+x+')').slideDown();
+
+         $('#showLess').show();
+        if(x <= 5  || x == size_art){
+            $('#loadMore').hide();
+        }
+
+        var visibleArt = $('.search-results').find('article:visible:last');
+
+         $('html, body').animate({
+	        scrollTop: $(visibleArt).offset().top
+	    }, 1000);
+    });
+
+    $('#showLess').click(function () {
+        x=(x-6<0) ? 5 : x-6;
+        
+
+        $('#loadMore').show();
+        $('#showLess').show();
+        if(x <= 5){
+            $('#showLess').hide();
+        }
+
+			
+		$('.search-results article').not(':lt('+x+')').hide(1000);
+
+		var visibleArt = $('.search-results').find('article:visible:last').prevAll().eq(7);
+		        $('html, body').animate({
+			        scrollTop: $(visibleArt).offset().top
+			    }, 1000);
+
+
+    });
+
+
+	/******************************
+	 Library: owl.carousel
+	******************************/
+	$("#related-posts").owlCarousel({
+		items : 4
+	});
+
+	$("#recent-posts").owlCarousel({
+		items : 3
+	});
+
+	//
+	document.addEventListener("touchstart", function(){}, true);
+
+
+	/******************************
+	 Library: jquery.matchHeight.js
+	******************************/
+    $('#recent-posts .entry').matchHeight();
+
 })(jQuery);
 
 
+/******************************
+Ivan Live Option
+******************************/
 function ivan_live_search_init() {
 	//"use strict";
 	var searchTopStyle = jQuery('.live-search'),
@@ -144,100 +239,3 @@ function ivan_live_search_init() {
 }
 //Live Search
 ivan_live_search_init();
-
-//Carousel Options
-jQuery("#related-posts").owlCarousel({
-	items : 4
-});
-
-jQuery("#recent-posts").owlCarousel({
-	items : 3
-});
-
-//
-document.addEventListener("touchstart", function(){}, true);
-
-
-//Read More Options
-( function( $ ) {
-    var showChar = 90;
-	var ellipsestext = "...";
-	var moretext = "Read more [+]";
-	var lesstext = "Read less [-]";
-	$('.readmore').each(function() {
-		var content = $(this).html();
-
-		if(content.length > showChar) {
-
-			var c = content.substr(0, showChar);
-			var h = content.substr(showChar-1, content.length - showChar);
-
-			var html = c + '<span class="moreelipses">'+ellipsestext+'</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
-
-			$(this).html(html);
-		}
-
-	});
-
-	$(".morelink").click(function(){
-		if($(this).hasClass("less")) {
-			$(this).removeClass("less");
-			$(this).html(moretext);
-		} else {
-			$(this).addClass("less");
-			$(this).html(lesstext);
-		}
-		$(this).parent().prev().toggle();
-		$(this).prev().toggle();
-		return false;
-	});
-
-	//Load more option to Search result
-    size_art = $(".search-results article").size();
-    x=5;
-
-        if(size_art <= 5){
-            $('#loadMore').hide();
-            $('#showLess').hide();
-        }
-
-    $('.search-results article:lt('+x+')').show();
-
-    $('#loadMore').click(function () {
-        x= (x+6 <= size_art) ? x+6 : size_art;
-        $('.search-results article:lt('+x+')').slideDown();
-
-         $('#showLess').show();
-        if(x <= 5  || x == size_art){
-            $('#loadMore').hide();
-        }
-
-        var visibleArt = $('.search-results').find('article:visible:last');
-
-         $('html, body').animate({
-	        scrollTop: $(visibleArt).offset().top
-	    }, 1000);
-    });
-
-    $('#showLess').click(function () {
-        x=(x-6<0) ? 5 : x-6;
-        
-
-        $('#loadMore').show();
-        $('#showLess').show();
-        if(x <= 5){
-            $('#showLess').hide();
-        }
-
-			
-		$('.search-results article').not(':lt('+x+')').hide(1000);
-
-		var visibleArt = $('.search-results').find('article:visible:last').prevAll().eq(7);
-		        $('html, body').animate({
-			        scrollTop: $(visibleArt).offset().top
-			    }, 1000);
-
-
-    });
-
-})(jQuery);
