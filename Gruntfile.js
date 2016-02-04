@@ -24,7 +24,8 @@ copy: {
     files: [
     {expand: true, flatten: true, src: ['src/js/**'], dest: 'js/', filter: 'isFile'},
     {expand: true, flatten: true, src: ['<%= project.bower %>/bootstrap-sass/assets/javascripts/bootstrap.min.js'], dest: 'js/', filter: 'isFile'},
-    {expand: true, flatten: true, src: ['<%= project.bower %>/jquery/dist/*.min.js'], dest: 'js/', filter: 'isFile'},
+    {expand: true, flatten: true, src: ['<%= project.bower %>/matchHeight/dist/jquery.matchHeight-min.js'], dest: 'js/', filter: 'isFile'},
+    {expand: true, flatten: true, src: ['<%= project.bower %>/jquery/dist/jquery.min.js'], dest: 'js/', filter: 'isFile'},
     {expand: true, flatten: true, src: ['<%= project.bower %>/font-awesome/css/font-awesome.min.css'], dest: 'css/', filter: 'isFile'}
     ],
   },
@@ -117,11 +118,13 @@ jshint: {
 
 //Watch
 watch: {
-  css: {
-  files: 'src/{,*/}*.{scss,js}',
-  tasks: ['copy','uglify','clean','sass','autoprefixer']
+  dev: {
+    files: 'src/{,*/}*.{scss,js}',
+    tasks: ['copy','uglify','clean','sass','autoprefixer']
+  }
 }
-}
+
+
 });
 
 //Load the Grunt plugins automatically
