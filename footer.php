@@ -40,7 +40,7 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 bottom-footer-left">
-					<div class="copyright">© 2015 - Lighthouse Group PLC - Company No. 04042743</div>
+					<div class="copyright">© 2016 - Lighthouse Financial Solutions</div>
 				</div>
 			</div>
 		</div>
