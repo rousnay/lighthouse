@@ -110,6 +110,20 @@
 
 
 	/******************************
+	 Font Adjustment
+	******************************/
+	var a=$("#primary");
+	$("#textplus").click(function(){
+		var c=a.css("fontSize");
+		var b=parseInt(c.replace("px",""))+1;$(a).css("fontSize",b+"px")
+	});
+	$("#textminus").click(function(){
+		var c=a.css("fontSize");
+		var b=parseInt(c.replace("px",""))-1;$(a).css("fontSize",b+"px")
+	})
+
+
+	/******************************
 	 Library: owl.carousel
 	******************************/
 	$("#related-posts").owlCarousel({
