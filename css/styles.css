@@ -12472,8 +12472,8 @@ footer#colophon .footer-bottom .site-info .social-items .icon-youtube:hover .fa 
   border-color: #363636;
 }
 .widget button[type="submit"]:hover, .widget button[type="submit"]:focus, .widget button[type="submit"]:active, .widget input[type="submit"]:hover, .widget input[type="submit"]:focus, .widget input[type="submit"]:active {
-  border-color: #f0f0f0 !important;
-  background-color: #f0f0f0 !important;
+  border-color: #e6e6e6 !important;
+  background-color: #e6e6e6 !important;
   color: #4c4c4c !important;
 }
 .widget .widget-title {
