@@ -13327,10 +13327,10 @@ Ninja Forms
   display: none;
 }
 .widget_ninja_forms_widget input {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 12px;
-  border: 1px solid #e7e7e7;
-  color: #5d5d5d;
+  border: 1px solid #e7e7e7 !important;
+  color: #5d5d5d !important;
   border-radius: 0 !important;
   -webkit-transition: all 0.3s ease-out;
      -moz-transition: all 0.3s ease-out;
@@ -13338,18 +13338,23 @@ Ninja Forms
           transition: all 0.3s ease-out;
 }
 
-.ninja-forms-form-wrap form input:focus, .ninja-forms-form-wrap form textarea:focus {
-  background: #fcfcfc;
-  border-color: #5d5d5d;
-}
 .ninja-forms-form-wrap form input[type=submit] {
-  color: white;
-  background: #0d8dd6;
+  color: white !important;
+  background: #0d8dd6 !important;
   float: left;
-  border: none;
+  border: none !important;
   letter-spacing: 1px;
   width: auto;
-  padding: 13px 27px;
+  padding: 13px 27px !important;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+.ninja-forms-form-wrap form input:hover, .ninja-forms-form-wrap form textarea:hover, .ninja-forms-form-wrap form input:focus, .ninja-forms-form-wrap form textarea:focus {
+  background: #fcfcfc !important;
+  border-color: #5d5d5d !important;
+  color: #4c4c4c !important;
 }
 
 /***************
