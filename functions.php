@@ -16,6 +16,13 @@ if ( ! function_exists( 'lighthouse_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function lighthouse_setup() {
+    // This theme styles the visual editor to resemble the theme style.
+    $font_url = 'https://fonts.googleapis.com/css?family=Questrial';
+    add_editor_style( 
+            array( 
+                'style.css', str_replace( ',', '%2C', $font_url )
+                ) 
+            );
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
