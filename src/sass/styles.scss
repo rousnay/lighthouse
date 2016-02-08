@@ -27,8 +27,10 @@
 # Third Party Styles
 --------------------------------------------------------------*/
 @import "bootstrap.scss";
-@import "lib/material-menu/style.scss";
-@import "lib/owl.carousel/owl.carousel.scss";
+@import "../components/font-awesome/scss/font-awesome.scss";
+@import "../components/elegant-icons/scss/style.scss";
+@import "../components/Material-Menu/_sass/sass/style.scss";
+@import "../components/owl.carousel/src/scss/owl.carousel.scss";
 /*--------------------------------------------------------------
 # Custom Variables & Mixins
 --------------------------------------------------------------*/

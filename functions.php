@@ -152,8 +152,6 @@ add_action( 'widgets_init', 'lighthouse_widgets_init' );
  */
 function lighthouse_scripts() {
 
-	wp_enqueue_style( 'lighthouse-font-awesome-css', get_template_directory_uri() . '/css/font-awesome.min.css');
-
 	wp_enqueue_style( 'lighthouse-style', get_stylesheet_uri() );
 
 	wp_enqueue_style('lighthouse-google-fonts', 'https://fonts.googleapis.com/css?family=Questrial');
