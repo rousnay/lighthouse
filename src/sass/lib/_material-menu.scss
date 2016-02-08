@@ -10,31 +10,31 @@ Version: 0.1.0
 // CONFIG
 // =============================================================================
 
-@import "config/variables";
-@import "config/mixins";
+@import "../../components/Material-Menu/_sass/sass/config/variables";
+@import "../../components/Material-Menu/_sass/sass/config/mixins";
 
 // =============================================================================
 // BASE
 // =============================================================================
 
-//@import "base/reset";
-//@import "base/base";
+//@import "../../components/Material-Menu/_sass/sass/base/reset";
+//@import "../../components/Material-Menu/_sass/sass/base/base";
 
 // =============================================================================
 // LAYOUTS
 // =============================================================================
 
-//@import "layouts/primary";
+//@import "../../components/Material-Menu/_sass/sass/layouts/primary";
 
 // =============================================================================
 // MODULES
 // =============================================================================
 
-@import "modules/menu";
-@import "modules/icons";
+@import "../../components/Material-Menu/_sass/sass/modules/menu";
+@import "../../components/Material-Menu/_sass/sass/modules/icons";
 
 // =============================================================================
 // FUSION AD
 // =============================================================================
 
-//@import "modules/fusionad";
+//@import "../../components/Material-Menu/_sass/sass/modules/fusionad";

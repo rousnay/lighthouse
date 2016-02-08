@@ -28,11 +28,11 @@
 			<div class="container">
 				<div class="row social-links">
 					<div class="col-sm-12 col-xs-12 col-md-6 social-items">
-						<!-- <a href="" class="icon icon-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a> -->
-						<a href="https://www.linkedin.com/company/lighthouse-financial-advice" class="icon icon-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
-						<a href="https://plus.google.com/b/112602769566696286010/112602769566696286010/about/p/pub" class="icon icon-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
-						<a href="https://www.facebook.com/Lighthouse-Group-1544255659197834/" class="icon icon-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
-						<a href="https://twitter.com/talk2lighthouse" class="icon icon-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>
+						<!-- <a href="" class="link link-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a> -->
+						<a href="https://www.linkedin.com/company/lighthouse-financial-advice" class="link link-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
+						<a href="https://plus.google.com/b/112602769566696286010/112602769566696286010/about/p/pub" class="link link-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
+						<a href="https://www.facebook.com/Lighthouse-Group-1544255659197834/" class="link link-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
+						<a href="https://twitter.com/talk2lighthouse" class="link link-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>
 						<a href="#" class="live-feed hidden-xs hidden-sm"><span>SP: 9.50p</span></a>	
 					</div>
 					<div class="col-md-6 top-search hidden-xs hidden-sm">

@@ -37,7 +37,7 @@ header{
                     }
                 }
             }
-            .icon{
+            .link{
                 float: left;
                 display: block;
                 // width: 40px;
@@ -49,27 +49,27 @@ header{
                     transition: color 0.3s;
                 }
             }
-            .icon-twitter{
+            .link-twitter{
                 &:hover .fa{
                 color:#00abf0
                 }
             }
-            .icon-facebook{
+            .link-facebook{
                 &:hover .fa{
                 color:#4b6cb2;
                 }
             }
-            .icon-google-plus{
+            .link-google-plus{
                 &:hover .fa{
                 color:#dc4b3f
                 }
             }
-            .icon-linkedin{
+            .link-linkedin{
                 &:hover .fa{
                 color:#0077b5
                 }
             }
-            .icon-youtube{
+            .link-youtube{
                 &:hover .fa{
                 color:#df192a
                 }
@@ -115,7 +115,7 @@ header{
 @media (max-width: 991px){
     header{
         .social-links {
-            .icon{
+            .link{
                 float: right!important;
             }
         }

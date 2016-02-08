@@ -26,21 +26,18 @@
 /*-------------------------------------------------------------
 # Third Party Styles
 --------------------------------------------------------------*/
-@import "bootstrap.scss";
-@import "../components/font-awesome/scss/font-awesome.scss";
-@import "../components/elegant-icons/scss/style.scss";
-@import "../components/Material-Menu/_sass/sass/style.scss";
-@import "../components/owl.carousel/src/scss/owl.carousel.scss";
+@import "lib/bootstrap";
+@import "lib/elegant-icons";
+@import "lib/font-awesome";
+@import "lib/icomoon-custom";
+@import "lib/material-menu";
+@import "lib/owl.carousel";
+
 /*--------------------------------------------------------------
 # Custom Variables & Mixins
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
-
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
 
 /*-------------------------------------------------------------
 # Typography

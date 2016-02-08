@@ -37,6 +37,7 @@
     "Material-Menu": "https://github.com/callmenick/Material-Menu.git",
     "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
     "matchHeight": "matchheight#~0.7.0",
-    "elegant-icons": "*"
+    "elegant-icons": "*",
+    "normalize-css": "normalize.css#^3.0.3"
   }
 }
