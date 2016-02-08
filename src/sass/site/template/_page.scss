@@ -5,6 +5,188 @@ body:not(.page-template-default){
         }
     }
 }
+/********
+  Home
+*********/
+body.page-template-page-home{
+	.site-content{
+		background-color:#F7F9FA!important;
+	}
+}
+.messages {
+    text-align: center;
+    background-color: #006AA7;
+    color: #ffffff;
+    padding: 8px 0;
+    p{
+    	padding:0;
+    	margin:0;
+    }
+}
+.boxes {
+	&> div{
+		padding:0;
+	}
+}
+.box-link{
+	background-color: #ffffff !important;
+	transition: background-color ease 500ms;
+	.box-icon{
+		div{
+			font-size: 4em;
+			color:#236fb6!important;
+			transition: color ease 500ms;
+		}
+	}
+	.box-text{
+		h4, hr{
+		   color: #222;
+		   margin-top: 15px;
+		   transition: color ease 500ms;
+		}
+		hr{
+		   width: 60%;
+		}
+	}
+	&:hover{
+		background-color: #006AA7!important;
+		.box-icon{
+			div{
+			 color: #ffffff!important;
+			}
+		}
+		.box-text{
+			h4, hr{
+			   color: #fff;
+			}
+		}
+	}
+}
+.box-holder {
+    padding: 40px;
+    text-align: center;
+}
+
+.block-link{
+	margin-top: 80px;
+    border-top: 3px solid #006AA7;
+    border-bottom: 3px solid #006AA7;
+
+	&> div > div {
+		padding:0;
+	}
+	.block-img{
+		height: 275px;
+	    background-color: #fafafa;
+	    background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-attachment: scroll;
+	    position: relative;
+		&.shareholder-img{
+			background-image: url("http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2015/12/shutterstock_334043420-480x480.jpg");
+		}
+		&.adviser-img{
+			background-image: url("http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2016/01/s9-2-480x340.jpg");
+		}
+		&.enrolment-img{
+			background-image: url("http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2015/12/blog14-480x480.jpg");
+		}
+
+		.block-holder {
+		    position: absolute;
+		    display: table;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 99;
+		    opacity: 1;
+		    filter: alpha(opacity=100);
+		}
+		.block-holder-link {
+		    position: absolute;
+		    display: table;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 99;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		}
+		.block-inner {
+		    display: table-cell;
+		    vertical-align: middle;
+		    z-index: 5;
+		    .block-text {
+			    margin: 0!important;
+			    text-align: center;
+			    h3{
+			    	color: #ffffff;
+			    }
+			}
+		}
+		.block-overlay {
+		    position: absolute;
+		    display: block;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    background-color: #000;
+		    opacity: .2;
+		    z-index: 55;
+		    filter: alpha(opacity=20);
+		    transition: opacity ease 300ms;
+		}
+		&:hover{
+			.block-holder{
+				opacity: 0;
+
+			}
+			.block-holder-link{
+				opacity: 1;
+
+			}
+			.block-text a {
+			    display: inline-block;
+			    margin-bottom: 0;
+			    text-align: center;
+			    vertical-align: middle;
+			    cursor: pointer;
+			    transition: border-color ease 300ms,background ease 300ms;
+			    font-size: 14px;
+			    padding: 10px 30px;
+			    line-height: 1.428571429;
+			    background: 0 0;
+			    font-weight: 600;
+			    text-transform: uppercase;
+			    user-select: none;
+			    border-radius: 30px;
+			    color: #fff;
+			    border: 2px solid #fff;
+			    &:hover {
+				    background-color: #fff;
+				    color: #222;
+				    border-color: #fff;
+				}
+			}
+			.block-overlay{
+				opacity: .4;
+				filter: alpha(opacity=40);
+			}
+
+		}
+	}
+
+}
+
+.recent-posts{
+	margin-bottom: 50px;
+}
+
+
 
 /********
   Advice

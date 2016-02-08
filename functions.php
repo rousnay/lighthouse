@@ -199,12 +199,14 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 
 //callback function for the 'clear_content' shortcode
-function recent_post_slider($atts){
+function recent_post_slider($atts, $content = null){
 
-	echo'<div class="post-slider row"><div id="recent-posts" class="owl-carousel">';
+	ob_start();
+
+	echo '<div class="post-slider row"><div id="recent-posts" class="owl-carousel">';
 
 	global $post;
-
+	
 	$post_query = new WP_Query( array(
 		'post_type' => 'post',
 		'posts_per_page' => 12,
@@ -221,13 +223,13 @@ function recent_post_slider($atts){
 
 		echo '<div class="col-xs-12"><div class="thumbnail thumbnail-hover">';
 
-		echo'<img class="img-responsive" src=" ' . $url_post . '">';
+		echo '<img class="img-responsive" src=" ' . $url_post . '">';
 
 		echo '<a href=" ' . get_permalink() .' " " title=" ' .  get_the_title() .' " class="overlay"></a>';
 
-		echo'</div>';
+		echo '</div>';
 		
-		echo'<div class="entry">';
+		echo '<div class="entry">';
 
 		echo '<h3><a href=" ' . get_permalink() . ' "> ' . get_the_title() . '</a></h3>';
 
@@ -248,6 +250,10 @@ function recent_post_slider($atts){
 	endif;
 		
 		echo '</div></div>';
+
+$output = ob_get_clean();
+
+return $output;
 
 }
 //add the new 'recent_posts' shortcode
