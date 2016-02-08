@@ -17151,6 +17151,17 @@ body.page-template-page-home .site-content {
 .box-link .box-text hr {
   width: 60%;
 }
+.box-link p {
+  padding: 0;
+  margin: 0;
+}
+.box-link .box-link-holder {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  color: transparent !important;
+}
 .box-link:hover {
   background-color: #006AA7 !important;
 }

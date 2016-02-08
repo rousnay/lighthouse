@@ -206,7 +206,7 @@ function recent_post_slider($atts, $content = null){
 	echo '<div class="post-slider row"><div id="recent-posts" class="owl-carousel">';
 
 	global $post;
-	
+
 	$post_query = new WP_Query( array(
 		'post_type' => 'post',
 		'posts_per_page' => 12,
@@ -296,6 +296,42 @@ function pagination($pages = '', $range = 4)
          echo "</div>\n";
      }
 }
+
+
+/**
+ * stop wp removing div tags
+ */
+function tinymce_settings( $settings ) {
+
+    // html elements being stripped
+    $settings['extended_valid_elements'] = 'div[*],article[*]';
+
+    // only html elements to keep
+    //$settings['valid_elements'] = 'a,strong/b,div,h1,h2,h3,section';
+
+	// paste elements to keep
+	//$opts = '*[*]';
+	//$settings['paste_word_valid_elements'] = $opts;
+
+    // don't remove line breaks
+    $settings['remove_linebreaks'] = false;
+
+    $settings['allow_html_in_named_anchor'] = true;
+
+    // convert newline characters to BR
+    $settings['convert_newlines_to_brs'] = true;
+
+    // don't remove redundant BR
+    $settings['remove_redundant_brs'] = false;
+
+	// only html elements to keep
+	//$settings['wpautop'] = false;
+
+    // pass back to wordpress
+
+	return $settings;
+}
+add_filter( 'tiny_mce_before_init', 'tinymce_settings' );
 
 /**
  * Implement the Custom Header feature.

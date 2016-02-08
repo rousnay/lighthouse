@@ -1,5 +1,194 @@
 <!-- Home -->
+<section class="slider">
+<div class="row">
+<div class="col-xs-12">
+<div class="slider-inner">
+[masterslider id="1"]
+</div>
+<div class="messages">
+<p>Latest Financial Reports just added - View our 2016 Accounts here +</p>
+</div>
+</div>
+</div>
+</section>
 
+<section class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="content-header">
+<h1>Book an Appointment</h1>
+Request a meeting in person or a telephone call with your local adviser.
+</div>
+</div>
+</div>
+<div class="row boxes">
+<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="box-link">
+		<div class="box-holder">
+			<div class="box-icon">
+				<div class="icon-edit"></div>
+			</div>
+			<div class="box-text">
+				<h4 class="box-title">Auto Enrolment</h4> 
+				<hr>
+			</div>
+		</div>
+		<a class="box-link-holder" href="#">link</a>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="box-link">
+		<div class="box-holder">
+			<div class="box-icon">
+				<div class="icon-key"></div>
+			</div>
+			<div class="box-text">
+				<h4 class="box-title">Mortgages</h4> 
+				<hr>
+			</div>
+		</div>
+		<a class="box-link-holder" href="#">link</a>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="box-link">
+		<div class="box-holder">
+			<div class="box-icon">
+				<div class="icon-shield"></div>
+			</div>
+			<div class="box-text">
+				<h4 class="box-title">Life Insurance</h4> 
+				<hr>
+			</div>
+		</div>
+		<a class="box-link-holder" href="#">link</a>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="box-link">
+		<div class="box-holder">
+			<div class="box-icon">
+				<div class="icon-document"></div>
+			</div>
+			<div class="box-text">
+				<h4 class="box-title">Pensions</h4> 
+				<hr>
+			</div>
+		</div>
+		<a class="box-link-holder" href="#">link</a>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="box-link">
+		<div class="box-holder">
+			<div class="box-icon">
+				<div class="icon-bargraph"></div>
+			</div>
+			<div class="box-text">
+				<h4 class="box-title">Investments</h4> 
+				<hr>
+			</div>
+		</div>
+		<a class="box-link-holder" href="#">link</a>
+	</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="box-link">
+		<div class="box-holder">
+			<div class="box-icon">
+				<div class="icon-wallet"></div>
+			</div>
+			<div class="box-text">
+				<h4 class="box-title">Wealth Management</h4> 
+				<hr>
+			</div>
+		</div>
+		<a class="box-link-holder" href="#">link</a>
+	</div>
+</div>
+</div>
+</section>
+
+<section class="block-link">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<div class="block-img shareholder-img">
+				<div class="block-overlay"></div>
+				<div class="block-holder">
+					<div class="block-inner">
+						<div class="block-text">
+							<h3>I'm a Shareholder</h3>
+						</div>
+					</div>
+				</div>
+				<div class="block-holder-link">
+					<div class="block-inner">
+						<div class="block-text">
+							<a href="#">View Investor Relations</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-4">
+			<div class="block-img adviser-img">
+				<div class="block-overlay"></div>
+				<div class="block-holder">
+					<div class="block-inner">
+						<div class="block-text">
+							<h3>I'm an Adviser</h3>
+						</div>
+					</div>
+				</div>
+				<div class="block-holder-link">
+					<div class="block-inner">
+						<div class="block-text">
+							<a href="#">Join Lighthouse</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-4">
+			<div class="block-img enrolment-img">
+				<div class="block-overlay"></div>
+				<div class="block-holder">
+					<div class="block-inner">
+						<div class="block-text">
+							<h3>View Auto Enrolment</h3>
+						</div>
+					</div>
+				</div>
+				<div class="block-holder-link">
+					<div class="block-inner">
+						<div class="block-text">
+							<a href="#">View Auto Enrolment</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="container recent-posts">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="content-header">
+				<h1>Lighthouse News Centre</h1>
+				<p>Read the latest articles and commentary in our news blog:</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-12">
+	[recent_posts]
+	</div>
+	</div>
+</section>
 
 <!-- Advice -->
 <section class="banner">

@@ -48,6 +48,17 @@ body.page-template-page-home{
 		   width: 60%;
 		}
 	}
+	p {
+	    padding: 0;
+	    margin: 0;
+	}
+	.box-link-holder {
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    color: transparent!important;
+	}
 	&:hover{
 		background-color: #006AA7!important;
 		.box-icon{
