@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col-xs-12">
 <div class="slider-inner">
-[masterslider id="1"]
+<?php echo do_shortcode( '[masterslider id="1"]') ?>
 </div>
 <div class="messages">
 <p>Latest Financial Reports just added - View our 2016 Accounts here +</p>
@@ -173,7 +173,6 @@
 	</div>
 </section>
 
-
 <section class="container recent-posts">
 	<div class="row">
 		<div class="col-xs-12">
@@ -185,7 +184,7 @@
 	</div>
 	<div class="row">
 	<div class="col-xs-12">
-	[recent_posts]
+	<?php echo do_shortcode( '[recent_posts]') ?>
 	</div>
 	</div>
 </section>
