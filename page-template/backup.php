@@ -29,7 +29,7 @@ Request a meeting in person or a telephone call with your local adviser.
 				<div class="icon-edit"></div>
 			</div>
 			<div class="box-text">
-				<h4 class="box-title">Auto Enrolment</h4> 
+				<h3 class="box-title">Auto Enrolment</h3> 
 				<hr>
 			</div>
 		</div>
@@ -43,7 +43,7 @@ Request a meeting in person or a telephone call with your local adviser.
 				<div class="icon-key"></div>
 			</div>
 			<div class="box-text">
-				<h4 class="box-title">Mortgages</h4> 
+				<h3 class="box-title">Mortgages</h3> 
 				<hr>
 			</div>
 		</div>
@@ -57,7 +57,7 @@ Request a meeting in person or a telephone call with your local adviser.
 				<div class="icon-shield"></div>
 			</div>
 			<div class="box-text">
-				<h4 class="box-title">Life Insurance</h4> 
+				<h3 class="box-title">Life Insurance</h3> 
 				<hr>
 			</div>
 		</div>
@@ -71,7 +71,7 @@ Request a meeting in person or a telephone call with your local adviser.
 				<div class="icon-document"></div>
 			</div>
 			<div class="box-text">
-				<h4 class="box-title">Pensions</h4> 
+				<h3 class="box-title">Pensions</h3> 
 				<hr>
 			</div>
 		</div>
@@ -85,7 +85,7 @@ Request a meeting in person or a telephone call with your local adviser.
 				<div class="icon-bargraph"></div>
 			</div>
 			<div class="box-text">
-				<h4 class="box-title">Investments</h4> 
+				<h3 class="box-title">Investments</h3> 
 				<hr>
 			</div>
 		</div>
@@ -99,7 +99,7 @@ Request a meeting in person or a telephone call with your local adviser.
 				<div class="icon-wallet"></div>
 			</div>
 			<div class="box-text">
-				<h4 class="box-title">Wealth Management</h4> 
+				<h3 class="box-title">Wealth Management</h3> 
 				<hr>
 			</div>
 		</div>

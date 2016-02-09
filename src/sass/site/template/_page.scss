@@ -33,13 +33,13 @@ body.page-template-page-home{
 	transition: background-color ease 500ms;
 	.box-icon{
 		div{
-			font-size: 4em;
+			font-size: 3.5em;
 			color:#236fb6!important;
 			transition: color ease 500ms;
 		}
 	}
 	.box-text{
-		h4, hr{
+		h3, hr{
 		   color: #222;
 		   margin-top: 15px;
 		   transition: color ease 500ms;
@@ -67,7 +67,7 @@ body.page-template-page-home{
 			}
 		}
 		.box-text{
-			h4, hr{
+			h3, hr{
 			   color: #fff;
 			}
 		}
@@ -135,6 +135,8 @@ body.page-template-page-home{
 			    text-align: center;
 			    h3{
 			    	color: #ffffff;
+		    	    font-weight: 600;
+	    	        margin: 0;
 			    }
 			}
 		}

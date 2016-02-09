@@ -1,5 +1,6 @@
 p {
 	margin-bottom: 1.5em;
+	font-size:0.875em;
 }
 
 dfn, cite, em, i {
@@ -42,4 +43,11 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+hr {
+  margin-top:    $line-height-computed;
+  margin-bottom: $line-height-computed;
+  border: 0;
+  border-top: 1px solid $hr-border;
 }
