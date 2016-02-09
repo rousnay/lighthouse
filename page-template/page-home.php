@@ -33,7 +33,7 @@ get_header(); ?>
 <div class="col-xs-12">
 <div class="content-header">
 <h1>Book an Appointment</h1>
-Request a meeting in person or a telephone call with your local adviser.
+<h4>Request a meeting in person or a telephone call with your local adviser.</h4>
 </div>
 </div>
 </div>

@@ -21,10 +21,7 @@ get_header(); ?>
 	<div id="primary" class="container content-area wider-wrapper">
 		<div class="row">
 			<div class="col-md-9 content-listing">
-				<div class="font-adjustment">
-					<button id="textplus">A+</button>
-					<button id="textminus">A-</button>
-				</div>
+			
 				<main id="main" class="site-main" role="main">
 
 				<?php
@@ -67,7 +64,9 @@ get_header(); ?>
 				</div>
 						
 				<div class="post-slider row">
+					<div class="col-xs-12">
 						<h2>Related Artices</h2>
+					</div>
 						<div id="related-posts" class="owl-carousel">
 							<?php
 							 $postslist = get_posts('numberposts=99&order=DESC&orderby=date');

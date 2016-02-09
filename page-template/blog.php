@@ -8,9 +8,9 @@ get_header(); ?>
 <div class="title-wrapper">
 	<div class="container blog-wrapper">
 		<div class="row">
-			<div class="col-xs-12">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				<h3 class="sub-title">Read the latest articles, commentary in our news blogs</h3>
+			<div class="col-xs-12 content-header">
+				<?php the_title( '<h1>', '</h1>' ); ?>
+				<h4>Read the latest articles, commentary in our news blogs</h4>
 			</div>
 		</div>
 	</div>
@@ -49,7 +49,7 @@ get_header(); ?>
 					<div class="col-sm-6 col-md-5 blog-content">
 						<div class="entry-inner">
 							<div class="entry-header">
-								<h3 class="entry-title"><?php the_title() ?></h3>
+								<h2 class="entry-title"><?php the_title() ?></h2>
 								<span class="date"><?php the_time(get_option('date_format')) ?></span>
 							</div>
 							<div class="entry-content">

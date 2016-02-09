@@ -112,7 +112,7 @@
 	/******************************
 	 Font Adjustment
 	******************************/
-	var a=$("#main");
+	var a=$("body");
 	$("#textplus").click(function(){
 		var c=a.css("fontSize");
 		var b=parseInt(c.replace("px",""))+1;$(a).css("fontSize",b+"px")

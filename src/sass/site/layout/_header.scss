@@ -111,7 +111,27 @@ header{
             }
         }
 }
-
+.font-adjustment {
+    float: right;
+    button{
+        font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #4c4c4c;
+        background-color: #FFF;
+        border: none;
+        outline: none;
+        padding: 10px;
+        float: left;
+        margin: 0;
+        position: relative;
+        transition: background 350ms ease-in-out;
+        &:hover{
+            background-color: #e6e6e6 !important;
+        }
+    }
+}
 @media (max-width: 991px){
     header{
         .social-links {

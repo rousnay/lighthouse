@@ -36,7 +36,10 @@
 						<a href="#" class="live-feed hidden-xs hidden-sm"><span>SP: 9.50p</span></a>	
 					</div>
 					<div class="col-md-6 top-search hidden-xs hidden-sm">
-
+						<div class="font-adjustment">
+							<button id="textplus">A+</button>
+							<button id="textminus">A-</button>
+						</div>
 						<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 						    <div class="search-wrap">
 						    	<label class="screen-reader-text" for="s"><?php _e( 'Search for:', 'presentation' ); ?></label>
@@ -46,7 +49,6 @@
 						        <input type="search" placeholder="<?php echo esc_attr( 'Search', 'presentation' ); ?>" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" />
 						    </div>
 						</form>
-
 					</div>
 				</div>
 				<div class="row header-menus">

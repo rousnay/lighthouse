@@ -4,19 +4,10 @@
 		.title-wrapper {
     		background-color: #F7F9FA;
     		border-top: 5px solid #2068AD;
-		    padding: 30px 0 25px;
 		    position: relative;
 		    color: #ffffff;
 		    text-align: center;
 		    transition: transform 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-		    .entry-title {
-			    color: #000;
-			    font-size: 36px;
-			}
-			.sub-title{
-				color: #999999;
-				font-size: 18px;
-			}
 		}
 		.content-listing {
 		    margin-top: 10px;
@@ -45,7 +36,7 @@
 								margin: 20px 0;
 								.read-more-btn {
 								    font-family: "Raleway", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-								    font-size: 12px;
+								    font-size: 0.75em;
 								    line-height: 1em;
 								    font-weight: 600;
 								    letter-spacing: 0.3px;
@@ -75,7 +66,7 @@
 		    margin: 15px 0 35px;
     		    .widget-title {
 			    color: #292d33;
-			    font-size: 24px;
+			    font-size: 1.5em;
 			    text-transform: capitalize;
 			    border-bottom: none;
 			    margin-bottom: 0;
@@ -84,7 +75,7 @@
 				    border-bottom: none;
 				    a{
 					    color: #292d33;
-					    font-size: 16px;
+					    font-size: 1em;
 					    &:hover {
 						    color: #2090cb;
 						}
@@ -94,6 +85,13 @@
 		}
 	}
 }
+
+.page-template-blog{
+	.entry-content {
+	    font-size: 1em;
+	    margin-top: .5em;
+	}
+}
 .single-post{
 	.site-content {
 		background-color: #ffffff;
@@ -101,9 +99,10 @@
 			text-align: left;
     		background-color: #f7f7f7;
     		border-top: 0;
+    		padding: 1.875em 0;
 		    .entry-title {
 			    color: #000;
-			    font-size: 36px;
+			    font-size: 2.25em;
 			    float: left;
 			}
 			.back-to{
@@ -114,11 +113,11 @@
 				span{
 					color: #9B9B9B;
 					margin-right: 30px;
-					font-size: 25px;
+					font-size: 1.56em;
 				}
 				a{
 					color: #000;
-					font-size: 20px;
+					font-size: 1.25em;
 				}
 
 			}
@@ -174,7 +173,7 @@
     padding: 10px 0 5px!important;
 }
 	.entry-title {
-    font-size: 20px;
+    font-size: 1.25em;
         line-height: 40px;
 }
 	.entry-inner {
@@ -188,7 +187,7 @@
 @media (max-width: 619px){
 .title-wrapper {
     .entry-title {
-    font-size: 24px!important;
+    font-size: 1.5em!important;
     line-height: 1 !important;
     margin-bottom: 10px;
 }
@@ -208,10 +207,10 @@
 	    margin-left: 15px!important;
 		span{
 			margin-right: 15px!important;
-			font-size: 18px!important;
+			font-size: 1.12em!important;
 		}
 		a{
-			font-size: 14px!important;
+			font-size: 0.875em!important;
 		}
 
 	}

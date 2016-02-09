@@ -1,6 +1,18 @@
 .full-width {
     width: 100%;
 }
+.content-header{
+	padding: 30px 0 25px;
+	text-align: center;
+	h1{
+		color: #000;
+		font-size: 2.25em;
+	}
+	h4{
+		color: #999999;
+		margin-top: 1.25em;
+	}
+}
 .fc-blue{
 	color:#236fb6!important;
 }
