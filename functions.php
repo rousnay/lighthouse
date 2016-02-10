@@ -198,7 +198,9 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 // add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
-//callback function for the 'clear_content' shortcode
+/**
+ * Shortcode: Recent Post Slider
+ */
 function recent_post_slider($atts, $content = null){
 
 	ob_start();
@@ -256,10 +258,16 @@ $output = ob_get_clean();
 return $output;
 
 }
-//add the new 'recent_posts' shortcode
 add_shortcode('recent_posts','recent_post_slider');
+/**
+ * Shortcode: Recent Post Slider
+ */
 
-// Numbered Pagination
+
+
+/**
+ * Numbered Pagination
+ */
 function pagination($pages = '', $range = 4)
 {  
      $showitems = ($range * 2)+1;  
@@ -332,6 +340,38 @@ function tinymce_settings( $settings ) {
 	return $settings;
 }
 add_filter( 'tiny_mce_before_init', 'tinymce_settings' );
+
+
+
+
+
+/**
+ * ACF settings
+ */
+
+// Options Page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Lighthouse General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+}
 
 /**
  * Implement the Custom Header feature.
