@@ -17,12 +17,12 @@ if ( ! function_exists( 'lighthouse_setup' ) ) :
  */
 function lighthouse_setup() {
     // This theme styles the visual editor to resemble the theme style.
-    $font_url = 'https://fonts.googleapis.com/css?family=Questrial';
-    add_editor_style( 
-            array( 
-                'style.css', str_replace( ',', '%2C', $font_url )
-                ) 
-            );
+	$font_url = 'https://fonts.googleapis.com/css?family=Questrial';
+	add_editor_style( 
+		array( 
+			'style.css', str_replace( ',', '%2C', $font_url )
+			) 
+		);
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -65,7 +65,7 @@ function lighthouse_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'lighthouse' ),
-	) );
+		) );
 
 
 	/*
@@ -94,7 +94,7 @@ function lighthouse_setup() {
 		'comment-list',
 		'gallery',
 		'caption',
-	) );
+		) );
 
 	/*
 	 * Enable support for Post Formats.
@@ -106,13 +106,13 @@ function lighthouse_setup() {
 		'video',
 		'quote',
 		'link',
-	) );
+		) );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'lighthouse_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
-	) ) );
+		) ) );
 }
 endif;
 add_action( 'after_setup_theme', 'lighthouse_setup' );
@@ -143,7 +143,7 @@ function lighthouse_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
+		) );
 }
 add_action( 'widgets_init', 'lighthouse_widgets_init' );
 
@@ -185,7 +185,7 @@ add_action( 'wp_enqueue_scripts', 'lighthouse_scripts' );
  * Read More button in excerpt
  */
 function new_excerpt_more( $more ) {
-    return '... <a class="readmore" href="' . get_permalink() . ' ">Read more <i class="fa fa-external-link"></i></a>';
+	return '... <a class="readmore" href="' . get_permalink() . ' ">Read more <i class="fa fa-external-link"></i></a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
@@ -208,7 +208,6 @@ function recent_post_slider($atts, $content = null){
 	echo '<div class="post-slider row"><div id="recent-posts" class="owl-carousel">';
 
 	global $post;
-
 	$post_query = new WP_Query( array(
 		'post_type' => 'post',
 		'posts_per_page' => 12,
@@ -218,51 +217,62 @@ function recent_post_slider($atts, $content = null){
 	);
 
 	if( $post_query->have_posts() ) : while( $post_query->have_posts() ) : $post_query->the_post();
+	$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
+	$url_post = $thumb_post[0];
+	$content = get_the_content();
 
-		$thumb_post = wp_get_attachment_image_src( get_post_thumbnail_id(), 'lighthouse_related_post');
-		$url_post = $thumb_post[0];
-		$content = get_the_content();
+	echo '<div class="col-xs-12"><div class="thumbnail thumbnail-hover">';
+	echo '<img class="img-responsive" src=" ' . $url_post . '">';
+	echo '<a href=" ' . get_permalink() .' " " title=" ' .  get_the_title() .' " class="overlay"></a>';
+	echo '</div>';
+	echo '<div class="entry">';
+	echo '<h3><a href=" ' . get_permalink() . ' "> ' . get_the_title() . '</a></h3>';
+	echo '<span class="date"> <i class="fa fa-clock-o"></i> ' . get_the_time(get_option('date_format')) .'</span>';
+	echo '<div class="entry-content">' . wp_trim_words( $content , '27' ) . '</div>';
+	echo '<div class="read-more">';
+	echo '<a href="' . get_permalink() . ' " class="btn read-more-btn">View Article</a>';
+	echo '</div>';
+	echo '</div></div>';
 
-		echo '<div class="col-xs-12"><div class="thumbnail thumbnail-hover">';
-
-		echo '<img class="img-responsive" src=" ' . $url_post . '">';
-
-		echo '<a href=" ' . get_permalink() .' " " title=" ' .  get_the_title() .' " class="overlay"></a>';
-
-		echo '</div>';
-		
-		echo '<div class="entry">';
-
-		echo '<h3><a href=" ' . get_permalink() . ' "> ' . get_the_title() . '</a></h3>';
-
-		echo '<span class="date"> <i class="fa fa-clock-o"></i> ' . get_the_time(get_option('date_format')) .'</span>';
-		
-		echo '<div class="entry-content">' . wp_trim_words( $content , '27' ) . '</div>';
-
-		echo '<div class="read-more">';
-
-		echo '<a href="' . get_permalink() . ' " class="btn read-more-btn">View Article</a>';
-
-		echo '</div>';
-
-		echo '</div></div>';
-
-		endwhile;
-	    wp_reset_postdata();
+	endwhile;
+	wp_reset_postdata();
 	endif;
-		
-		echo '</div></div>';
 
-$output = ob_get_clean();
+	echo '</div></div>';
 
-return $output;
-
+	$output = ob_get_clean();
+	return $output;
 }
 add_shortcode('recent_posts','recent_post_slider');
+
+
 /**
  * Shortcode: Recent Post Slider
  */
+function member_logo_slider($atts, $content = null){
+	ob_start();
+	echo '<div class="members-logo row"> <div id="logo-slider" class="owl-carousel">';
+	if( have_rows('members_logo', 'option') ):
+		while ( have_rows('members_logo', 'option') ) : the_row();
+	$logo_url = get_sub_field('logo');
+	$company_link = get_sub_field('link');
 
+	echo '<div class="thumbnail thumbnail-hover">';
+	echo '<img class="img-responsive" src=" ' . $logo_url . '">';
+	echo '<a href=" ' . $company_link .' " " title=" ' .  $company_link .' " class="link-full"></a>';
+	echo '</div>';
+
+
+
+	endwhile;
+	else :
+		echo '<div class="col-xs-12">Members Logo Slider not found! <be> please add some logo in theme setting page</div>';
+	endif;
+	echo '</div></div>';
+	$output = ob_get_clean();
+	return $output;
+}
+add_shortcode('members_logo','member_logo_slider');
 
 
 /**
@@ -270,39 +280,39 @@ add_shortcode('recent_posts','recent_post_slider');
  */
 function pagination($pages = '', $range = 4)
 {  
-     $showitems = ($range * 2)+1;  
- 
-     global $paged;
-     if(empty($paged)) $paged = 1;
- 
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }   
- 
-     if(1 != $pages)
-     {
-         echo "<div class=\"pagination\"><span>Page ".$paged." of ".$pages."</span>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
- 
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
-             }
-         }
- 
-         if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";  
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
-         echo "</div>\n";
-     }
+	$showitems = ($range * 2)+1;  
+
+	global $paged;
+	if(empty($paged)) $paged = 1;
+
+	if($pages == '')
+	{
+		global $wp_query;
+		$pages = $wp_query->max_num_pages;
+		if(!$pages)
+		{
+			$pages = 1;
+		}
+	}   
+
+	if(1 != $pages)
+	{
+		echo "<div class=\"pagination\"><span>Page ".$paged." of ".$pages."</span>";
+		if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
+		if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
+
+		for ($i=1; $i <= $pages; $i++)
+		{
+			if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+			{
+				echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+			}
+		}
+
+		if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";  
+		if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
+		echo "</div>\n";
+	}
 }
 
 
@@ -312,7 +322,7 @@ function pagination($pages = '', $range = 4)
 function tinymce_settings( $settings ) {
 
     // html elements being stripped
-    $settings['extended_valid_elements'] = 'div[*],article[*]';
+	$settings['extended_valid_elements'] = 'div[*],article[*]';
 
     // only html elements to keep
     //$settings['valid_elements'] = 'a,strong/b,div,h1,h2,h3,section';
@@ -322,15 +332,15 @@ function tinymce_settings( $settings ) {
 	//$settings['paste_word_valid_elements'] = $opts;
 
     // don't remove line breaks
-    $settings['remove_linebreaks'] = false;
+	$settings['remove_linebreaks'] = false;
 
-    $settings['allow_html_in_named_anchor'] = true;
+	$settings['allow_html_in_named_anchor'] = true;
 
     // convert newline characters to BR
-    $settings['convert_newlines_to_brs'] = true;
+	$settings['convert_newlines_to_brs'] = true;
 
     // don't remove redundant BR
-    $settings['remove_redundant_brs'] = false;
+	$settings['remove_redundant_brs'] = false;
 
 	// only html elements to keep
 	//$settings['wpautop'] = false;
@@ -355,22 +365,22 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
 		'page_title' 	=> 'Lighthouse General Settings',
 		'menu_title'	=> 'Theme Settings',
-		'menu_slug' 	=> 'theme-general-settings',
+		'menu_slug' 	=> 'lighthouse-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
-	));
+		));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Header Settings',
 		'menu_title'	=> 'Header',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+		'parent_slug'	=> 'lighthouse-general-settings',
+		));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Footer Settings',
 		'menu_title'	=> 'Footer',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+		'parent_slug'	=> 'lighthouse-general-settings',
+		));
 }
 
 /**

@@ -16956,6 +16956,57 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
   margin-top: 1.25em;
 }
 
+.member-logo {
+  padding: 1.875em 45px 2.5em;
+  background: #ffffff;
+}
+.member-logo .owl-buttons div {
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 42px;
+  top: 50%;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 500ms ease;
+     -moz-transition: all 500ms ease;
+       -o-transition: all 500ms ease;
+          transition: all 500ms ease;
+  background: url(../images/sprite.png);
+  opacity: 1;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 400;
+}
+.member-logo .owl-buttons div i {
+  display: none;
+}
+.member-logo .owl-buttons .owl-prev {
+  left: -25px !important;
+  background-position: 0 -176px;
+}
+.member-logo .owl-buttons .owl-next {
+  right: -25px !important;
+  background-position: 0 -228px;
+}
+
+.link-full {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 500ms ease-in-out;
+     -moz-transition: opacity 500ms ease-in-out;
+       -o-transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out;
+}
+
 .fc-blue {
   color: #236fb6 !important;
 }
@@ -17121,6 +17172,7 @@ body.page-template-page-home .site-content {
   margin-top: 80px;
   border-top: 3px solid #006AA7;
   border-bottom: 3px solid #006AA7;
+  background-color: #ffffff;
 }
 .block-link > div > div {
   padding: 0;
@@ -17234,6 +17286,10 @@ body.page-template-page-home .site-content {
 .block-link .block-img:hover .block-overlay {
   opacity: .4;
   filter: alpha(opacity=40);
+}
+.block-link .member-logo h4 {
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 .recent-posts {

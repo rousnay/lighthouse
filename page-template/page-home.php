@@ -187,6 +187,16 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+<div class="container member-logo">
+	<div class="row">
+		<div class="col-xs-12">
+		<h4>Members of the following groups, see how we already work with you:</h4>
+
+		<?php echo do_shortcode( '[members_logo]') ?>
+		</div>
+	</div>
+</div>
+	
 </section>
 
 <section class="container recent-posts">

@@ -13,6 +13,50 @@
 		margin-top: 1.25em;
 	}
 }
+//logo slider
+.member-logo {
+    padding: 1.875em 45px 2.5em;
+    background: #ffffff;
+
+    .owl-buttons {
+    	div {
+		    position: absolute;
+		    display: block;
+		    width: 22px;
+		    height: 42px;
+		    top: 50%;
+		    margin: 0;
+		    transform: translateY(-50%);
+		    transition: all 500ms ease;
+		    background: url(../images/sprite.png);
+		    opacity: 1;
+		    text-align: center;
+		    font-size: 55px;
+		    font-weight: 400;
+		    i{
+		    	display: none;
+		    }
+		}
+		.owl-prev {
+		    left: -25px !important;
+		    background-position: 0 -176px;
+		}
+		.owl-next {
+		    right: -25px !important;
+		    background-position: 0 -228px;
+		}
+	}
+}
+//absolute link
+.link-full{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 500ms ease-in-out;
+}
 .fc-blue{
 	color:#236fb6!important;
 }

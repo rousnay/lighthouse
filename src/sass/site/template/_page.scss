@@ -82,6 +82,7 @@ body.page-template-page-home{
 	margin-top: 80px;
     border-top: 3px solid #006AA7;
     border-bottom: 3px solid #006AA7;
+    background-color: #ffffff;
 
 	&> div > div {
 		padding:0;
@@ -191,6 +192,10 @@ body.page-template-page-home{
 			}
 
 		}
+	}
+	.member-logo h4 {
+	    text-align: center;
+	    padding-bottom: 2em;
 	}
 
 }

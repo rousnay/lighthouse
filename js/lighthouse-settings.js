@@ -134,6 +134,19 @@
 		items : 3
 	});
 
+	$("#logo-slider").owlCarousel({
+		items : 15,
+		navigation : true,
+		itemsDesktop : [1199,12],
+	    itemsDesktopSmall : [980,10],
+	    itemsTablet: [768,8],
+	    itemsTabletSmall: [600,6],
+	    itemsMobile : [400,4],
+	    singleItem : false,
+	    itemsScaleUp : false,
+	    navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+	});
+
 	//
 	document.addEventListener("touchstart", function(){}, true);
 
