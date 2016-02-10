@@ -1,4 +1,13 @@
 <!-- Home -->
+<div class="container full-width">
+	<div class="row">
+		<main id="main" class="site-main" role="main">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="sections">
+					<?php //the_content(); ?>
+
+
+
 <section class="slider">
 <div class="row">
 <div class="col-xs-12">
@@ -26,7 +35,7 @@
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-edit"></div>
+				<div class="icomoon icon-edit"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Auto Enrolment</h3> 
@@ -40,7 +49,7 @@
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-key"></div>
+				<div class="icomoon icon-key"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Mortgages</h3> 
@@ -54,7 +63,7 @@
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-shield"></div>
+				<div class="icomoon icon-shield"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Life Insurance</h3> 
@@ -68,7 +77,7 @@
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-document"></div>
+				<div class="icomoon icon-document"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Pensions</h3> 
@@ -82,7 +91,7 @@
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-bargraph"></div>
+				<div class="icomoon icon-bargraph"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Investments</h3> 
@@ -96,7 +105,7 @@
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-wallet"></div>
+				<div class="icomoon icon-wallet"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Wealth Management</h3> 
@@ -171,6 +180,16 @@
 			</div>
 		</div>
 	</div>
+<div class="container member-logo">
+	<div class="row">
+		<div class="col-xs-12">
+		<h4>Members of the following groups, see how we already work with you:</h4>
+
+		<?php echo do_shortcode( '[members_logo]') ?>
+		</div>
+	</div>
+</div>
+	
 </section>
 
 <section class="container recent-posts">
