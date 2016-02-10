@@ -42,7 +42,7 @@ get_header(); ?>
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-edit"></div>
+				<div class="icomoon icon-edit"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Auto Enrolment</h3> 
@@ -56,7 +56,7 @@ get_header(); ?>
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-key"></div>
+				<div class="icomoon icon-key"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Mortgages</h3> 
@@ -70,7 +70,7 @@ get_header(); ?>
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-shield"></div>
+				<div class="icomoon icon-shield"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Life Insurance</h3> 
@@ -84,7 +84,7 @@ get_header(); ?>
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-document"></div>
+				<div class="icomoon icon-document"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Pensions</h3> 
@@ -98,7 +98,7 @@ get_header(); ?>
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-bargraph"></div>
+				<div class="icomoon icon-bargraph"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Investments</h3> 
@@ -112,7 +112,7 @@ get_header(); ?>
 	<div class="box-link">
 		<div class="box-holder">
 			<div class="box-icon">
-				<div class="icon-wallet"></div>
+				<div class="icomoon icon-wallet"></div>
 			</div>
 			<div class="box-text">
 				<h3 class="box-title">Wealth Management</h3> 

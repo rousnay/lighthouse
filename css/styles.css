@@ -11570,7 +11570,7 @@ you can use the generic selector below, but it's slower:
   font-weight: normal;
   font-style: normal;
 }
-[class^="icon-"], [class*=" icon-"] {
+.icomoon {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
