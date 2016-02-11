@@ -156,6 +156,8 @@
 	******************************/
     $('#recent-posts .entry').matchHeight();
 
+    $('.about-link .about-block').matchHeight();
+
 })(jQuery);
 
 

@@ -200,6 +200,96 @@ body.page-template-page-home{
 
 }
 
+.get-touch {
+    background-color: #006AA7;
+    text-align: center;
+    padding: 3em 0 3.5em;
+    h1 {
+	    color: #ffffff;
+	    margin-bottom: 1em;
+	}
+	a{
+		background-color: #ffffff ;
+	    color: #222;
+	    padding-top: .82em;
+	    padding-bottom: .82em;
+	    font-size: 0.93em;
+	    border-radius: 50px;
+	    transition: color ease 500ms;
+	    &:hover{
+	    	color: #006AA7;
+	    }
+	    span{
+	    	padding-left: 30px ;
+		    padding-right: 30px;
+		    font-family: Montserrat ;
+	    }
+	}
+}
+.about-link{
+	background-color: #1C7AAB;
+	.block-overlay {
+	    position: absolute;
+	    display: block;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #000;
+	    filter: alpha(opacity=20);
+	    opacity: .2;
+	    z-index: 22;
+	    transition: opacity ease 300ms;
+	}
+	.about-advice {
+		&:hover{
+			.block-overlay {
+				filter: alpha(opacity=50);
+			    opacity: .5;
+			}
+		} 
+	}
+	.about-lighthouse {
+	    background-image: url("http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2015/12/contact.jpg");
+	    background-position: center ;
+	    background-repeat: no-repeat ;
+	    background-size: cover ;
+	    &:hover{
+			.block-overlay {
+				filter: alpha(opacity=50);
+			    opacity: .5;
+			}
+		}
+	}
+	.about-block {
+	    padding: 4.5em 2em 5em;
+	    position: relative;
+	    z-index: 33;
+	    h1, p {
+	    	color: #ffffff;
+	    }
+	    a{
+			background-color: transparent;
+		    color: #ffffff;
+		    padding-top: .82em;
+		    padding-bottom: .82em;
+		    font-size: 0.93em;
+		    border-radius: 50px;
+	        border: 2px solid #ffffff;
+		    transition: color ease 500ms, background-color ease 500ms;
+		    &:hover{
+		    	color: #000;
+		    	background-color:#ffffff;
+		    }
+		    span{
+		    	padding-left: 30px ;
+			    padding-right: 30px;
+			    font-family: Montserrat ;
+		    }
+		}
+	}
+}
+
 .recent-posts{
 	margin-bottom: 50px;
 }

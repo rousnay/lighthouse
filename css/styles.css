@@ -15752,7 +15752,6 @@ h6, .h6 {
 
 p {
   margin-bottom: 1.5em;
-  font-size: 1em;
 }
 
 dfn, cite, em, i {
@@ -16965,7 +16964,7 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
   display: block;
   width: 22px;
   height: 42px;
-  top: 50%;
+  top: 45%;
   margin: 0;
   -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
@@ -17290,6 +17289,101 @@ body.page-template-page-home .site-content {
 .block-link .member-logo h4 {
   text-align: center;
   padding-bottom: 2em;
+}
+
+.get-touch {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 3em 0 3.5em;
+}
+.get-touch h1 {
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+.get-touch a {
+  background-color: #ffffff;
+  color: #222;
+  padding-top: .82em;
+  padding-bottom: .82em;
+  font-size: 0.93em;
+  border-radius: 50px;
+  -webkit-transition: color ease 500ms;
+     -moz-transition: color ease 500ms;
+       -o-transition: color ease 500ms;
+          transition: color ease 500ms;
+}
+.get-touch a:hover {
+  color: #006AA7;
+}
+.get-touch a span {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Montserrat;
+}
+
+.about-link {
+  background-color: #1C7AAB;
+}
+.about-link .block-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=20);
+  opacity: .2;
+  z-index: 22;
+  -webkit-transition: opacity ease 300ms;
+     -moz-transition: opacity ease 300ms;
+       -o-transition: opacity ease 300ms;
+          transition: opacity ease 300ms;
+}
+.about-link .about-advice:hover .block-overlay {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.about-link .about-lighthouse {
+  background-image: url("http://genuineimitation.co.uk/lighthouse/wp-content/uploads/2015/12/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.about-link .about-lighthouse:hover .block-overlay {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.about-link .about-block {
+  padding: 4.5em 2em 5em;
+  position: relative;
+  z-index: 33;
+}
+.about-link .about-block h1, .about-link .about-block p {
+  color: #ffffff;
+}
+.about-link .about-block a {
+  background-color: transparent;
+  color: #ffffff;
+  padding-top: .82em;
+  padding-bottom: .82em;
+  font-size: 0.93em;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  -webkit-transition: color ease 500ms, background-color ease 500ms;
+     -moz-transition: color ease 500ms, background-color ease 500ms;
+       -o-transition: color ease 500ms, background-color ease 500ms;
+          transition: color ease 500ms, background-color ease 500ms;
+}
+.about-link .about-block a:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+.about-link .about-block a span {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Montserrat;
 }
 
 .recent-posts {
