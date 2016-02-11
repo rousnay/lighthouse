@@ -220,7 +220,7 @@ get_header(); ?>
 							<div class="col-xs-12">
 								<h1>Get Trusted, Expert Financial Advice</h1>
 								<a href="http://genuineimitation.co.uk/lighthouse/get-advice-now/">
-									<span>Get in Touch</span>
+									<span class="tag-support">Get in Touch</span>
 								</a>
 							</div>
 						</div>
@@ -232,9 +232,9 @@ get_header(); ?>
 							<div class="block-overlay"></div>
 							<div class="about-block">
 									<h1>Why seek Professional Advice?</h1>
-									<p>With financial security comes peace of mind and the space to do the things we enjoy in life. Yet, wealth is fundamental in this equation. This is why you consider seeking professional financial advice.</p>
+									<p class="tag-support">With financial security comes peace of mind and the space to do the things we enjoy in life. Yet, wealth is fundamental in this equation. This is why you consider seeking professional financial advice.</p>
 									<a href="http://genuineimitation.co.uk/lighthouse/get-advice-now/">
-										<span>Benefits of Expert Advice</span>
+										<span class="tag-support">Benefits of Expert Advice</span>
 									</a>
 							</div>
 							</div>
@@ -242,10 +242,10 @@ get_header(); ?>
 							<div class="block-overlay"></div>
 							<div class="about-block">
 									<h1>Who are Lighthouse</h1>
-									<p>
+									<p class="tag-support">
 									Lighthouse is one the UK’s most prestigious and diverse financial advice firms; profoundly interested in the security of your financial future and helping you make the most of your financial circumstances. </p>
 									<a href="http://genuineimitation.co.uk/lighthouse/about-lighthouse/">
-										<span>Find out more</span>
+										<span class="tag-support">Find out more</span>
 									</a>
 							</div>
 							</div>

@@ -75,15 +75,15 @@ function tinymce_settings( $settings ) {
 	//$settings['paste_word_valid_elements'] = $opts;
 
     // don't remove line breaks
-	$settings['remove_linebreaks'] = false;
+	//$settings['remove_linebreaks'] = false;
 
 	$settings['allow_html_in_named_anchor'] = true;
 
     // convert newline characters to BR
-	$settings['convert_newlines_to_brs'] = true;
+	//$settings['convert_newlines_to_brs'] = true;
 
     // don't remove redundant BR
-	$settings['remove_redundant_brs'] = false;
+	//$settings['remove_redundant_brs'] = false;
 
 	// only html elements to keep
 	//$settings['wpautop'] = false;

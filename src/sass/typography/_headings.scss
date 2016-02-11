@@ -3,9 +3,55 @@ h1, h2, h3, h4, h5, h6 {
 	color:$color_heading;
 	clear: both;
 }
-h1, .h1 { font-size: 2em; }
-h2, .h2 { font-size: 1.5em; }
-h3, .h3 { font-size: 1.17em; }
-h4, .h4 { font-size: 1em; }
-h5, .h5 { font-size: .83em; }
-h6, .h6 { font-size: .67em; }
+
+/*
+Default font size for ehading according to HTML 4 (16px = 1em)
+https://www.w3.org/TR/CSS21/sample.html
+*/
+// h1, .h1 { font-size: 32px;}
+// h2, .h2 { font-size: 24px;}
+// h3, .h3 { font-size: 18.72px;}
+// h4, .h4 { font-size: 16px;}
+// h5, .h5 { font-size: 13.28px;}
+// h6, .h6 { font-size: 10.72px;}
+
+// h1, .h1 { font-size: 2em;}
+// h2, .h2 { font-size: 1.5em;}
+// h3, .h3 { font-size: 1.17em;}
+// h4, .h4 { font-size: 1em;}
+// h5, .h5 { font-size: .83em;}
+// h6, .h6 { font-size: .67em;}
+
+/*
+Custom font size on copro theme (14px = 1em)
+*/
+// h1, .h1 { font-size: 36px; }
+// h2, .h2 { font-size: 26px; }
+// h3, .h3 { font-size: 24px; }
+// h4, .h4 { font-size: 18px; }
+// h5, .h5 { font-size: 13px; }
+// h6, .h6 { font-size: 12px; }
+
+// h1, .h1 { font-size: 2.57em;}
+// h2, .h2 { font-size: 1.857em;}
+// h3, .h3 { font-size: 1.714em;}
+// h4, .h4 { font-size: 1.286em;}
+// h5, .h5 { font-size: .93em;}
+// h6, .h6 { font-size: .857em;}
+
+/*
+Custom font size for heading (14px = 1em)
+*/
+// h1, .h1 { font-size: 32px;}
+// h2, .h2 { font-size: 24px;}
+// h3, .h3 { font-size: 18.72px;}
+// h4, .h4 { font-size: 16px;}
+// h5, .h5 { font-size: 13.28px;}
+// h6, .h6 { font-size: 10.72px;}
+
+h1, .h1 { font-size: 2.286em; }
+h2, .h2 { font-size: 1.714em; }
+h3, .h3 { font-size: 1.337em; }
+h4, .h4 { font-size: 1.142em; }
+h5, .h5 { font-size: 0.948em; }
+h6, .h6 { font-size: 0.765em; }

@@ -36,8 +36,8 @@
 								margin: 20px 0;
 								.read-more-btn {
 								    font-family: "Raleway", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-								    font-size: 0.75em;
-								    line-height: 1em;
+								    font-size: 0.857em;
+								    line-height: 1.14286em;
 								    font-weight: 600;
 								    letter-spacing: 0.3px;
 								    text-transform: uppercase;
@@ -45,7 +45,7 @@
 								    background-color: #1C7AAB ;
 								    border-color: #1C7AAB ;
 							        border-radius: 0;
-								    padding: 13px 21px;
+								    padding: 0.93em 1.6em;
 								    position: relative;
 								    &:hover {
 										background-color: #e6e6e6!important;
@@ -66,7 +66,7 @@
 		    margin: 15px 0 35px;
     		    .widget-title {
 			    color: #292d33;
-			    font-size: 1.5em;
+			    font-size: 1.714em;
 			    text-transform: capitalize;
 			    border-bottom: none;
 			    margin-bottom: 0;
@@ -75,7 +75,7 @@
 				    border-bottom: none;
 				    a{
 					    color: #292d33;
-					    font-size: 1em;
+					    font-size: 1.14286em;
 					    &:hover {
 						    color: #2090cb;
 						}
@@ -89,7 +89,7 @@
 .page-template-blog{
 	.entry-content {
 	    font-size: 1em;
-	    margin-top: .5em;
+	    margin-top: .571em;
 	}
 }
 .single-post{
@@ -102,7 +102,7 @@
     		padding: 1.875em 0;
 		    .entry-title {
 			    color: #000;
-			    font-size: 2.25em;
+			    font-size: 2.571em;
 			    float: left;
 			}
 			.back-to{
@@ -113,11 +113,11 @@
 				span{
 					color: #9B9B9B;
 					margin-right: 30px;
-					font-size: 1.56em;
+					font-size: 1.782em;
 				}
 				a{
 					color: #000;
-					font-size: 1.25em;
+					font-size: 1.428em;
 				}
 
 			}
@@ -173,7 +173,7 @@
     padding: 10px 0 5px!important;
 }
 	.entry-title {
-    font-size: 1.25em;
+    font-size: 1.428em;
         line-height: 40px;
 }
 	.entry-inner {

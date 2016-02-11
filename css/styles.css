@@ -15694,8 +15694,7 @@ Version: 0.1.0
 # Typography
 --------------------------------------------------------------*/
 html {
-  font-size: 100%;
-  font-size: 1rem;
+  font-size: 14px;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   -webkit-tap-highlight-color: transparent;
@@ -15703,6 +15702,8 @@ html {
 
 body {
   font-family: "Questrial", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-size: 1rem;
   line-height: 1.5;
   color: #999999;
   -webkit-font-smoothing: none;
@@ -15726,28 +15727,38 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+/*
+Default font size for ehading according to HTML 4 (16px = 1em)
+https://www.w3.org/TR/CSS21/sample.html
+*/
+/*
+Custom font size on copro theme (14px = 1em)
+*/
+/*
+Custom font size for heading (14px = 1em)
+*/
 h1, .h1 {
-  font-size: 2em;
+  font-size: 2.286em;
 }
 
 h2, .h2 {
-  font-size: 1.5em;
+  font-size: 1.714em;
 }
 
 h3, .h3 {
-  font-size: 1.17em;
+  font-size: 1.337em;
 }
 
 h4, .h4 {
-  font-size: 1em;
+  font-size: 1.142em;
 }
 
 h5, .h5 {
-  font-size: .83em;
+  font-size: 0.948em;
 }
 
 h6, .h6 {
-  font-size: .67em;
+  font-size: 0.765em;
 }
 
 p {
@@ -16842,7 +16853,7 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
   color: #ffffff;
   border: 2px solid #363636 !important;
   padding: 10px 15px;
-  font-size: 0.8125em;
+  font-size: 0.928em;
   color: #7f7f7f;
   background: transparent !important;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16855,7 +16866,7 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
 }
 .widget .widget-title {
   font-weight: 400;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 1.25;
   color: #ffffff;
   text-transform: uppercase;
@@ -16878,7 +16889,7 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
 .widget li i {
   margin-right: 4px;
   display: inline-block;
-  width: 1.5em;
+  width: 1.714em;
   text-align: center;
 }
 .widget .menu li {
@@ -16906,15 +16917,15 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
   vertical-align: middle;
 }
 .widget.widget_recent_entries li div a {
-  font-size: 13px;
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.714em;
   margin-bottom: 3px;
   font-weight: 500;
   padding-top: 0;
 }
 .widget.widget_recent_entries li div .post-date {
-  font-size: 0.6875em;
-  line-height: 1.4em;
+  font-size: 0.785em;
+  line-height: 1.6em;
   display: block;
   color: #7f7f7f;
 }
@@ -16948,15 +16959,15 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
 }
 .content-header h1 {
   color: #000;
-  font-size: 2.25em;
+  font-size: 2.571em;
 }
 .content-header h4 {
   color: #999999;
-  margin-top: 1.25em;
+  margin-top: 1.428em;
 }
 
 .member-logo {
-  padding: 1.875em 45px 2.5em;
+  padding: 2.142em 45px 2.571em;
   background: #ffffff;
 }
 .member-logo .owl-buttons div {
@@ -17123,7 +17134,7 @@ body.page-template-page-home .site-content {
           transition: background-color ease 500ms;
 }
 .box-link .box-icon div {
-  font-size: 3.5em;
+  font-size: 4em;
   color: #236fb6 !important;
   -webkit-transition: color ease 500ms;
      -moz-transition: color ease 500ms;
@@ -17263,7 +17274,7 @@ body.page-template-page-home .site-content {
      -moz-transition: border-color ease 300ms,background ease 300ms;
        -o-transition: border-color ease 300ms,background ease 300ms;
           transition: border-color ease 300ms,background ease 300ms;
-  font-size: 0.875em;
+  font-size: 1em;
   padding: 10px 30px;
   line-height: 1.428571429;
   background: 0 0;
@@ -17288,24 +17299,24 @@ body.page-template-page-home .site-content {
 }
 .block-link .member-logo h4 {
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 2.285em;
 }
 
 .get-touch {
   background-color: #006AA7;
   text-align: center;
-  padding: 3em 0 3.5em;
+  padding: 3.428em 0 4em;
 }
 .get-touch h1 {
   color: #ffffff;
-  margin-bottom: 1em;
+  margin-bottom: 1.14586em;
 }
 .get-touch a {
   background-color: #ffffff;
   color: #222;
-  padding-top: .82em;
-  padding-bottom: .82em;
-  font-size: 0.93em;
+  padding-top: 0.937em;
+  padding-bottom: .937em;
+  font-size: 1.062em;
   border-radius: 50px;
   -webkit-transition: color ease 500ms;
      -moz-transition: color ease 500ms;
@@ -17356,7 +17367,7 @@ body.page-template-page-home .site-content {
   opacity: .5;
 }
 .about-link .about-block {
-  padding: 4.5em 2em 5em;
+  padding: 7em 3em 10em;
   position: relative;
   z-index: 33;
 }
@@ -17366,9 +17377,9 @@ body.page-template-page-home .site-content {
 .about-link .about-block a {
   background-color: transparent;
   color: #ffffff;
-  padding-top: .82em;
-  padding-bottom: .82em;
-  font-size: 0.93em;
+  padding-top: .937em;
+  padding-bottom: .937em;
+  font-size: 1.062em;
   border-radius: 50px;
   border: 2px solid #ffffff;
   -webkit-transition: color ease 500ms, background-color ease 500ms;
@@ -17419,13 +17430,13 @@ body.page-template-page-home .site-content {
   color: #ffffff;
 }
 .banner .content-wrapper h1 {
-  font-size: 3.437em;
+  font-size: 3.928em;
 }
 .banner .content-wrapper h2 {
-  font-size: 2.8em;
+  font-size: 3.2em;
 }
 .banner .content-wrapper p {
-  font-size: 1.1875em;
+  font-size: 1.357em;
 }
 
 .content-text h3, .content-text p {
@@ -17470,7 +17481,7 @@ body.page-template-page-home .site-content {
      -moz-transition: border-color ease 500ms,background ease 500ms,color ease 500ms;
        -o-transition: border-color ease 500ms,background ease 500ms,color ease 500ms;
           transition: border-color ease 500ms,background ease 500ms,color ease 500ms;
-  font-size: 1em;
+  font-size: 1.14286em;
   font-weight: 600;
   line-height: 1.428571429;
   padding: 0.75em 0;
@@ -17537,7 +17548,7 @@ body.page-template-page-home .site-content {
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  line-height: .8em;
+  line-height: .914em;
 }
 
 /*--------------------------------------------------------------
@@ -17587,8 +17598,8 @@ body.page-template-page-home .site-content {
 }
 .page-template-blog .site-content .content-listing article .entry-inner .read-more .read-more-btn, .single-post .site-content .content-listing article .entry-inner .read-more .read-more-btn, .search-results .site-content .content-listing article .entry-inner .read-more .read-more-btn {
   font-family: "Raleway", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.75em;
-  line-height: 1em;
+  font-size: 0.857em;
+  line-height: 1.14286em;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-transform: uppercase;
@@ -17596,7 +17607,7 @@ body.page-template-page-home .site-content {
   background-color: #1C7AAB;
   border-color: #1C7AAB;
   border-radius: 0;
-  padding: 13px 21px;
+  padding: 0.93em 1.6em;
   position: relative;
 }
 .page-template-blog .site-content .content-listing article .entry-inner .read-more .read-more-btn:hover, .single-post .site-content .content-listing article .entry-inner .read-more .read-more-btn:hover, .search-results .site-content .content-listing article .entry-inner .read-more .read-more-btn:hover {
@@ -17614,7 +17625,7 @@ body.page-template-page-home .site-content {
 }
 .page-template-blog .site-content .sidebar .widget .widget-title, .single-post .site-content .sidebar .widget .widget-title, .search-results .site-content .sidebar .widget .widget-title {
   color: #292d33;
-  font-size: 1.5em;
+  font-size: 1.714em;
   text-transform: capitalize;
   border-bottom: none;
   margin-bottom: 0;
@@ -17624,7 +17635,7 @@ body.page-template-page-home .site-content {
 }
 .page-template-blog .site-content .sidebar .widget.widget_recent_entries li a, .single-post .site-content .sidebar .widget.widget_recent_entries li a, .search-results .site-content .sidebar .widget.widget_recent_entries li a {
   color: #292d33;
-  font-size: 1em;
+  font-size: 1.14286em;
 }
 .page-template-blog .site-content .sidebar .widget.widget_recent_entries li a:hover, .single-post .site-content .sidebar .widget.widget_recent_entries li a:hover, .search-results .site-content .sidebar .widget.widget_recent_entries li a:hover {
   color: #2090cb;
@@ -17632,7 +17643,7 @@ body.page-template-page-home .site-content {
 
 .page-template-blog .entry-content {
   font-size: 1em;
-  margin-top: .5em;
+  margin-top: .571em;
 }
 
 .single-post .site-content {
@@ -17646,7 +17657,7 @@ body.page-template-page-home .site-content {
 }
 .single-post .site-content .title-wrapper .entry-title {
   color: #000;
-  font-size: 2.25em;
+  font-size: 2.571em;
   float: left;
 }
 .single-post .site-content .title-wrapper .back-to {
@@ -17658,11 +17669,11 @@ body.page-template-page-home .site-content {
 .single-post .site-content .title-wrapper .back-to span {
   color: #9B9B9B;
   margin-right: 30px;
-  font-size: 1.56em;
+  font-size: 1.782em;
 }
 .single-post .site-content .title-wrapper .back-to a {
   color: #000;
-  font-size: 1.25em;
+  font-size: 1.428em;
 }
 .single-post .site-content #main {
   margin-top: 25px;
@@ -17713,7 +17724,7 @@ body.page-template-page-home .site-content {
   }
 
   .entry-title {
-    font-size: 1.25em;
+    font-size: 1.428em;
     line-height: 40px;
   }
 
@@ -17757,23 +17768,23 @@ body.page-template-page-home .site-content {
   margin-bottom: 40px;
 }
 .post-slider #related-posts h2 {
-  font-size: 1.5em;
+  font-size: 1.714em;
   margin: 35px 0 20px 15px;
 }
 .post-slider #related-posts .fa-clock-o {
   color: #7f7f7f;
 }
 .post-slider #related-posts h3 {
-  font-size: 1em;
+  font-size: 1.14286em;
   line-height: 1.3;
   font-weight: 400;
-  margin: 20px 0 5px;
+  margin: 1em 0 0.5em;
 }
 .post-slider #related-posts h3 a {
   color: #222;
 }
 .post-slider #related-posts .date {
-  font-size: 0.875em;
+  font-size: 1em;
 }
 .post-slider #related-posts .entry-content {
   margin-top: 10px;
@@ -17783,7 +17794,7 @@ body.page-template-page-home .site-content {
   padding: 20px;
 }
 .post-slider #recent-posts .entry h3 {
-  font-size: 1.25em;
+  font-size: 1.428em;
   line-height: 1.3;
   font-weight: 400;
   margin: 0 0 5px;
@@ -17796,15 +17807,15 @@ body.page-template-page-home .site-content {
 }
 .post-slider #recent-posts .entry .entry-content {
   margin-top: 10px;
-  font-size: 0.875em;
+  font-size: 1em;
 }
 .post-slider #recent-posts .entry .read-more {
   margin: 13px 0 0;
 }
 .post-slider #recent-posts .entry .read-more .read-more-btn {
   font-family: "Raleway", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.75em;
-  line-height: 1em;
+  font-size: 0.857em;
+  line-height: 1.14286em;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-transform: uppercase;
@@ -17857,7 +17868,7 @@ body.page-template-page-home .site-content {
   border: 1px solid transparent;
   display: block;
   margin: 30px 0;
-  padding: 1em 1em 1em 4em;
+  padding: 1.14286em 1.14286em 1.14286em 4.571em;
   position: relative;
   font-size: 1em;
   -webkit-box-sizing: border-box;
@@ -17870,7 +17881,7 @@ body.page-template-page-home .site-content {
 .disclaimer-box .disclaimer-icon {
   color: #999999;
   bottom: 0;
-  font-size: 1em;
+  font-size: 1.14286em;
   font-style: normal;
   font-weight: normal;
   left: 0;
@@ -17879,7 +17890,6 @@ body.page-template-page-home .site-content {
   width: 4em;
 }
 .disclaimer-box .disclaimer-icon i {
-  font-size: 1.7em;
   line-height: 1;
   left: 50%;
   position: absolute;
