@@ -1,7 +1,7 @@
 <?php 
 
 // Hide ACF field group menu item
-add_filter('acf/settings/show_admin', '__return_false');
+//add_filter('acf/settings/show_admin', '__return_false');
 
 // Customize ACF path
 add_filter('acf/settings/path', 'my_acf_settings_path');
