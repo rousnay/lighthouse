@@ -229,33 +229,33 @@ get_header(); ?>
 					<section class="about-link">
 						<div class="row">
 							<div class="col-xs-12 col-sm-6 about-advice">
-							<div class="block-overlay"></div>
-							<div class="about-block">
+								<div class="block-overlay"></div>
+								<div class="about-block">
 									<h1>Why seek Professional Advice?</h1>
 									<p class="tag-support">With financial security comes peace of mind and the space to do the things we enjoy in life. Yet, wealth is fundamental in this equation. This is why you consider seeking professional financial advice.</p>
 									<a href="http://genuineimitation.co.uk/lighthouse/get-advice-now/">
 										<span class="tag-support">Benefits of Expert Advice</span>
 									</a>
-							</div>
+								</div>
 							</div>
 							<div class="col-xs-12 col-sm-6 about-lighthouse">
-							<div class="block-overlay"></div>
-							<div class="about-block">
+								<div class="block-overlay"></div>
+								<div class="about-block">
 									<h1>Who are Lighthouse</h1>
 									<p class="tag-support">
-									Lighthouse is one the UK’s most prestigious and diverse financial advice firms; profoundly interested in the security of your financial future and helping you make the most of your financial circumstances. </p>
-									<a href="http://genuineimitation.co.uk/lighthouse/about-lighthouse/">
-										<span class="tag-support">Find out more</span>
-									</a>
+										Lighthouse is one the UK’s most prestigious and diverse financial advice firms; profoundly interested in the security of your financial future and helping you make the most of your financial circumstances. </p>
+										<a href="http://genuineimitation.co.uk/lighthouse/about-lighthouse/">
+											<span class="tag-support">Find out more</span>
+										</a>
+									</div>
+								</div>
 							</div>
-							</div>
-						</div>
-					</section>
+						</section>
 
-				</div>
-			<?php endwhile; // end of the loop. ?>
-		</main><!-- #main -->
-	</div><!-- .row -->
-</div><!-- .container -->
+					</div>
+				<?php endwhile; // end of the loop. ?>
+			</main><!-- #main -->
+		</div><!-- .row -->
+	</div><!-- .container -->
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
