@@ -2,7 +2,7 @@ node_modules
  
 src/components
 src/lib
-assets
+_assets
 .sass-cache
 tmp
 .npm-debug.log
