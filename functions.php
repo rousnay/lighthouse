@@ -123,6 +123,8 @@ function lighthouse_scripts() {
 
 	wp_enqueue_style('lighthouse-google-fonts-raleway', 'https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,600,100');
 
+	wp_enqueue_style('lighthouse-google-fonts-montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 	wp_enqueue_script( 'lighthouse-classList-js', 'https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js', array('jquery'), '');
 
 	wp_enqueue_script( 'lighthouse-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
