@@ -117,7 +117,7 @@ add_action( 'after_setup_theme', 'lighthouse_content_width', 0 );
  */
 function lighthouse_scripts() {
 
-	wp_enqueue_style( 'lighthouse-style', get_stylesheet_uri() );<link href='' rel='stylesheet' type='text/css'>
+	wp_enqueue_style( 'lighthouse-style', get_stylesheet_uri() );
 
 	wp_enqueue_style('lighthouse-google-fonts-questrial', 'https://fonts.googleapis.com/css?family=Questrial');
 
