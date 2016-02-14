@@ -160,11 +160,36 @@ body.page-template-page-home{
 		&:hover{
 			.block-holder{
 				opacity: 0;
+				filter: alpha(opacity=0);
 
 			}
 			.block-holder-link{
 				opacity: 1;
+				filter: alpha(opacity=100);
 
+			}
+			.block-text a {
+			    display: inline-block;
+			    margin-bottom: 0;
+			    text-align: center;
+			    vertical-align: middle;
+			    cursor: pointer;
+			    transition: border-color ease 300ms,background ease 300ms;
+			    font-size: 1em;
+			    padding: 10px 30px;
+			    line-height: 1.428571429;
+			    background: 0 0;
+			    font-weight: 600;
+			    text-transform: uppercase;
+			    user-select: none;
+			    border-radius: 30px;
+			    color: #fff;
+			    border: 2px solid #fff;
+			    &:hover {
+				    background-color: #fff;
+				    color: #222;
+				    border-color: #fff;
+				}
 			}
 			.block-overlay{
 				opacity: .4;
@@ -179,33 +204,6 @@ body.page-template-page-home{
 	}
 
 }
-
-.block-img:hover{
-	.block-text a {
-	    display: inline-block;
-	    margin-bottom: 0;
-	    text-align: center;
-	    vertical-align: middle;
-	    cursor: pointer;
-	    transition: border-color ease 300ms,background ease 300ms;
-	    font-size: 1em;
-	    padding: 10px 30px;
-	    line-height: 1.428571429;
-	    background: 0 0;
-	    font-weight: 600;
-	    text-transform: uppercase;
-	    user-select: none;
-	    border-radius: 30px;
-	    color: #fff;
-	    border: 2px solid #fff;
-	    &:hover {
-		    background-color: #fff;
-		    color: #222;
-		    border-color: #fff;
-		}
-	}
-}
-
 
 .get-touch {
     background-color: #006AA7;
