@@ -11832,6 +11832,9 @@ button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle
   background-color: transparent !important;
 }
 
+#mm-menu .mm-menu__header {
+  background-color: #006AA7 !important;
+}
 #mm-menu #header-menu-left-id {
   margin-top: 15px;
 }
