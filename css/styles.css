@@ -12707,6 +12707,10 @@ body.page-template-page-home .site-content {
   background-color: #F7F9FA !important;
 }
 
+.slider-inner {
+  background-color: #ffffff;
+}
+
 .messages {
   text-align: center;
   background-color: #006AA7;
@@ -13935,6 +13939,10 @@ Visual Composer
 /***************
 Master Slider
 ***************/
+.master-slider a {
+  line-height: 1.15em !important;
+}
+
 /***************
 Ninja Forms
 ***************/
