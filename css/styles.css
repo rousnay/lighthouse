@@ -12515,6 +12515,159 @@ body.page-template-page-home .site-content {
 /*--------------------------------------------------------------
 ## Search Results
 --------------------------------------------------------------*/
+.search-results .site-content {
+  background-color: #ffffff;
+}
+.search-results .site-content .title-wrapper {
+  text-align: left;
+  background-color: #f7f7f7;
+  border-top: 0;
+}
+.search-results .site-content .title-wrapper .entry-title {
+  color: #000;
+  font-size: 36px;
+  float: left;
+}
+.search-results .site-content .title-wrapper .back-to {
+  float: left;
+  line-height: 90px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  color: #000;
+}
+.search-results .site-content .title-wrapper .back-to span {
+  color: #9B9B9B;
+  margin-right: 30px;
+  font-size: 25px;
+}
+.search-results .site-content .title-wrapper .back-to span.separator {
+  margin: 0 5px !important;
+  font-size: 19px !important;
+}
+.search-results .site-content .title-wrapper .back-to a {
+  color: #000;
+}
+.search-results .site-content h1.page-title {
+  margin: 20px 0 0;
+  font-size: 24px;
+}
+.search-results .site-content #main {
+  margin-top: 25px;
+}
+.search-results .site-content .blog-listing {
+  margin-top: 10px;
+}
+.search-results .site-content .blog-listing .post-img img {
+  width: 100%;
+}
+.search-results .site-content .blog-listing article {
+  background: transparent;
+}
+.search-results .site-content .sidebar {
+  background-color: transparent;
+}
+.search-results .site-content .edit-link {
+  display: none;
+}
+.search-results .site-content .entry-summary {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.search-results .site-content i.fa.fa-external-link {
+  font-size: 13px;
+}
+
+.search-inner-page form input[type="search"] {
+  border: 1px solid #e6e6e6;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px;
+  width: 200px;
+}
+.search-inner-page form input[type="search"]:hover, .search-inner-page form input[type="search"]:focus, .search-inner-page form input[type="search"]:active {
+  border-color: #1C7AAB;
+}
+.search-inner-page form button {
+  background-color: #e6e6e6 !important;
+  color: #999999 !important;
+  border: none !important;
+  outline: none !important;
+  padding: 17px;
+  font-size: 16px;
+  -webkit-transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+     -moz-transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+       -o-transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+          transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
+}
+.search-inner-page form button:hover, .search-inner-page form button:focus, .search-inner-page form button:active {
+  background-color: #1C7AAB !important;
+  color: #fff !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.search-results #main article {
+  display: none;
+}
+
+#showLess {
+  display: none;
+}
+
+.search-load {
+  float: right;
+  margin: 10px 0 30px;
+}
+.search-load > div {
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-left: 3px;
+  text-decoration: none;
+  width: auto;
+  color: #4c4c4c;
+  padding: 15px 20px;
+  background-color: #e6e6e6;
+  -webkit-transition: color .15s ease-in-out background-color .15s ease-in-out;
+     -moz-transition: color .15s ease-in-out background-color .15s ease-in-out;
+       -o-transition: color .15s ease-in-out background-color .15s ease-in-out;
+          transition: color .15s ease-in-out background-color .15s ease-in-out;
+}
+.search-load > div:hover {
+  color: #fff;
+  background-color: #1C7AAB;
+}
+
+.nav-links {
+  float: right;
+  margin: 10px 0 30px;
+}
+.nav-links > div {
+  display: block;
+  float: left;
+  margin-left: 3px;
+  text-decoration: none;
+  width: auto;
+}
+.nav-links > div a {
+  color: #4c4c4c;
+  padding: 15px 20px;
+  background-color: #e6e6e6;
+  -webkit-transition: color .15s ease-in-out background-color .15s ease-in-out;
+     -moz-transition: color .15s ease-in-out background-color .15s ease-in-out;
+       -o-transition: color .15s ease-in-out background-color .15s ease-in-out;
+          transition: color .15s ease-in-out background-color .15s ease-in-out;
+}
+.nav-links > div:hover a {
+  color: #fff;
+  background-color: #1C7AAB;
+}
+
+a.readmore {
+  white-space: nowrap;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
