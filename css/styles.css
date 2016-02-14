@@ -12987,7 +12987,16 @@ body.page-template-page-home .site-content {
 .block-link .block-img:hover .block-holder-link {
   opacity: 1;
 }
-.block-link .block-img:hover .block-text a {
+.block-link .block-img:hover .block-overlay {
+  opacity: .4;
+  filter: alpha(opacity=40);
+}
+.block-link .member-logo h4 {
+  text-align: center;
+  padding-bottom: 2.285em;
+}
+
+.block-img:hover .block-text a {
   display: inline-block;
   margin-bottom: 0;
   text-align: center;
@@ -13011,18 +13020,10 @@ body.page-template-page-home .site-content {
   color: #fff;
   border: 2px solid #fff;
 }
-.block-link .block-img:hover .block-text a:hover {
+.block-img:hover .block-text a:hover {
   background-color: #fff;
   color: #222;
   border-color: #fff;
-}
-.block-link .block-img:hover .block-overlay {
-  opacity: .4;
-  filter: alpha(opacity=40);
-}
-.block-link .member-logo h4 {
-  text-align: center;
-  padding-bottom: 2.285em;
 }
 
 .get-touch {
