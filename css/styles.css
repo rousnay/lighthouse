@@ -12847,6 +12847,9 @@ body.page-template-page-home .site-content {
   padding: 0;
   margin: 0;
 }
+.messages a {
+  color: #ffffff;
+}
 
 .boxes > div {
   padding: 0;

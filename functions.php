@@ -17,10 +17,15 @@ if ( ! function_exists( 'lighthouse_setup' ) ) :
  */
 function lighthouse_setup() {
     // This theme styles the visual editor to resemble the theme style.
-	$font_url = 'https://fonts.googleapis.com/css?family=Questrial';
+	$font_url_Questrial = 'https://fonts.googleapis.com/css?family=Questrial';
+
+	$font_url_Raleway = 'https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,600,100';
+
+	$font_url_Montserrat = 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
 	add_editor_style( 
 		array( 
-			'style.css', str_replace( ',', '%2C', $font_url )
+			'style.css', str_replace( ',', '%2C', $font_url_Questrial), str_replace( ',', '%2C', $font_url_Raleway), str_replace( ',', '%2C', $font_url_Montserrat)
 			) 
 		);
 	/*
