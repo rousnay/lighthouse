@@ -50,7 +50,7 @@ get_header(); ?>
 
 				</main><!-- #main -->
 
-				<div class="row disclaimer-box">
+<!-- 				<div class="row disclaimer-box">
 					<div class="disclaimer-icon"><i class="fa fa-info"></i></div>
 					<div id="disclaimer-text" class="readmore">Disclaimer: This article is for your general information and use only and is not intended to address your particular requirements. 
 					It should not be relied upon in its entirety. Although endeavours have been made to provide accurate and timely information, 
@@ -61,7 +61,7 @@ get_header(); ?>
 					The value of unit prices can fall as well as rise and the return of your capital is not guaranteed. 
 					Tax advice which contains no investment element is not regulated by the Financial Conduct Authority.
 					</div>
-				</div>
+				</div> -->
 						
 				<div class="post-slider row">
 					<div class="col-xs-12">
