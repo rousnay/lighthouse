@@ -34,14 +34,20 @@
 						<a href="https://www.facebook.com/Lighthouse-Group-1544255659197834/" class="link link-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
 						<a href="https://twitter.com/talk2lighthouse" class="link link-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>
 						<a href="#" class="live-feed hidden-xs hidden-sm">
-							<span> Share Price: 
+							<span class="share-price-at-top">
 								<?php
 									$url = 'http://charts3.equitystory.com/api/lighthousegroup/English';
 									$xml = simplexml_load_file($url);
 									$price=$xml->latest_price->close_price;
-
+									$change=$xml->latest_price->change_pcent_today;
+									$volume=$xml->latest_price->volume;
+									echo "Share Price:";
 									echo $price;
-								?>p
+									echo "p | Change: ";
+									echo $change;
+									echo "% | Volume: ";
+									echo $volume;
+								?>
 							</span>
 						</a>
 					</div>

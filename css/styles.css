@@ -12286,6 +12286,12 @@ header .top-search form button i.fa.fa-search {
   color: #000;
 }
 
+span.share-price-at-top {
+  font-size: 14px;
+  margin-top: 8px !important;
+  cursor: default;
+}
+
 .font-adjustment {
   float: right;
 }
