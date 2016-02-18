@@ -20,11 +20,15 @@ Visual Composer
 	}
 }
 .ivan-icon-box {
+	.icon-box-text-holder {
+	    position: initial;
+	}
 	.icon-box-link-holder {
 	    position: absolute;
 	    height: 100%;
 	    width: 100%;
 	    top: 0;
+        left: 0;
 	    z-index: 11;
 	    
 	    a {
@@ -34,7 +38,6 @@ Visual Composer
 		}
 	}
 }
-
 
 .ivan-title-wrapper{
 	.title-wrapper {

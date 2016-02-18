@@ -28,6 +28,46 @@ header{
             padding-top: 5px;
             a {
                 font-size: 16px;
+                &.link{
+                    height: 30px;
+                    width: 30px;
+                    margin: 0 4px;
+                    float: left;
+                    display: block;
+                    background-image: url('../images/social-icons.jpg');
+                    background-repeat: no-repeat;
+                    background-size: 180px 30px;
+                }
+                &.link-twitter{
+                    background-position: -90px 0;
+                    &:hover .fa{
+                    color:#00abf0
+                    }
+                }
+                &.link-facebook{
+                    background-position: -60px 0;
+                    &:hover .fa{
+                    color:#4b6cb2;
+                    }
+                }
+                &.link-google-plus{
+                    background-position: -30px 0;
+                    &:hover .fa{
+                    color:#dc4b3f
+                    }
+                }
+                &.link-linkedin{
+                    background-position: 0 0;
+                    &:hover .fa{
+                    color:#0077b5
+                    }
+                }
+                &.link-youtube{
+                    background-position: -150px 0;
+                    &:hover .fa{
+                    color:#df192a
+                    }
+                }
                 &.live-feed {
                     color: #333;
                     margin-left: 10px;
@@ -37,44 +77,6 @@ header{
                     }
                 }
             }
-            .link{
-                float: left;
-                display: block;
-                // width: 40px;
-                // height: 40px;
-                background-color:transparent;
-                .fa {
-                    padding: 10px;
-                    color: #3d3d3d;
-                    transition: color 0.3s;
-                }
-            }
-            .link-twitter{
-                &:hover .fa{
-                color:#00abf0
-                }
-            }
-            .link-facebook{
-                &:hover .fa{
-                color:#4b6cb2;
-                }
-            }
-            .link-google-plus{
-                &:hover .fa{
-                color:#dc4b3f
-                }
-            }
-            .link-linkedin{
-                &:hover .fa{
-                color:#0077b5
-                }
-            }
-            .link-youtube{
-                &:hover .fa{
-                color:#df192a
-                }
-            }
-
         }
         .top-search{
             form {

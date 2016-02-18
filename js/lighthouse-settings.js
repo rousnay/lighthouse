@@ -158,6 +158,12 @@
 
     $('.about-link .about-block').matchHeight();
 
+    /******************************
+	 Other settings
+	******************************/
+
+	$(".remove-link a").removeAttr("href");
+
 })(jQuery);
 
 

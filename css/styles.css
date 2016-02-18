@@ -12211,6 +12211,47 @@ header .social-links {
 header .social-links a {
   font-size: 16px;
 }
+header .social-links a.link {
+  height: 30px;
+  width: 30px;
+  margin: 0 4px;
+  float: left;
+  display: block;
+  background-image: url("../images/social-icons.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 180px 30px;
+          background-size: 180px 30px;
+}
+header .social-links a.link-twitter {
+  background-position: -90px 0;
+}
+header .social-links a.link-twitter:hover .fa {
+  color: #00abf0;
+}
+header .social-links a.link-facebook {
+  background-position: -60px 0;
+}
+header .social-links a.link-facebook:hover .fa {
+  color: #4b6cb2;
+}
+header .social-links a.link-google-plus {
+  background-position: -30px 0;
+}
+header .social-links a.link-google-plus:hover .fa {
+  color: #dc4b3f;
+}
+header .social-links a.link-linkedin {
+  background-position: 0 0;
+}
+header .social-links a.link-linkedin:hover .fa {
+  color: #0077b5;
+}
+header .social-links a.link-youtube {
+  background-position: -150px 0;
+}
+header .social-links a.link-youtube:hover .fa {
+  color: #df192a;
+}
 header .social-links a.live-feed {
   color: #333;
   margin-left: 10px;
@@ -12218,34 +12259,6 @@ header .social-links a.live-feed {
 header .social-links a.live-feed span {
   display: inline-block;
   margin-top: 5px;
-}
-header .social-links .link {
-  float: left;
-  display: block;
-  background-color: transparent;
-}
-header .social-links .link .fa {
-  padding: 10px;
-  color: #3d3d3d;
-  -webkit-transition: color 0.3s;
-     -moz-transition: color 0.3s;
-       -o-transition: color 0.3s;
-          transition: color 0.3s;
-}
-header .social-links .link-twitter:hover .fa {
-  color: #00abf0;
-}
-header .social-links .link-facebook:hover .fa {
-  color: #4b6cb2;
-}
-header .social-links .link-google-plus:hover .fa {
-  color: #dc4b3f;
-}
-header .social-links .link-linkedin:hover .fa {
-  color: #0077b5;
-}
-header .social-links .link-youtube:hover .fa {
-  color: #df192a;
 }
 header .top-search form {
   float: right;
@@ -14000,11 +14013,15 @@ Visual Composer
   color: #236fb6;
 }
 
+.ivan-icon-box .icon-box-text-holder {
+  position: initial;
+}
 .ivan-icon-box .icon-box-link-holder {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 11;
 }
 .ivan-icon-box .icon-box-link-holder a {
