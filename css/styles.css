@@ -14014,7 +14014,7 @@ Visual Composer
 }
 
 .ivan-icon-box .icon-box-text-holder {
-  position: initial;
+  position: initial !important;
 }
 .ivan-icon-box .icon-box-link-holder {
   position: absolute;
