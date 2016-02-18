@@ -74,12 +74,5 @@
 	});
 </script>
 
-
-<?php if( !is_single() ) : ?>
-	<!-- BEGIN LivePerson Monitor. -->
-
-	<!-- END LivePerson Monitor. -->
-<?php endif; ?>
-
 </body>
 </html>
