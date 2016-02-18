@@ -11424,7 +11424,7 @@ body {
   font-size: 100%;
   font-size: 1rem;
   line-height: 1.5;
-  color: #999999;
+  color: #555555;
   -webkit-font-smoothing: none;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;
@@ -11437,7 +11437,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: #999999;
+  color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
