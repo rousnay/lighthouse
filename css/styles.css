@@ -12739,6 +12739,10 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
           transition: opacity 500ms ease-in-out;
 }
 
+iframe {
+  border: none !important;
+}
+
 .fc-blue {
   color: #236fb6 !important;
 }
