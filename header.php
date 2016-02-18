@@ -41,7 +41,7 @@
 									$price=$xml->latest_price->close_price;
 									$change=$xml->latest_price->change_pcent_today;
 									$volume=$xml->latest_price->volume;
-									echo "Share Price:";
+									echo "Share Price: ";
 									echo $price;
 									echo "p | Change: ";
 									echo $change;
