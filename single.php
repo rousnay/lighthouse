@@ -49,19 +49,6 @@ get_header(); ?>
 				?>
 
 				</main><!-- #main -->
-
-<!-- 				<div class="row disclaimer-box">
-					<div class="disclaimer-icon"><i class="fa fa-info"></i></div>
-					<div id="disclaimer-text" class="readmore">Disclaimer: This article is for your general information and use only and is not intended to address your particular requirements. 
-					It should not be relied upon in its entirety. Although endeavours have been made to provide accurate and timely information, 
-					there can be no guarantee that such information is accurate as of the date it is received or that it will continue to be accurate in the future. 
-					No individual or company should act upon such information without receiving appropriate professional advice after a thorough examination of their particular situation. 
-					Levels, bases of and reliefs from taxation are subject to change and their value depends on the individual circumstances of the investor. 
-					The past performance of an investment provides no guarantee as to the future performance of the new funds. 
-					The value of unit prices can fall as well as rise and the return of your capital is not guaranteed. 
-					Tax advice which contains no investment element is not regulated by the Financial Conduct Authority.
-					</div>
-				</div> -->
 						
 				<div class="post-slider row">
 					<div class="col-xs-12">
