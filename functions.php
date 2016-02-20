@@ -1,6 +1,4 @@
 <?php
-update_option( 'siteurl', 'http://www.lighthousegroup.plc.uk' );
-update_option( 'home', 'http://www.lighthousegroup.plc.uk' );
 /**
  * Lighthouse functions and definitions.
  *
