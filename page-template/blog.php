@@ -10,7 +10,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-xs-12 content-header">
 				<?php the_title( '<h1>', '</h1>' ); ?>
-				<h4>Read the latest articles, commentary in our news blogs</h4>
+				<h4>Read the latest articles and commentary in our news blogs</h4>
 			</div>
 		</div>
 	</div>
