@@ -125,8 +125,9 @@
     /******************************
 	 Other settings
 	******************************/
-
 	$(".remove-link a").removeAttr("href");
+
+	$("#ninja_forms_form_1_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Mortgage and Borrowing', 'Services Pages')");
 
 })(jQuery);
 
