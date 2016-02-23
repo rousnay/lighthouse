@@ -84,7 +84,7 @@
 						</div>
 						<div class="col-sm-12 col-md-2 col-lg-2 header-center-area">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+								<img src="<?php echo get_template_directory_uri()?>/images/lighthouse-logo.svg" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 							</a>
 
 							<div class="iv-module live-search">
