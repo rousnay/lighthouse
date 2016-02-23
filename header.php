@@ -41,20 +41,20 @@
 						<a href="#" class="live-feed hidden-xs hidden-sm">
 							<span class="share-price-at-top">
 								<?php
-									$url = 'http://charts3.equitystory.com/api/lighthousegroup/English';
-									$xml = simplexml_load_file($url);
-									$price=$xml->latest_price->close_price;
-									$change=$xml->latest_price->change_today;
-									$change_pcent=$xml->latest_price->change_pcent_today;
-									$volume=$xml->latest_price->volume;
-									echo "Share Price: ";
-									echo $price;
-									echo "p | Change: ";
-									echo $change;
-									echo "p - ";
-									echo $change_pcent;
-									echo "% | Volume: ";
-									echo $volume;
+									// $url = 'http://charts3.equitystory.com/api/lighthousegroup/English';
+									// $xml = simplexml_load_file($url);
+									// $price=$xml->latest_price->close_price;
+									// $change=$xml->latest_price->change_today;
+									// $change_pcent=$xml->latest_price->change_pcent_today;
+									// $volume=$xml->latest_price->volume;
+									// echo "Share Price: ";
+									// echo $price;
+									// echo "p | Change: ";
+									// echo $change;
+									// echo "p - ";
+									// echo $change_pcent;
+									// echo "% | Volume: ";
+									// echo $volume;
 								?>
 							</span>
 						</a>
