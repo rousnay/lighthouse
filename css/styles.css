@@ -14157,26 +14157,6 @@ Ninja Forms
   padding: 0 5px;
 }
 
-.ninja-forms-form-wrap *, .ninja-forms-form-wrap *:after, .ninja-forms-form-wrap *:before {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.list-radio-wrap ul li, .list-checkbox-wrap ul li {
-  list-style: none;
-}
-
-.list-radio-wrap ul, .list-checkbox-wrap ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list-radio-wrap.label-left ul li, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right ul li {
-  padding: 0 8px;
-}
-
 .ninja-row {
   width: auto;
   margin: 0 auto;
