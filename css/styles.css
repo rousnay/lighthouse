@@ -12752,10 +12752,9 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 500ms ease-in-out;
-     -moz-transition: opacity 500ms ease-in-out;
-       -o-transition: opacity 500ms ease-in-out;
-          transition: opacity 500ms ease-in-out;
+  background-color: #236fb6;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 iframe {
