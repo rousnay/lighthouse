@@ -186,21 +186,20 @@ Ninja Forms
     display: none;
 }
 .ninja-col-1-2 {
-    width: 50%;
+    width: 50%!important;
 }
 .ninja-col-2-2 {
-    width: 100%;
+    width: 100%!important;
 }
 .profile_pass-wrap input, .label-above.text-wrap input, .label-below.text-wrap input, .label-inside.text-wrap input, .label-above.textarea-wrap textarea, .label-below.textarea-wrap textarea, .label-inside.textarea-wrap textarea, .label-above.list-dropdown-wrap select, .label-below.list-dropdown-wrap select{
-	 width: 100%;
+	 width: 100%!important;
 }
 .list-radio-wrap.label-left label, .list-radio-wrap.label-left ul, .list-radio-wrap.label-left ul li, .list-radio-wrap.label-right label, .list-radio-wrap.label-right ul, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left label, .list-checkbox-wrap.label-left ul, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right label, .list-checkbox-wrap.label-right ul, .list-checkbox-wrap.label-right ul li {
-    float: left;
+    float: left!important;
 }
 .field-wrap.label-right label, .field-wrap.label-left label {
     display: inline;
 }
-
 /***************
 Content Timeline
 ***************/
