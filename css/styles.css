@@ -14164,7 +14164,11 @@ Ninja Forms
   width: 100%;
 }
 
-.list-checkbox-wrap.label-right ul li {
+.profile_pass-wrap input, .label-above.text-wrap input, .label-below.text-wrap input, .label-inside.text-wrap input, .label-above.textarea-wrap textarea, .label-below.textarea-wrap textarea, .label-inside.textarea-wrap textarea, .label-above.list-dropdown-wrap select, .label-below.list-dropdown-wrap select {
+  width: 100%;
+}
+
+.list-radio-wrap.label-left label, .list-radio-wrap.label-left ul, .list-radio-wrap.label-left ul li, .list-radio-wrap.label-right label, .list-radio-wrap.label-right ul, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left label, .list-checkbox-wrap.label-left ul, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right label, .list-checkbox-wrap.label-right ul, .list-checkbox-wrap.label-right ul li {
   float: left;
 }
 
