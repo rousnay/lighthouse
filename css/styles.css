@@ -14161,6 +14161,10 @@ Ninja Forms
   margin-bottom: 20px;
 }
 
+.list-radio-wrap span ul li input, .list-checkbox-wrap span ul li input {
+  margin-right: 5px;
+}
+
 .list-radio-wrap ul li, .list-checkbox-wrap ul li {
   list-style: none;
 }

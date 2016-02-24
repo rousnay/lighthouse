@@ -179,6 +179,10 @@ Ninja Forms
 //     height: auto;
 //     vertical-align: inherit;
 // }
+
+.list-radio-wrap span ul li input, .list-checkbox-wrap span ul li input {
+    margin-right: 5px;
+}
 .list-radio-wrap ul li, .list-checkbox-wrap ul li {
     list-style: none;
 }
