@@ -14173,6 +14173,10 @@ Ninja Forms
   vertical-align: inherit;
 }
 
+.list-radio-wrap ul li, .list-checkbox-wrap ul li {
+  list-style: none;
+}
+
 .hp-wrap {
   display: none;
 }
