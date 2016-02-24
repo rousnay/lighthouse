@@ -14152,6 +14152,17 @@ Ninja Forms
   color: #4c4c4c !important;
 }
 
+[class*='ninja-col-'] {
+  float: left;
+  padding: 0 5px;
+}
+
+.ninja-row {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .hp-wrap {
   display: none;
 }
