@@ -163,6 +163,23 @@ Ninja Forms
 	}
 }
 
+.hp-wrap {
+    display: none;
+}
+.ninja-col-1-2 {
+    width: 50%;
+}
+.ninja-col-2-2 {
+    width: 100%;
+}
+.list-checkbox-wrap.label-right ul li {
+    float: left;
+}
+.field-wrap.label-right label, .field-wrap.label-left label {
+    display: inline;
+}
+
+
 /***************
 Content Timeline
 ***************/
