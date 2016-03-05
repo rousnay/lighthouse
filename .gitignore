@@ -1,6 +1,8 @@
 node_modules
  
 src/components
+xml-feeds/RNS.xml
+xml-feeds/share-price.xml
 src/lib
 _assets
 .sass-cache
