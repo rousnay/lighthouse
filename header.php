@@ -45,7 +45,7 @@
 
 									file_put_contents('./wp-content/themes/lighthouse/xml-feeds/share-price.xml', $xmldat);
 
-									$url 	= esc_url( home_url( '/' ) ) . 'share-price.xml';
+									$url 	= './wp-content/themes/lighthouse/xml-feeds/share-price.xml';
 									$xml 	= simplexml_load_file($url);
 									$price 	= $xml->CurrentPrice;
 									$change = $xml->Change;
