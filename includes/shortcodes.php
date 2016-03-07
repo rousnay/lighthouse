@@ -68,8 +68,6 @@ function member_logo_slider($atts, $content = null){
 	echo '<a href=" ' . $company_link .' " " title=" ' .  $company_link .' " class="link-full"></a>';
 	echo '</div>';
 
-
-
 	endwhile;
 	else :
 		echo '<div class="col-xs-12">Members Logo Slider not found! <be> please add some logo in theme setting page</div>';
@@ -77,9 +75,43 @@ function member_logo_slider($atts, $content = null){
 	echo '</div></div>';
 
 	$output = ob_get_clean();
-
 	return $output;
-	
 }
 
 add_shortcode('members_logo','member_logo_slider');
+
+
+/**
+ * Shortcode: Share Price
+ */
+function share_price_feed($atts, $content = null){
+
+	ob_start();
+
+	$xmldat = file_get_contents('http://qfx.quartalflife.com/clients/uk/lighthouse_group/xml/xml.aspx');
+	file_put_contents('./wp-content/themes/lighthouse/xml-feeds/share-price.xml', $xmldat);
+
+	$url 	= './wp-content/themes/lighthouse/xml-feeds/share-price.xml';
+	$xml 	= simplexml_load_file($url);
+	$price 	= $xml->CurrentPrice;
+	$change = $xml->Change;
+	$change_pcent 	= $xml->PercentageChange;
+	$volume = $xml->Volume;
+	$Date 	= $xml->Date; 
+	$time 	= $xml->time; 
+
+	echo '<div class="share_price_feed">';
+
+	echo '<div class="feed_options"><div class="share_data_title">Share Price:</div><div class="share_data">' . $price . '</div></div>';
+	echo '<div class="feed_options"><div class="share_data_title">Change:</div><div class="share_data">' . $change . '</div></div>';
+	echo '<div class="feed_options"><div class="share_data_title">Volume:</div><div class="share_data">' . $volume . '</div></div>';
+	echo '<div class="feed_options"><div class="share_data_title">Date:</div><div class="share_data">' . $Date . '</div></div>';
+	echo '<div class="feed_options"><div class="share_data_title">Time:</div><div class="share_data">' . $time . '</div></div>';
+
+	echo '</div>';
+
+	$output = ob_get_clean();
+	return $output;
+}
+
+add_shortcode('share_price','share_price_feed');

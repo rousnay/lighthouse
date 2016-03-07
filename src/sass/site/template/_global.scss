@@ -133,3 +133,19 @@ iframe{
 		background-color: #006AA7!important;
 	}
 }
+
+//share price shorcode
+
+.share_price_feed {
+    max-width: 200px;
+    margin: 0 auto;
+    &>div {
+	    width: 95%;
+	    margin: 0 auto;
+	    clear: both;
+	    &>div {
+		    width: 50%;
+		    float: left;
+		}
+    }
+}

@@ -12856,6 +12856,20 @@ iframe {
   background-color: #006AA7 !important;
 }
 
+.share_price_feed {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.share_price_feed > div {
+  width: 95%;
+  margin: 0 auto;
+  clear: both;
+}
+.share_price_feed > div > div {
+  width: 50%;
+  float: left;
+}
+
 /*--------------------------------------------------------------
 ## Page
 --------------------------------------------------------------*/
