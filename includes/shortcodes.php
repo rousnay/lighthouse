@@ -103,7 +103,7 @@ function share_price_feed($atts, $content = null){
 	echo '<div class="share_price_feed">';
 
 	echo '<div class="feed_options"><div class="share_data_title">Share Price:</div><div class="share_data">' . $price . '</div></div>';
-	echo '<div class="feed_options"><div class="share_data_title">Change:</div><div class="share_data">' . $change . '</div></div>';
+	echo '<div class="feed_options"><div class="share_data_title">Change:</div><div class="share_data">' . $change . 'p</div></div>';
 	echo '<div class="feed_options"><div class="share_data_title">Volume:</div><div class="share_data">' . $volume . '</div></div>';
 	echo '<div class="feed_options"><div class="share_data_title">Date:</div><div class="share_data">' . $Date . '</div></div>';
 	echo '<div class="feed_options"><div class="share_data_title">Time:</div><div class="share_data">' . $time . '</div></div>';

@@ -60,6 +60,13 @@ function lighthouse_setup() {
 
 	add_image_size( 'lighthouse_related_post', 475, 280, array( 'center', 'center' ) );
 
+
+	/*
+	 * Enable support for Shortcode in text widget
+	 *
+	 */
+	add_filter('widget_text', 'do_shortcode');
+	
 	/*
 	 * Default HTML5 Form
 	 *

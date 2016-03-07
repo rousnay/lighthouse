@@ -137,6 +137,7 @@ iframe{
 //share price shorcode
 
 .share_price_feed {
+    width: 100%;
     max-width: 200px;
     margin: 0 auto;
     &>div {
@@ -148,4 +149,13 @@ iframe{
 		    float: left;
 		}
     }
+    .share_data {
+	    text-align: right;
+	}
+}
+.textwidget{
+	.share_price_feed {
+	    margin: 0!important;
+	    max-width: 165px!important;
+	}	
 }
