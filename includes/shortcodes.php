@@ -115,3 +115,33 @@ function share_price_feed($atts, $content = null){
 }
 
 add_shortcode('share_price','share_price_feed');
+
+
+
+/**
+ * Shortcode: RNS Feeds
+ */
+function rns_feed_fn($atts, $content = null){
+
+	ob_start();
+
+	$xmldata = file_get_contents('http://otp.investis.com/clients/uk/lighthouse_group_plc/rns/xml-feed.aspx?culture=en-GB');
+	file_put_contents('./wp-content/themes/lighthouse/xml-feeds/rns-feed.xml', $xmldata);
+
+	$url 	= './wp-content/themes/lighthouse/xml-feeds/rns-feed.xml';
+	$xml 	= simplexml_load_file($url);
+
+	foreach ($xml->RNSSummaries->RNSSummary as $RNSSummary) {
+		$RNSDateTime = $RNSSummary->publishDate;
+		$RNSDate = substr($RNSDateTime, 5, 11);
+		$RNSLink = $RNSSummary->ShareURL;
+		$RNSTitle = $RNSSummary->Title;
+
+		echo $RNSDate, ' – <a title="Read article" href=" ', $RNSLink, ' " target="_blank"> ', $RNSTitle, ' </a><br> ', PHP_EOL;
+	}
+
+	$output = ob_get_clean();
+	return $output;
+}
+
+add_shortcode('rns_feed','rns_feed_fn');
