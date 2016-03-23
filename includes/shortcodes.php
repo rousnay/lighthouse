@@ -132,7 +132,7 @@ function rns_feed_fn($atts, $content = null){
 	$xml 	= simplexml_load_file($url);
 
 	foreach ($xml->RNSSummaries->RNSSummary as $RNSSummary) {
-		$RNSDateTime = $RNSSummary->publishDate;
+		$RNSDateTime = $RNSSummary->pubDate;
 		$RNSDate = substr($RNSDateTime, 5, 11);
 		$RNSLink = $RNSSummary->ShareURL;
 		$RNSTitle = $RNSSummary->Title;
