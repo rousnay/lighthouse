@@ -12045,9 +12045,6 @@ span.form-close-btn.bold {
     height: 70px;
     line-height: 70px;
   }
-  .header-center-area img {
-    max-width: 200px;
-  }
 }
 @media (min-width: 767px) {
   .mm-menu-toggle {
