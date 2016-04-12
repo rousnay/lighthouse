@@ -63,7 +63,7 @@
 <script type="text/javascript">
 	function fixed_header_with_adminBar() {
 		var adminBarHeight	= jQuery('#wpadminbar').height();
-		var menuToggleTop 	= 65;
+		var menuToggleTop 	= 55;
 		var topTotal 		= adminBarHeight + menuToggleTop;
 		jQuery('#masthead').css('top',adminBarHeight);
 		jQuery('#mm-menu-toggle').css('top',topTotal)
