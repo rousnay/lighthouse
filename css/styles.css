@@ -11810,7 +11810,7 @@ a:hover, a:active {
   vertical-align: middle;
 }
 .header-center-area img {
-  max-width: 250px;
+  max-width: 320px;
   width: 100%;
   position: absolute;
   margin: auto;
@@ -12023,6 +12023,16 @@ span.form-close-btn.bold {
   outline: 0;
 }
 
+@media (max-width: 1320px) {
+  .main-navigation ul a {
+    padding: 15px 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .main-navigation ul a {
+    padding: 15px 13px;
+  }
+}
 @media (min-width: 991px) {
   #mm-menu-toggle {
     display: none;

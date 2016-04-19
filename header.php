@@ -82,12 +82,12 @@
 				</div>
 				<div class="row header-menus">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<div class="col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
+						<div class="col-md-4 col-lg-4 hidden-xs hidden-sm menu-area">
 							<div id="menu-left">
 								<?php lighthouse_header_menu_left(); ?>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-2 col-lg-2 header-center-area">
+						<div class="col-sm-12 col-md-4 col-lg-4 header-center-area">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 							</a>
@@ -117,7 +117,7 @@
 							</div>
 
 						</div>
-						<div class="col-md-5 col-lg-5 hidden-xs hidden-sm menu-area">
+						<div class="col-md-4 col-lg-4 hidden-xs hidden-sm menu-area">
 							<div id="menu-right">
 								<?php lighthouse_header_menu_right(); ?>
 							</div>

@@ -113,7 +113,7 @@
     line-height: 90px;
     vertical-align: middle;
 		img {
-	    max-width: 250px;
+	    max-width: 320px;
 	    width: 100%;
 	    position: absolute;
 	    margin: auto;
@@ -321,6 +321,18 @@ span.form-close-btn.bold {
     transform: translateZ(0);
     outline: 0;
 }
+
+
+ @media (max-width: 1320px) {
+    .main-navigation ul a {
+	    padding: 15px 24px;
+	}
+ }
+  @media (max-width: $screen-md-max) {
+    .main-navigation ul a {
+	    padding: 15px 13px;
+	}
+ }
 
  @media (min-width: $screen-sm-max) {
     #mm-menu-toggle{
