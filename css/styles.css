@@ -11794,7 +11794,7 @@ a:hover, a:active {
   color: #a7a7a7;
 }
 .main-navigation ul a {
-  padding: 15px 30px;
+  padding: 15px 26px;
   margin-bottom: 15px;
 }
 
@@ -11818,6 +11818,7 @@ a:hover, a:active {
   left: 0;
   right: 0;
   bottom: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* Small menu. */
