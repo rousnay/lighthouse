@@ -11794,7 +11794,7 @@ a:hover, a:active {
   color: #a7a7a7;
 }
 .main-navigation ul a {
-  padding: 15px 26px;
+  padding: 15px 24px;
   margin-bottom: 15px;
 }
 
@@ -12026,12 +12026,22 @@ span.form-close-btn.bold {
 
 @media (max-width: 1320px) {
   .main-navigation ul a {
-    padding: 15px 20px;
+    padding: 15px 18px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
+  .main-navigation ul a {
+    padding: 15px 12px;
+  }
+}
+@media (max-width: 1100px) {
   .main-navigation ul a {
     padding: 15px 10px;
+  }
+}
+@media (max-width: 1050px) {
+  .main-navigation ul a {
+    padding: 15px 5px;
   }
 }
 @media (min-width: 991px) {
