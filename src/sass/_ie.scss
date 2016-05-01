@@ -1,0 +1,95 @@
+/***************
+Master Slider
+***************/
+.master-slider a{
+    line-height: 1.15em!important;
+}
+
+/***************
+Ninja Forms
+***************/
+.widget_ninja_forms_widget{
+	.ninja-forms-required-items{
+		display: none;
+	}
+	input{
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+	    font-size: 12px;
+	    border: 1px solid #e7e7e7!important;
+	    color: #5d5d5d!important;
+	    border-radius: 0!important;
+	    transition: all 0.3s ease-out;
+	}
+}
+.ninja-forms-form-wrap {
+	form {
+		input[type=submit] {
+		    color: white!important;
+		    background: #1C7AAB!important;
+		    float: left;
+		    border: none!important;
+		    letter-spacing: 1px;
+		    width: auto;
+		    padding: 13px 27px!important;
+		    transition: all 0.3s ease-out;
+		}
+		input:hover, textarea:hover, input:focus, textarea:focus{
+		    background: #fcfcfc!important;
+		    border-color: #5d5d5d!important;
+		    color: #4c4c4c !important;
+		}
+	}
+}
+[class*='ninja-col-'] {
+    float: left;
+    padding: 0 5px;
+}
+.field-wrap, #ninja_forms_required_items {
+    margin-bottom: 20px;
+}
+// .ninja-row {
+//     width: auto;
+//     margin: 0 auto;
+//     padding: 0;
+// }
+// .ninja-forms-form-wrap input, .ninja-forms-form-wrap select, .ninja-forms-form-wrap textarea {
+//     width: auto;
+//     height: auto;
+//     vertical-align: inherit;
+// }
+
+.list-radio-wrap span ul li input, .list-checkbox-wrap span ul li input {
+    margin-right: 5px;
+}
+.list-radio-wrap ul li, .list-checkbox-wrap ul li {
+    list-style: none;
+}
+.hp-wrap {
+    display: none;
+}
+.ninja-col-1-2 {
+    width: 50%!important;
+}
+.ninja-col-2-2 {
+    width: 100%!important;
+}
+.profile_pass-wrap input, .label-above.text-wrap input, .label-below.text-wrap input, .label-inside.text-wrap input, .label-above.textarea-wrap textarea, .label-below.textarea-wrap textarea, .label-inside.textarea-wrap textarea, .label-above.list-dropdown-wrap select, .label-below.list-dropdown-wrap select{
+	 width: 100%!important;
+}
+.list-radio-wrap.label-left label, .list-radio-wrap.label-left ul, .list-radio-wrap.label-left ul li, .list-radio-wrap.label-right label, .list-radio-wrap.label-right ul, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left label, .list-checkbox-wrap.label-left ul, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right label, .list-checkbox-wrap.label-right ul, .list-checkbox-wrap.label-right ul li {
+    float: left!important;
+}
+.field-wrap.label-right label, .field-wrap.label-left label {
+    display: inline;
+}
+.textarea-wrap textarea {
+    height: 200px;
+}
+.list-radio-wrap ul, .list-checkbox-wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-radio-wrap.label-left ul li, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right ul li {
+    padding: 0 8px;
+}
