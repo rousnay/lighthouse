@@ -204,6 +204,18 @@ Ninja Forms
 .field-wrap.label-right label, .field-wrap.label-left label {
     display: inline;
 }
+.textarea-wrap textarea {
+    height: 200px;
+}
+.list-radio-wrap ul, .list-checkbox-wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-radio-wrap.label-left ul li, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right ul li {
+    padding: 0 8px;
+}
+
 /***************
 Content Timeline
 ***************/
