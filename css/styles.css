@@ -14330,3 +14330,7 @@ Update to new VC
 .vc_custom_1449683896173 p, .vc_custom_1451408285148 p {
   color: #c8e1f0 !important;
 }
+
+.wpb_column > .wpb_wrapper > *:last-child {
+  margin-bottom: 0;
+}
