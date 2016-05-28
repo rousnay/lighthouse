@@ -164,21 +164,19 @@ ivan-carousel (owl)
 Update to new VC
 ***************/
 
-.vc_custom_1463042317321 h2 {
-    font-weight: 200 !important;
-    color: #ffffff !important;
-    font-size: 45px !important;
-}
-
-.vc_custom_1463042317321 h1 {
-    font-weight: 400 !important;
-    color: #ffffff !important;
-    font-size: 55px !important;
-}
-
-.vc_custom_1463042317321 p {
-    font-weight: 300 !important;
-    color: #ffffff !important;
-    font-size: 19px !important;
-    line-height: 15px !important;
+.vc_custom_1463042317321, .vc_custom_1463042343950{
+	color: #ffffff !important;
+	h2 {
+	    font-weight: 200 !important;
+	    font-size: 45px !important;
+	}
+	h1 {
+	    font-weight: 400 !important;
+	    font-size: 55px !important;
+	}
+	p {
+	    font-weight: 300 !important;
+	    font-size: 19px !important;
+	    line-height: 15px !important;
+	}
 }
