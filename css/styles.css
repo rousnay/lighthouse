@@ -14336,6 +14336,6 @@ Update to new VC
 }
 
 .vc_column_container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
