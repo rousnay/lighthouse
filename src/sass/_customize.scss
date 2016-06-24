@@ -214,4 +214,8 @@ Update to new VC
 	    padding-left: 0!important;
 	    padding-right: 0!important;
 	}
+
+	.wpb_column>.wpb_wrapper>*:last-child {
+	    margin-bottom: -25px;
+	}
 }
