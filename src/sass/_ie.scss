@@ -59,11 +59,17 @@ Ninja Forms
     height: auto;
     vertical-align: inherit;
 }
+.ninja-col-3-3 {
+    width: 100%;
+}
 .ninja-col-2-3 {
     width: 66.66%;
 }
 .ninja-col-1-3 {
     width: 33.33%;
+}
+#ninja_forms_field_15_options_span li{
+	clear:both!important;
 }
 //!temp
 
