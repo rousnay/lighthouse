@@ -12253,6 +12253,18 @@ Ninja Forms
   margin-bottom: 20px;
 }
 
+.ninja-row {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ninja-forms-form-wrap input, .ninja-forms-form-wrap select, .ninja-forms-form-wrap textarea {
+  width: auto;
+  height: auto;
+  vertical-align: inherit;
+}
+
 .list-radio-wrap span ul li input, .list-checkbox-wrap span ul li input {
   margin-right: 5px;
 }
