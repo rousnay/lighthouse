@@ -12265,6 +12265,14 @@ Ninja Forms
   vertical-align: inherit;
 }
 
+.ninja-col-2-3 {
+  width: 66.66%;
+}
+
+.ninja-col-1-3 {
+  width: 33.33%;
+}
+
 .list-radio-wrap span ul li input, .list-checkbox-wrap span ul li input {
   margin-right: 5px;
 }

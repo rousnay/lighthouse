@@ -47,6 +47,7 @@ Ninja Forms
 .field-wrap, #ninja_forms_required_items {
     margin-bottom: 20px;
 }
+
 //temp
 .ninja-row {
     width: auto;
@@ -58,7 +59,14 @@ Ninja Forms
     height: auto;
     vertical-align: inherit;
 }
+.ninja-col-2-3 {
+    width: 66.66%;
+}
+.ninja-col-1-3 {
+    width: 33.33%;
+}
 //!temp
+
 .list-radio-wrap span ul li input, .list-checkbox-wrap span ul li input {
     margin-right: 5px;
 }
