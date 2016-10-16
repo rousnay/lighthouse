@@ -1,0 +1,41 @@
+{
+    "key": "group_580323d111995",
+    "title": "Lighthouse General Settings",
+    "fields": [
+        {
+            "key": "field_580323e8d5cd8",
+            "label": "Theme options",
+            "name": "theme_options_",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "More options has to come...",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "lighthouse-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1476601002
+}

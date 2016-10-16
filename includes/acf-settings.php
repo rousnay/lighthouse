@@ -1,7 +1,7 @@
 <?php 
 
 // Hide ACF field group menu item
-add_filter('acf/settings/show_admin', '__return_false');
+//add_filter('acf/settings/show_admin', '__return_false');
 
 // Customize ACF path
 add_filter('acf/settings/path', 'my_acf_settings_path');
@@ -55,28 +55,32 @@ function my_acf_json_load_point( $paths ) {
 }
 
 
-/**************
-  Options Page
+/*****
+ Options Page
 ***************/
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Lighthouse General Settings',
 		'menu_title'	=> 'Theme Settings',
 		'menu_slug' 	=> 'lighthouse-general-settings',
 		'capability'	=> 'edit_posts',
-		'redirect'		=> false
+		'parent_slug'	=> '',
+		'redirect'		=> false,
+		'icon_url' => 'dashicons-layout'
 		));
 	
-	// acf_add_options_sub_page(array(
-	// 	'page_title' 	=> 'Theme Header Settings',
-	// 	'menu_title'	=> 'Header',
-	// 	'parent_slug'	=> 'lighthouse-general-settings',
-	// 	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Announcement Slider',
+		'menu_title'	=> 'Announcement',
+		'menu_slug' 	=> 'announcement-slider',
+		'parent_slug'	=> 'lighthouse-general-settings',
+		));
 	
-	// acf_add_options_sub_page(array(
-	// 	'page_title' 	=> 'Theme Footer Settings',
-	// 	'menu_title'	=> 'Footer',
-	// 	'parent_slug'	=> 'lighthouse-general-settings',
-	// 	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Members Logo Slider',
+		'menu_title'	=> 'Members Logo',
+		'menu_slug' 	=> 'members-logo-slider',
+		'parent_slug'	=> 'lighthouse-general-settings',
+		));
 }

@@ -1,5 +1,35 @@
 <?php 
 
+
+/**
+ * Shortcode: Recent Post Slider
+ */
+function announcement_slider($atts, $content = null){
+
+	ob_start();
+
+	echo '<div class="messages"> <div id="announcement_slider" class="owl-carousel">';
+
+	if( have_rows('announcement', 'option') ):
+		while ( have_rows('announcement', 'option') ) : the_row();
+	$message = get_sub_field('messages');
+	$message_link = get_sub_field('link');
+	echo '<a href=" ' . $message_link .' " " title="Click to read full messages" class="link-full"> ' . $message .' </a>';
+
+	endwhile;
+	else :
+		echo '<div class="col-xs-12">No Messages to Show!</div>';
+	endif;
+	echo '</div>';
+
+	$output = ob_get_clean();
+	return $output;
+}
+
+add_shortcode('announcement','announcement_slider');
+
+
+
 /**
  * Shortcode: Recent Post Slider
  */
@@ -50,7 +80,7 @@ add_shortcode('recent_posts','recent_post_slider');
 
 
 /**
- * Shortcode: Recent Post Slider
+ * Shortcode: Member logo slider
  */
 function member_logo_slider($atts, $content = null){
 
