@@ -2,114 +2,124 @@
 
 	/******************************
 	 Header and Menu
-	******************************/
-	function contentMargin() {
-		var headerHeight	= $('#masthead').height();
-		var siteContent		= $('#content');
+	 ******************************/
+	 function contentMargin() {
+	 	var headerHeight	= $('#masthead').height();
+	 	var siteContent		= $('#content');
 
-		siteContent.css('margin-top',headerHeight)
-	}
+	 	siteContent.css('margin-top',headerHeight)
+	 }
 
-	contentMargin();
+	 contentMargin();
 
-	$( window ).resize(function() {
-		contentMargin();
-	});
+	 $( window ).resize(function() {
+	 	contentMargin();
+	 });
 
-	jQuery('#mm-menu li').addClass("mm-menu__item");
-	jQuery('#mm-menu a').addClass("mm-menu__link");
-	jQuery('#mm-menu a span').addClass("mm-menu__link-text");
-	var menu = new Menu;
+	 jQuery('#mm-menu li').addClass("mm-menu__item");
+	 jQuery('#mm-menu a').addClass("mm-menu__link");
+	 jQuery('#mm-menu a span').addClass("mm-menu__link-text");
+	 var menu = new Menu;
 
 
 	/*********************************
 	 Load more option to Search result
-	*********************************/
-    size_art = $(".search-results article").size();
-    x=5;
+	 *********************************/
+	 size_art = $(".search-results article").size();
+	 x=5;
 
-        if(size_art <= 5){
-            $('#loadMore').hide();
-            $('#showLess').hide();
-        }
+	 if(size_art <= 5){
+	 	$('#loadMore').hide();
+	 	$('#showLess').hide();
+	 }
 
-    $('.search-results article:lt('+x+')').show();
+	 $('.search-results article:lt('+x+')').show();
 
-    $('#loadMore').click(function () {
-        x= (x+6 <= size_art) ? x+6 : size_art;
-        $('.search-results article:lt('+x+')').slideDown();
+	 $('#loadMore').click(function () {
+	 	x= (x+6 <= size_art) ? x+6 : size_art;
+	 	$('.search-results article:lt('+x+')').slideDown();
 
-         $('#showLess').show();
-        if(x <= 5  || x == size_art){
-            $('#loadMore').hide();
-        }
+	 	$('#showLess').show();
+	 	if(x <= 5  || x == size_art){
+	 		$('#loadMore').hide();
+	 	}
 
-        var visibleArt = $('.search-results').find('article:visible:last');
+	 	var visibleArt = $('.search-results').find('article:visible:last');
 
-         $('html, body').animate({
-	        scrollTop: $(visibleArt).offset().top
-	    }, 1000);
-    });
+	 	$('html, body').animate({
+	 		scrollTop: $(visibleArt).offset().top
+	 	}, 1000);
+	 });
 
-    $('#showLess').click(function () {
-        x=(x-6<0) ? 5 : x-6;
-        
-
-        $('#loadMore').show();
-        $('#showLess').show();
-        if(x <= 5){
-            $('#showLess').hide();
-        }
-
-			
-		$('.search-results article').not(':lt('+x+')').hide(1000);
-
-		var visibleArt = $('.search-results').find('article:visible:last').prevAll().eq(7);
-		        $('html, body').animate({
-			        scrollTop: $(visibleArt).offset().top
-			    }, 1000);
+	 $('#showLess').click(function () {
+	 	x=(x-6<0) ? 5 : x-6;
 
 
-    });
+	 	$('#loadMore').show();
+	 	$('#showLess').show();
+	 	if(x <= 5){
+	 		$('#showLess').hide();
+	 	}
+
+
+	 	$('.search-results article').not(':lt('+x+')').hide(1000);
+
+	 	var visibleArt = $('.search-results').find('article:visible:last').prevAll().eq(7);
+	 	$('html, body').animate({
+	 		scrollTop: $(visibleArt).offset().top
+	 	}, 1000);
+
+
+	 });
 
 
 	/******************************
 	 Font Adjustment
-	******************************/
-	var a=$("body");
-	$("#textplus").click(function(){
-		var c=a.css("fontSize");
-		var b=parseInt(c.replace("px",""))+1;$(a).css("fontSize",b+"px")
-	});
-	$("#textminus").click(function(){
-		var c=a.css("fontSize");
-		var b=parseInt(c.replace("px",""))-1;$(a).css("fontSize",b+"px")
-	})
+	 ******************************/
+	 var a=$("body");
+	 $("#textplus").click(function(){
+	 	var c=a.css("fontSize");
+	 	var b=parseInt(c.replace("px",""))+1;$(a).css("fontSize",b+"px")
+	 });
+	 $("#textminus").click(function(){
+	 	var c=a.css("fontSize");
+	 	var b=parseInt(c.replace("px",""))-1;$(a).css("fontSize",b+"px")
+	 })
 
 
 	/******************************
 	 Library: owl.carousel
-	******************************/
-	$("#related-posts").owlCarousel({
-		items : 4
-	});
+	 ******************************/
 
-	$("#recent-posts").owlCarousel({
-		items : 3
-	});
+	 $("#announcement_slider").owlCarousel({
+	 	singleItem : true,
+	 	autoPlay : true,
+	 	slideSpeed	: 100,
+	 	transitionStyle : "fade",
+	 	stopOnHover : true,
+	 	autoHeight	: true
+	 });
 
-	$("#logo-slider").owlCarousel({
-		items : 15,
-		navigation : true,
-		itemsDesktop : [1199,12],
-	    itemsDesktopSmall : [980,10],
-	    itemsTablet: [768,8],
-	    itemsTabletSmall: [600,6],
-	    itemsMobile : [400,4],
-	    singleItem : false,
-	    itemsScaleUp : false,
-	    navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-	});
+	 $("#related-posts").owlCarousel({
+	 	items : 4
+	 });
+
+	 $("#recent-posts").owlCarousel({
+	 	items : 3
+	 });
+
+	 $("#logo-slider").owlCarousel({
+	 	items : 15,
+	 	navigation : true,
+	 	itemsDesktop : [1199,12],
+	 	itemsDesktopSmall : [980,10],
+	 	itemsTablet: [768,8],
+	 	itemsTabletSmall: [600,6],
+	 	itemsMobile : [400,4],
+	 	singleItem : false,
+	 	itemsScaleUp : false,
+	 	navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+	 });
 
 	//
 	document.addEventListener("touchstart", function(){}, true);
@@ -117,21 +127,21 @@
 
 	/******************************
 	 Library: jquery.matchHeight.js
-	******************************/
-    $('#recent-posts .entry').matchHeight();
+	 ******************************/
+	 $('#recent-posts .entry').matchHeight();
 
-    $('.about-link .about-block').matchHeight();
+	 $('.about-link .about-block').matchHeight();
 
     /******************************
 	 Other settings
-	******************************/
-	$(".remove-link a").removeAttr("href");
+	 ******************************/
+	 $(".remove-link a").removeAttr("href");
 
-	$("#ninja_forms_form_1_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Woodingdean', 'Services Pages')");
-	
-	$("#ninja_forms_form_91_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Stockport', 'Services Pages')");
+	 $("#ninja_forms_form_1_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Woodingdean', 'Services Pages')");
 
-})(jQuery);
+	 $("#ninja_forms_form_91_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Stockport', 'Services Pages')");
+
+	})(jQuery);
 
 
 /******************************
@@ -140,9 +150,9 @@ Ivan Live Option
 function ivan_live_search_init() {
 	//"use strict";
 	var searchTopStyle = jQuery('.live-search'),
-		searchfullScreen = jQuery('.live-search.search-full-screen-style'),
-		searchfullScreenAlt = jQuery('.live-search.search-full-screen-alt-style'),
-		formCloseBtn = jQuery('.live-search').find('.form-close-btn');
+	searchfullScreen = jQuery('.live-search.search-full-screen-style'),
+	searchfullScreenAlt = jQuery('.live-search.search-full-screen-alt-style'),
+	formCloseBtn = jQuery('.live-search').find('.form-close-btn');
 
 	jQuery('.live-search .trigger').click( function(e) {
 
