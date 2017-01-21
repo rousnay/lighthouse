@@ -147,6 +147,8 @@ function lighthouse_scripts() {
 
 	wp_enqueue_script( 'lighthouse-match-height-js', get_template_directory_uri() . '/js/jquery.matchHeight-min.js', array('jquery'), '', true );
 
+	wp_enqueue_script( 'lighthouse-marquee-js', get_template_directory_uri() . '/js/jquery.marquee.min.js', array('jquery'), '', true );
+
 	wp_enqueue_script( 'lighthouse-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'lighthouse-settings-js', get_template_directory_uri() . '/js/lighthouse-settings.min.js', array('jquery'), '20160220', true );

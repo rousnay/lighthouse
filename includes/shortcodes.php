@@ -4,32 +4,55 @@
 /**
  * Shortcode: Announcement Slider
  */
+// function announcement_slider($atts, $content = null){
+
+// 	ob_start();
+
+// 	echo '<div class="messages"> <div id="announcement_slider" class="owl-carousel">';
+
+// 	if( have_rows('announcement', 'option') ):
+// 		while ( have_rows('announcement', 'option') ) : the_row();
+// 	$message = get_sub_field('messages');
+// 	$message_link = get_sub_field('link');
+
+// 	echo '<div class="col-xs-12">';
+// 	echo '<a href=" ' . $message_link .' " " title="Click to read full messages"> ' . $message .' </a>';
+// 	echo '</div>';
+// 	endwhile;
+// 	else :
+// 		echo '<div class="col-xs-12">No Messages to Show!</div>';
+// 	endif;
+// 	echo '</div></div>';
+
+// 	$output = ob_get_clean();
+// 	return $output;
+// }
+
+// add_shortcode('announcement','announcement_slider');
+
 function announcement_slider($atts, $content = null){
 
 	ob_start();
 
-	echo '<div class="messages"> <div id="announcement_slider" class="owl-carousel">';
+	echo '<div class="marquee-container"> 
+	<div class="marquee">';
+		if( have_rows('announcement', 'option') ):
+			while ( have_rows('announcement', 'option') ) : the_row();
+		$message = get_sub_field('messages');
+		$message_link = get_sub_field('link');
 
-	if( have_rows('announcement', 'option') ):
-		while ( have_rows('announcement', 'option') ) : the_row();
-	$message = get_sub_field('messages');
-	$message_link = get_sub_field('link');
+		echo '<a href=" ' . $message_link .' " " title="Click to read full messages"> ' . $message .' </a>';
+		endwhile;
+		else :
+			echo '<div class="col-xs-12">No Messages to Show!</div>';
+		endif;
+		echo '</div></div>';
 
-	echo '<div class="col-xs-12">';
-	echo '<a href=" ' . $message_link .' " " title="Click to read full messages"> ' . $message .' </a>';
-	echo '</div>';
-	endwhile;
-	else :
-		echo '<div class="col-xs-12">No Messages to Show!</div>';
-	endif;
-	echo '</div></div>';
+		$output = ob_get_clean();
+		return $output;
+	}
 
-	$output = ob_get_clean();
-	return $output;
-}
-
-add_shortcode('announcement','announcement_slider');
-
+	add_shortcode('announcement','announcement_slider');
 
 
 /**

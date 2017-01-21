@@ -87,6 +87,9 @@
 	 })
 
 
+
+
+
 	/******************************
 	 Library: owl.carousel
 	 ******************************/
@@ -132,6 +135,26 @@
 
 	 $('.about-link .about-block').matchHeight();
 
+
+	/******************************
+	 Library: jQuery.Marquee
+	 ******************************/
+	 $('.marquee').marquee({
+	    //speed in milliseconds of the marquee
+	    duration: 15000,
+	    //gap in pixels between the tickers
+	    gap: 0,
+	    //time in milliseconds before the marquee will start animating
+	    delayBeforeStart: 0,
+	    //'left' or 'right'
+	    direction: 'left',
+	    //true or false - should the marquee be duplicated to show an effect of continues flow
+	    duplicated: true,
+	    //pauseOnHover
+	    pauseOnHover: true
+	});
+
+
     /******************************
 	 Other settings
 	 ******************************/
@@ -140,6 +163,40 @@
 	 $("#ninja_forms_form_1_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Woodingdean', 'Services Pages')");
 
 	 $("#ninja_forms_form_91_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Stockport', 'Services Pages')");
+
+
+	/******************************
+	 News Feed Padding Adjustment
+	 ******************************/
+	 function padding_adjustment() {
+
+	 	var WidthofLinks = 0;
+	 	var containerWidth = 0;
+
+	 	$('.marquee .js-marquee:first a').each(function(index) {
+	 		WidthofLinks += parseInt($(this).width(), 10);
+	 	});
+
+	 	containerWidth = $(document ).width();
+	 	totalLink = jQuery('.marquee .js-marquee:first a').length;
+	 	paddingToApply = (((containerWidth - WidthofLinks) / totalLink ) / 2 ) ;
+
+	 	if (paddingToApply > 26) {
+	 		$('.marquee a').css('padding-left', paddingToApply);
+	 		$('.marquee a').css('padding-right', paddingToApply);
+	 		//console.log("if padding: " + paddingToApply);
+	 	} else {
+	 		$('.marquee a').css('padding-left', 25);
+	 		$('.marquee a').css('padding-right', 25);
+	 		//console.log("else padding: " + paddingToApply);
+	 	}
+	 	console.log("total link: " + totalLink);
+	 }
+
+	 padding_adjustment();
+	 jQuery( window ).resize(function() {
+	 	padding_adjustment();
+	 });
 
 	})(jQuery);
 

@@ -12485,7 +12485,7 @@ body:not(.page-template-default) section header, body:not(.page-template-default
 
 /********
   Home
-*********/
+  *********/
 body.page-template-page-home .site-content {
   background-color: #F7F9FA !important;
 }
@@ -12494,17 +12494,18 @@ body.page-template-page-home .site-content {
   background-color: #ffffff;
 }
 
-.messages {
+.marquee-container {
   text-align: center;
   background-color: #006AA7;
   color: #ffffff;
-  padding: 8px 0;
+  overflow: hidden;
+  padding: 10px;
 }
-.messages p {
+.marquee-container .marquee p {
   padding: 0;
   margin: 0;
 }
-.messages a {
+.marquee-container .marquee a {
   color: #ffffff;
 }
 
@@ -12791,7 +12792,7 @@ body.page-template-page-home .site-content {
 
 /********
   Advice
-*********/
+  *********/
 .banner {
   background-image: url("http://www.lighthousegroup.plc.uk/wp-content/uploads/2016/01/shutterstock_129517946-copy.1.jpg");
   background-position: 50% -151px;
