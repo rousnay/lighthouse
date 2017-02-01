@@ -41,7 +41,7 @@ function announcement_slider($atts, $content = null){
 		$message = get_sub_field('messages');
 		$message_link = get_sub_field('link');
 
-		echo '<a href=" ' . $message_link .' " " title="Click to read full messages"> ' . $message .' </a>';
+		echo '<a href=" ' . $message_link .' " " title="Click to read full message"> ' . $message .' </a> <span>|</span>';
 		endwhile;
 		else :
 			echo '<div class="col-xs-12">No Messages to Show!</div>';
