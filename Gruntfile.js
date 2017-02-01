@@ -118,7 +118,7 @@ jshint: {
 //Watch
 watch: {
   dev: {
-    files: 'src/{,*/}*.{scss,js}',
+    files: 'src/{,**/}*.{scss,js}',
     tasks: ['copy','uglify','clean','sass','autoprefixer']
   }
 }
