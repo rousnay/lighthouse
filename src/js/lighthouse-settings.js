@@ -171,15 +171,21 @@
 	 function padding_adjustment() {
 
 	 	var WidthofLinks = 0;
+	 	var WidthofSepa = 0;
 	 	var containerWidth = 0;
 
 	 	$('.marquee .js-marquee:first a').each(function(index) {
 	 		WidthofLinks += parseInt($(this).width(), 10);
 	 	});
 
+	 	$('.marquee .js-marquee:first span').each(function(index) {
+	 		WidthofSepa += parseInt($(this).width(), 10);
+	 	});
+ 		
+ 		widthOfCont = WidthofSepa + WidthofLinks;
 	 	containerWidth = $(document ).width();
 	 	totalLink = jQuery('.marquee .js-marquee:first a').length;
-	 	paddingToApply = (((containerWidth - WidthofLinks) / totalLink ) / 2 ) ;
+	 	paddingToApply = (((containerWidth - widthOfCont) / totalLink ) / 2 ) ;
 
 	 	if (paddingToApply > 26) {
 	 		$('.marquee a').css('padding-left', paddingToApply);
@@ -190,7 +196,7 @@
 	 		$('.marquee a').css('padding-right', 25);
 	 		//console.log("else padding: " + paddingToApply);
 	 	}
-	 	console.log("total link: " + totalLink);
+	 	console.log("total announcement item: " + totalLink);
 	 }
 
 	 padding_adjustment();
@@ -198,8 +204,8 @@
 	 	padding_adjustment();
 	 });
 
-	})(jQuery);
 
+	})(jQuery);
 
 /******************************
 Ivan Live Option

@@ -72,6 +72,22 @@
 	jQuery( window ).resize(function() {
 		fixed_header_with_adminBar();
 	});
+
+	//Content timeline fix
+	jQuery(window).bind("load", function() {
+	 var lineItem = jQuery('.t_line_holder .t_line_view .t_line_m a');
+	 lineItem.each(function(){
+
+	 	var href =  jQuery(this).attr('href');
+	 	var tag = href.slice(7, 11);
+
+	 	jQuery(this).contents().filter(function(){ 
+	 		return this.nodeType == 3; 
+	 	})[0].nodeValue = tag;
+	 	//console.log(tag);
+	 });
+
+});
 </script>
 
 <!-- Google Analytics tracking code -->
