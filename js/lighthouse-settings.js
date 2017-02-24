@@ -132,8 +132,11 @@
 	 Library: jquery.matchHeight.js
 	 ******************************/
 	 $('#recent-posts .entry').matchHeight();
-
 	 $('.about-link .about-block').matchHeight();
+	 $('.ivan-icon-box-wrapper .ivan-icon-boxed-inner').matchHeight();
+
+
+	 
 
 
 	/******************************
