@@ -40,7 +40,7 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 bottom-footer-left">
-					<div class="copyright">© 2017 - Lighthouse Group PLC - 04086645</div>
+					<div class="copyright">© 2017 - Lighthouse Group PLC - 04042743</div>
 				</div>
 			</div>
 		</div>
