@@ -226,3 +226,15 @@ Update to new VC
 	    margin-bottom: -25px;
 	}
 }
+
+
+/***************
+  Custom Table
+***************/
+body.page.page-id-67925, table, tr, td, th  {
+    border: 1px solid;
+}
+
+body.page.page-id-67925, td, th {
+    padding: 5px;
+}
