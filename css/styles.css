@@ -13829,3 +13829,13 @@ Update to new VC
 .vc_custom_1448317594608 .wpb_column > .wpb_wrapper > *:last-child {
   margin-bottom: -25px;
 }
+
+/*****************
+  Custom Table
+*****************/
+body.page.page-id-67925 table, body.page.page-id-67925 tr, body.page.page-id-67925 td, body.page.page-id-67925 th {
+  border: 1px solid;
+}
+body.page.page-id-67925 td, body.page.page-id-67925 th {
+  padding: 5px;
+}
