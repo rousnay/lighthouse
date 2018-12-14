@@ -31,7 +31,7 @@
 					<div class="social-items">
 						<!-- <a href="" class="link link-youtube" target="_blank"><i class="fa fw fa-youtube"></i></a> -->
 						<a href="https://www.linkedin.com/company/lighthouse-group-plc" class="link link-linkedin" target="_blank"><i class="fa fw fa-linkedin"></i></a>
-						<a href="https://plus.google.com/u/0/112602769566696286010" class="link link-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a>
+		<!-- 				<a href="https://plus.google.com/u/0/112602769566696286010" class="link link-google-plus" target="_blank"><i class="fa fw fa-google-plus"></i></a> -->
 						<a href="https://www.facebook.com/LighthouseGroupPLC" class="link link-facebook" target="_blank"><i class="fa fw fa-facebook"></i></a>
 						<a href="https://twitter.com/talk2lighthouse" class="link link-twitter" target="_blank"><i class="fa fw fa-twitter"></i></a>
 					</div>
