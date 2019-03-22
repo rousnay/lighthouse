@@ -164,7 +164,7 @@ iframe{
 //ink confirmation button
 
 .link-confirmation-box-box {
-	color: #b53b40;
+	// color: #b53b40;
     float: left;
     padding-top: 5px;
     cursor: pointer;
@@ -186,7 +186,9 @@ button#link-confirmation-Button {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 	&:hover{ 
-		background: #b63b41 !important;
+		background: #fcfcfc !important;
+	    border-color: #5d5d5d !important;
+	    color: #4c4c4c !important;
 	}
 }
 
