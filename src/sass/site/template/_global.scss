@@ -160,3 +160,31 @@ iframe{
 	    max-width: 165px!important;
 	}	
 }
+
+//ink confirmation button
+
+button#link-confirmation-Button {
+    margin-left: 30px;
+    color: #fff !important;
+    background: #1C7AAB;
+    float: left;
+    border: none !important;
+    letter-spacing: 1px;
+    width: auto;
+    padding: 13px 27px !important;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	&:hover{ 
+		background: #fcfcfc !important;
+	    border-color: #5d5d5d !important;
+	    color: #4c4c4c !important;}
+}
+
+button#link-confirmation-Button[disabled] {
+    cursor: default;
+    border-color: #f0f0f0 !important;
+    background-color: #f0f0f0 !important;
+    color: #4c4c4c !important;
+}
