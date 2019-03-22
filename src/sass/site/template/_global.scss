@@ -168,6 +168,7 @@ iframe{
     float: left;
     padding-top: 5px;
     cursor: pointer;
+    margin-bottom: 7px;
 }
 
 input#link-confirmation-Checkbox {
@@ -199,4 +200,9 @@ button#link-confirmation-Button[disabled] {
     border-color: #f0f0f0 !important;
     background-color: #f0f0f0 !important;
     color: #4c4c4c !important;
+}
+@media (min-width: 990px){
+	button#link-confirmation-Button {
+	    margin-left: 30px;
+	}
 }
