@@ -12476,14 +12476,19 @@ iframe {
   max-width: 165px !important;
 }
 
+.link-confirmation-box-box {
+  color: #b53b40;
+  float: left;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
 button#link-confirmation-Button {
   margin-left: 30px;
   color: #fff !important;
   background: #1C7AAB;
-  float: left;
   border: none !important;
   letter-spacing: 1px;
-  width: auto;
   padding: 13px 27px !important;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -12491,9 +12496,7 @@ button#link-confirmation-Button {
   transition: all 0.3s ease-out;
 }
 button#link-confirmation-Button:hover {
-  background: #fcfcfc !important;
-  border-color: #5d5d5d !important;
-  color: #4c4c4c !important;
+  background: #b63b41 !important;
 }
 
 button#link-confirmation-Button[disabled] {
