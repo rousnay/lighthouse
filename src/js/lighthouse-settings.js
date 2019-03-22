@@ -167,7 +167,9 @@
 
 	 $("#ninja_forms_form_91_cont input[type='submit']").attr("onclick", "ga('send', 'event', 'Form Submission', 'Contact Request - Stockport', 'Services Pages')");
 
-
+	  $('#link-confirmation-Checkbox').click(function () {
+	    $('#link-confirmation-Button').prop("disabled", !$("#link-confirmation-Checkbox").prop("checked")); 
+	  })
 	/******************************
 	 News Feed Padding Adjustment
 	 ******************************/
