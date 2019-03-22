@@ -12483,6 +12483,10 @@ iframe {
   cursor: pointer;
 }
 
+input#link-confirmation-Checkbox {
+  margin-right: 6px;
+}
+
 button#link-confirmation-Button {
   margin-left: 30px;
   color: #fff !important;
