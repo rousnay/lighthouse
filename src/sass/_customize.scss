@@ -264,11 +264,14 @@ body.page-id-70638 {
 	}
 
 	.tbrightcontent {
-	    position: absolute;
-	    top: 20%!important;
-	    left: 15%!important;
-	    width: 70%!important;
-	    height: 60%!important;
+		position: absolute;
+	    top: 50px !important;
+	    left: calc((100% - 600px)/2) !important;
+	    width: 60% !important;
+	    max-width: 600px;
+	    margin: auto;
+	    height: 80% !important;
+	    max-height: 600px !important;
 	}
 
 	input.termsagree {
@@ -276,14 +279,18 @@ body.page-id-70638 {
 	}
 	@media (max-width: 991px){
 			.tbrightcontent {
-			    top: 15%!important;
-			    height: 80%!important;
+			    top: 50px !important;
+			    height: 80% !important;
+			    left: 25% !important;
+			    width: 50% !important;
 			}
 	}
 	@media (max-width: 767px){
 			.tbrightcontent {
-			    top: 120px !important;
-			    height: calc(100% - 140px) !important;
+				top: 50px !important;
+			    height: 80% !important;
+			    left: 25% !important;
+			    width: 50% !important;
 			}
 	}
 }
