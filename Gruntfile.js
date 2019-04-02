@@ -56,7 +56,7 @@ sass:{
       style: 'expanded',
    			//lineNumbers: true,
    			//compass: true
-   			sourcemap: 'none'
+   			sourcemap: 'file'
    		},
    		files:{
    			'tmp/styles.css' : 'src/sass/styles.scss'
@@ -65,7 +65,7 @@ sass:{
     dist: {
      options: {
       style: 'compressed',
-      sourcemap: 'none'
+      sourcemap: 'file'
     },
     files:{
       'tmp/styles.min.css' : 'src/sass/styles.scss'
