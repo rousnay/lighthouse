@@ -13920,15 +13920,19 @@ body.page-id-70638 input.termsagree {
 @media (max-width: 991px) {
   body.page-id-70638 .tbrightcontent {
     top: 60px !important;
-    height: 80% !important;
+    height: -webkit-calc(100vh - 60px) !important;
+    height: -moz-calc(100vh - 60px) !important;
+    height: calc(100vh - 60px) !important;
     left: 15% !important;
     width: 60% !important;
   }
 }
 @media (max-width: 767px) {
   body.page-id-70638 .tbrightcontent {
-    top: 50px !important;
-    height: 80% !important;
+    top: 20px !important;
+    height: -webkit-calc(100vh - 20px) !important;
+    height: -moz-calc(100vh - 20px) !important;
+    height: calc(100vh - 20px) !important;
     left: 10% !important;
     width: 80% !important;
   }
