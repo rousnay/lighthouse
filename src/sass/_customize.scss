@@ -266,20 +266,27 @@ body.page-id-70638 {
 	.tbrightcontent {
 		position: absolute;
 	    top: 100px !important;
-	    left: calc((100% - 700px)/2) !important;
+	    left: calc((100% - 900px)/2) !important;
 	    width: 80% !important;
-	    max-width: 700px;
-	    height: 600px !important;
+	    max-width: 900px;
+	    height: 700px !important;
+	    height: fit-content !important;
 	}
 
 	input.termsagree {
 	    margin-bottom: 10px!important;
 	}
+	@media (max-width: 1150px){
+		.tbrightcontent{
+			left: calc((100% - 80%)/2) !important;
+		}
+	}
+	
 	@media (max-width: 991px){
 			.tbrightcontent {
 			    top: 50px !important;
 			    height: calc(100vh - 200px) !important;
-			    left: 15% !important;
+			    left: 20% !important;
 			    width: 60% !important;
 			}
 	}
