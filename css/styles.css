@@ -13904,12 +13904,12 @@ body.page-id-70638 .tdarkoverlay {
 }
 body.page-id-70638 .tbrightcontent {
   position: absolute;
-  top: 50px !important;
-  left: -webkit-calc((100% - 600px)/2) !important;
-  left: -moz-calc((100% - 600px)/2) !important;
-  left: calc((100% - 600px)/2) !important;
-  width: 60% !important;
-  max-width: 600px;
+  top: 100px !important;
+  left: -webkit-calc((100% - 700px)/2) !important;
+  left: -moz-calc((100% - 700px)/2) !important;
+  left: calc((100% - 700px)/2) !important;
+  width: 80% !important;
+  max-width: 700px;
   margin: auto;
   height: 80% !important;
   max-height: 600px !important;
@@ -13919,17 +13919,17 @@ body.page-id-70638 input.termsagree {
 }
 @media (max-width: 991px) {
   body.page-id-70638 .tbrightcontent {
-    top: 50px !important;
+    top: 60px !important;
     height: 80% !important;
-    left: 25% !important;
-    width: 50% !important;
+    left: 15% !important;
+    width: 60% !important;
   }
 }
 @media (max-width: 767px) {
   body.page-id-70638 .tbrightcontent {
     top: 50px !important;
     height: 80% !important;
-    left: 25% !important;
-    width: 50% !important;
+    left: 10% !important;
+    width: 80% !important;
   }
 }
