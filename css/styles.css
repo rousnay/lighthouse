@@ -13894,18 +13894,32 @@ table.gc-table1 td, table.gc-table2 td, table.gc-table3 td {
 /***************
 WP Terms Popup
 ***************/
-input.termsagree {
+body.page-id-70638 .ivan-custom-wrapper,
+body.page-id-70638 .ivan-custom-wrapper > .vc_row:last-child,
+body.page-id-70638 .vc_col-sm-12.wpb_column.vc_column_container {
+  position: initial !important;
+}
+body.page-id-70638 .tdarkoverlay {
+  position: absolute;
+}
+body.page-id-70638 .tbrightcontent {
+  position: absolute;
+  top: 20% !important;
+  left: 15% !important;
+  width: 70% !important;
+  height: 60% !important;
+}
+body.page-id-70638 input.termsagree {
   margin-bottom: 10px !important;
 }
-
 @media (max-width: 991px) {
-  .tbrightcontent {
+  body.page-id-70638 .tbrightcontent {
     top: 15% !important;
     height: 80% !important;
   }
 }
 @media (max-width: 767px) {
-  .tbrightcontent {
+  body.page-id-70638 .tbrightcontent {
     top: 120px !important;
     height: -webkit-calc(100% - 140px) !important;
     height: -moz-calc(100% - 140px) !important;

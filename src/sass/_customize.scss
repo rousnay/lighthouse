@@ -253,18 +253,37 @@ Update to new VC
 /***************
 WP Terms Popup
 ***************/
-input.termsagree {
-    margin-bottom: 10px!important;
-}
-@media (max-width: 991px){
-		.tbrightcontent {
-		    top: 15%!important;
-		    height: 80%!important;
-		}
-}
-@media (max-width: 767px){
-		.tbrightcontent {
-		    top: 120px !important;
-		    height: calc(100% - 140px) !important;
-		}
+body.page-id-70638 {
+	.ivan-custom-wrapper,
+	.ivan-custom-wrapper>.vc_row:last-child,
+	.vc_col-sm-12.wpb_column.vc_column_container {
+	    position: initial!important;
+	}
+	.tdarkoverlay{
+		position: absolute;
+	}
+
+	.tbrightcontent {
+	    position: absolute;
+	    top: 20%!important;
+	    left: 15%!important;
+	    width: 70%!important;
+	    height: 60%!important;
+	}
+
+	input.termsagree {
+	    margin-bottom: 10px!important;
+	}
+	@media (max-width: 991px){
+			.tbrightcontent {
+			    top: 15%!important;
+			    height: 80%!important;
+			}
+	}
+	@media (max-width: 767px){
+			.tbrightcontent {
+			    top: 120px !important;
+			    height: calc(100% - 140px) !important;
+			}
+	}
 }
