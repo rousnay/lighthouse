@@ -258,8 +258,8 @@ input.termsagree {
 }
 @media (max-width: 767px){
 		.tbrightcontent {
-		    top: 15%!important;
-		    height: 80%!important;
+		    top: 120px !important;
+		    height: calc(100% - 140px) !important;
 		}
 }
 

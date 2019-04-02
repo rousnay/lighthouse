@@ -13900,8 +13900,10 @@ input.termsagree {
 
 @media (max-width: 767px) {
   .tbrightcontent {
-    top: 15% !important;
-    height: 80% !important;
+    top: 120px !important;
+    height: -webkit-calc(100% - 140px) !important;
+    height: -moz-calc(100% - 140px) !important;
+    height: calc(100% - 140px) !important;
   }
 }
 @media (max-width: 991px) {
