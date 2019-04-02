@@ -11786,7 +11786,7 @@ header#masthead.panel-top {
   position: relative;
 }
 header#masthead.panel-fixed {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -12092,7 +12092,7 @@ footer#colophon .footer-bottom .site-info .social-items .link-youtube:hover .fa 
        -o-transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
           transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background: white;
   overflow: hidden;
 }
@@ -13889,4 +13889,24 @@ table.gc-table1 td, table.gc-table2 td, table.gc-table3 td {
 .gt-text-color {
   color: #1c7aab;
   padding-bottom: 15px;
+}
+
+/***************
+WP Terms Popup
+***************/
+input.termsagree {
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 767px) {
+  .tbrightcontent {
+    top: 15% !important;
+    height: 80% !important;
+  }
+}
+@media (max-width: 991px) {
+  .tbrightcontent {
+    top: 15% !important;
+    height: 80% !important;
+  }
 }
