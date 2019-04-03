@@ -13897,6 +13897,7 @@ WP Terms Popup
 body.page-id-70638 .ivan-custom-wrapper,
 body.page-id-70638 .ivan-custom-wrapper > .vc_row:last-child,
 body.page-id-70638 .vc_col-sm-12.wpb_column.vc_column_container {
+  position: inherit !important;
   position: initial !important;
 }
 body.page-id-70638 .tdarkoverlay {
