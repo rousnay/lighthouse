@@ -39,7 +39,7 @@
 
 
 						<a href="#" class="live-feed hidden-xs hidden-sm">
-							<span class="share-price-at-top">
+							<span class="share-price-at-top" style="display: none!important;">
 								<?php
 									$xmldat = file_get_contents('http://qfx.quartalflife.com/clients/uk/lighthouse_group/xml/xml.aspx');
 
