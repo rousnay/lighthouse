@@ -310,3 +310,56 @@ body.page-id-70638 {
 			}
 	}
 }
+/*******************
+Custom Twitter Feeds
+********************/
+#ctf {
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: darkgrey;
+		outline: 1px solid slategrey;
+	}
+	&.ctf-super-narrow{
+		.ctf-header-text {
+			padding-top: 0;
+		}
+		.ctf-header-user {
+			min-height: 40px;
+		}
+	}
+	.ctf-header {
+		padding: 0px 0px 2px 5px!important;
+	}
+	.ctf-header-img {
+		width: 45px;
+		border-radius: 0!important;
+		img{
+			border-radius: 0!important;
+		}
+	}
+	.ctf-header-name {
+		font-weight: normal;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		line-height: 1.25;
+	}
+	.ctf-header-text .ctf-header-user, .ctf-header-text p {
+		margin: 0 0 0 50px !important;
+	}
+	.ctf-tweet-actions a{
+		&.ctf-reply, 
+		&.ctf-retweet, 
+		&.ctf-like {
+			color: #bbb!important;
+		}
+	}
+}
